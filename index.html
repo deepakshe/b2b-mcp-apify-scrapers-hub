@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="HibTJDzexrmA4d65n3E016kJeNl--oBg9-SpcxC_lNA" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>62 Zero-Proxy B2B Scrapers, Lead Enrichers, GovTech & SecOps APIs on Apify | Deepak Sheoran</title>
-  <meta name="description" content="Production directory of 62 lightweight, zero-proxy Apify Actors and MCP Servers for B2B email verification, LinkedIn jobs, YouTube leads, SAM.gov tenders, OFAC sanctions, and CISA KEV monitoring." />
+  <meta name="google-site-verification" content="HibTJDzexrmA4d65n3E016kJeNl--oBg9-SpcxC_lNA" />
+  <title>62 Zero-Proxy B2B Scrapers, Lead Enrichers, GovTech & SecOps APIs | Deepak Sheoran</title>
+  <meta name="description" content="Searchable B2B App Store of 62 lightweight, zero-proxy Apify Actors, n8n workflow templates, and Claude/Cursor MCP servers for lead enrichment, job scraping, and compliance monitoring." />
   <link rel="canonical" href="https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/" />
   <script type="application/ld+json">
   {
@@ -882,82 +882,1585 @@
   ]
 }
   </script>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent-green: #059669;
+      --accent-purple: #7c3aed;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero-container { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 2.3rem; margin: 0 0 12px 0; color: var(--text-main); font-weight: 800; }
+    .hero-sub { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 24px; }
+    .badges-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 24px; }
+    .top-cta { display: inline-flex; gap: 12px; }
+    .btn-top {
+      background: #00c853; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    }
+    .btn-top-gh {
+      background: #0f172a; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    }
+    .main-container { max-width: 1200px; margin: 0 auto; padding: 32px 20px; }
+    
+    /* Search & Filter Toolbar */
+    .toolbar {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 32px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .search-box {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 1.05rem;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus { border-color: var(--primary); }
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .pill {
+      background: #f1f5f9;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pill:hover { background: #e2e8f0; }
+    .pill.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* App Store Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    .actor-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .actor-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .badge { font-size: 0.75rem; padding: 3px 8px; border-radius: 6px; font-weight: 700; }
+    .category-badge { background: #f1f5f9; color: #334155; }
+    .ppe-badge { background: #dcfce7; color: #166534; }
+    .card-title { margin: 0 0 4px 0; font-size: 1.2rem; }
+    .card-title a { color: var(--text-main); text-decoration: none; }
+    .card-title a:hover { color: var(--primary); }
+    .card-slug { font-size: 0.82rem; color: #64748b; margin: 0 0 10px 0; }
+    .card-keywords { font-size: 0.86rem; color: var(--text-muted); margin: 0 0 16px 0; flex-grow: 1; }
+    
+    .card-endpoint {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      background: #f8fafc;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    .endpoint-input {
+      flex-grow: 1;
+      border: none;
+      background: transparent;
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: #334155;
+      outline: none;
+    }
+    .btn-copy {
+      background: #e2e8f0;
+      border: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-copy:hover { background: #cbd5e1; }
+    
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-store {
+      flex-grow: 1;
+      background: var(--primary);
+      color: #ffffff;
+      text-align: center;
+      padding: 9px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .btn-store:hover { background: var(--primary-hover); }
+    .btn-n8n {
+      background: var(--accent-purple);
+      color: #ffffff;
+      text-align: center;
+      padding: 9px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .btn-n8n:hover { background: #6d28d9; }
+    
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      background: #ffffff;
+      margin-top: 60px;
+    }
+    .empty-results {
+      text-align: center;
+      padding: 40px;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+      display: none;
+    }
+  </style>
 </head>
-<body style="font-family:system-ui,-apple-system,sans-serif;line-height:1.6;max-width:1100px;margin:0 auto;padding:24px;background:#f8fafc;color:#1e293b;">
-  <header style="margin-bottom:32px;text-align:center;">
-    <h1 style="color:#0f172a;font-size:2.2rem;margin-bottom:8px;">⚡ 62 Production B2B Scrapers, GovTech & SecOps MCP Tools</h1>
-    <p style="font-size:1.15rem;color:#475569;max-width:850px;margin:0 auto 16px;">Zero Proxy Bandwidth Fees ($0.00) • Sub-5 Second Asynchronous HTTP Execution • 100% n8n, Make.com, Cursor & Claude MCP Ready • Pay-Per-Event ($0.003/record)</p>
-    <div>
-      <a href="https://apify.com/deepaksheoran172" style="background:#00C853;color:#ffffff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;margin-right:8px;display:inline-block;">Visit Official Apify Store</a>
-      <a href="https://github.com/deepaksheoran172/b2b-mcp-apify-scrapers-hub" style="background:#0f172a;color:#ffffff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;">View on GitHub</a>
+<body>
+  <header>
+    <div class="hero-container">
+      <h1>⚡ Zero-Proxy B2B App Store & Automation Hub</h1>
+      <p class="hero-sub">62 Production Apify Actors & MCP Tools • $0.00 Proxy Fees • Sub-5s Asynchronous HTTP Execution • 1-Click n8n Templates & Claude MCP Integration</p>
+      
+      <div class="top-cta">
+        <a href="https://apify.com/deepaksheoran172" target="_blank" rel="noopener" class="btn-top">Visit Apify Storefront</a>
+        <a href="https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub" target="_blank" rel="noopener" class="btn-top-gh">View GitHub Repository</a>
+      </div>
     </div>
   </header>
-  <main>
-    <article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" rel="noopener" style="color:#2563eb;text-decoration:none;">Bulk Email Verifier MX SMTP (deepaksheoran172/bulk-email-verifier-mx-smtp)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner</p><p><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~bulk-email-verifier-mx-smtp/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" rel="noopener" style="color:#2563eb;text-decoration:none;">B2B Decision Maker Email Finder (deepaksheoran172/b2b-decision-maker-email-finder)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads</p><p><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~b2b-decision-maker-email-finder/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Social Bio Contact Email Extractor (deepaksheoran172/social-bio-contact-email-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> social media bio email scraper, creator contact extractor, influencer lead generation</p><p><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~social-bio-contact-email-extractor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">Local Business Website Phone Whatsapp Scraper (deepaksheoran172/local-business-website-phone-whatsapp-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google maps whatsapp scraper, local business phone email extractor, b2b local leads</p><p><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~local-business-website-phone-whatsapp-scraper/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Bulk Transcript Captions Scraper (deepaksheoran172/youtube-bulk-transcript-captions-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube transcript api, bulk youtube captions downloader, llm rag video data</p><p><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-bulk-transcript-captions-scraper/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Channel Sponsor Email Lead Finder (deepaksheoran172/youtube-channel-sponsor-email-lead-finder)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube sponsor finder, youtuber business email scraper, brand deal lead generation</p><p><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-channel-sponsor-email-lead-finder/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Comments Painpoint Sentiment Miner (deepaksheoran172/youtube-comments-painpoint-sentiment-miner)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube comments scraper, audience pain point miner, product research tool</p><p><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-comments-painpoint-sentiment-miner/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Shorts Viral Hook Trend Tracker (deepaksheoran172/youtube-shorts-viral-hook-trend-tracker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube shorts trend tracker, viral hook analyzer, short form video metrics</p><p><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-shorts-viral-hook-trend-tracker/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Jobs Scraper No Login (deepaksheoran172/linkedin-jobs-scraper-no-login)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper</p><p><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-jobs-scraper-no-login/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Hiring Company Lead Enricher (deepaksheoran172/linkedin-hiring-company-lead-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> hiring company lead enricher, b2b recruiting intent signals, headhunter automation</p><p><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-hiring-company-lead-enricher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Remote Salary Filter (deepaksheoran172/linkedin-remote-salary-filter)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> remote jobs salary scraper, compensation benchmark api, tech job aggregator</p><p><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-remote-salary-filter/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Public Company Profiler (deepaksheoran172/linkedin-public-company-profiler)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> company profile enricher, firmographic data api, b2b account enrichment</p><p><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-public-company-profiler/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Store Catalog Redirect Extractor (deepaksheoran172/store-catalog-redirect-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> shopify catalog extractor, e-commerce redirect auditor, store product feed spy</p><p><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~store-catalog-redirect-extractor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">Domain Security Super Auditor (deepaksheoran172/domain-security-super-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api</p><p><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~domain-security-super-auditor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" rel="noopener" style="color:#2563eb;text-decoration:none;">Catalog Feed Normalizer (deepaksheoran172/catalog-feed-normalizer)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> product catalog normalizer, e-commerce json feed cleaner, merchant center tool</p><p><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~catalog-feed-normalizer/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-health-checker" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Health Checker (deepaksheoran172/website-health-checker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website uptime response checker, broken link technical seo auditor, bulk http status</p><p><a href="https://apify.com/deepaksheoran172/website-health-checker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-health-checker/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" rel="noopener" style="color:#2563eb;text-decoration:none;">Indian Public Tender Parser (deepaksheoran172/indian-public-tender-parser)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts</p><p><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~indian-public-tender-parser/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" rel="noopener" style="color:#2563eb;text-decoration:none;">Openrouter MCP Registry (deepaksheoran172/openrouter-mcp-registry)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openrouter models api, mcp server registry, llm pricing context benchmark</p><p><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~openrouter-mcp-registry/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Domain Protocol Signals Enricher (deepaksheoran172/domain-protocol-signals-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> domain dns http protocol signals, tech stack security enricher, b2b domain intel</p><p><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~domain-protocol-signals-enricher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-contact-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Contact Extractor (deepaksheoran172/website-contact-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website email phone social scraper, contact page parser, zero proxy lead extractor</p><p><a href="https://apify.com/deepaksheoran172/website-contact-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-contact-extractor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" rel="noopener" style="color:#2563eb;text-decoration:none;">Google Keyword Suggester (deepaksheoran172/google-keyword-suggester)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google autocomplete keyword api, long tail seo keyword scraper, content research</p><p><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~google-keyword-suggester/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">ATS Jobs Extractor (deepaksheoran172/ats-jobs-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> greenhouse lever ashby workable scraper, ats job postings api, hiring tracker</p><p><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ats-jobs-extractor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">App Store Reviews Scraper (deepaksheoran172/app-store-reviews-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> apple app store reviews api, mobile app sentiment scraper, competitor review monitor</p><p><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~app-store-reviews-scraper/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Screenshot PDF (deepaksheoran172/website-screenshot-pdf)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website screenshot to pdf api, headless browser visual capture, compliance archiving</p><p><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-screenshot-pdf/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/google-ads-transparency" rel="noopener" style="color:#2563eb;text-decoration:none;">Google Ads Transparency (deepaksheoran172/google-ads-transparency)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google ads transparency center scraper, competitor ad spy api, b2b ad intelligence</p><p><a href="https://apify.com/deepaksheoran172/google-ads-transparency" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~google-ads-transparency/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" rel="noopener" style="color:#2563eb;text-decoration:none;">Scanned Document OCR (deepaksheoran172/scanned-document-ocr)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> scanned pdf image ocr api, document text extraction, automated invoice parser</p><p><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~scanned-document-ocr/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">CISA KEV Delta Monitor (deepaksheoran172/cisa-kev-delta-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> cisa known exploited vulnerabilities api, kev cve alert feed, secops automation</p><p><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~cisa-kev-delta-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" rel="noopener" style="color:#2563eb;text-decoration:none;">OSV Dependency CVE Scanner (deepaksheoran172/osv-dependency-cve-scanner)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google osv vulnerability scanner, pypi npm go maven cve checker, sbom security</p><p><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~osv-dependency-cve-scanner/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" rel="noopener" style="color:#2563eb;text-decoration:none;">Runtime And Container EOL Radar (deepaksheoran172/runtime-and-container-eol-radar)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance</p><p><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~runtime-and-container-eol-radar/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">npm Package Health Auditor (deepaksheoran172/npm-package-health-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> npm package security deprecation auditor, supply chain health check, nodejs audit</p><p><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~npm-package-health-auditor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">PyPI Package Health Auditor (deepaksheoran172/pypi-package-health-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> pypi python package auditor, yanked release maintainer check, python supply chain</p><p><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~pypi-package-health-auditor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">Github Actions Pinning Auditor (deepaksheoran172/github-actions-pinning-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> github actions sha pinning security auditor, ci cd supply chain vulnerability</p><p><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~github-actions-pinning-auditor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" rel="noopener" style="color:#2563eb;text-decoration:none;">OpenAPI Breaking Change Diff (deepaksheoran172/openapi-breaking-change-diff)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openapi swagger breaking change detector, api contract diff tool, ci cd api check</p><p><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~openapi-breaking-change-diff/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" rel="noopener" style="color:#2563eb;text-decoration:none;">Statuspage Incident Aggregator (deepaksheoran172/statuspage-incident-aggregator)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status</p><p><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~statuspage-incident-aggregator/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">AWS Health Incident Monitor (deepaksheoran172/aws-health-incident-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> aws service health dashboard api, amazon web services outage monitor, sre alerting</p><p><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~aws-health-incident-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">GCP Incident Monitor (deepaksheoran172/gcp-incident-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google cloud status incident api, gcp regional outage monitor, cloud reliability</p><p><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~gcp-incident-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Azure Status Feed Monitor (deepaksheoran172/azure-status-feed-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> microsoft azure status rss api, azure cloud outage monitor, devops incident feed</p><p><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~azure-status-feed-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" rel="noopener" style="color:#2563eb;text-decoration:none;">API SDK Deprecation Radar (deepaksheoran172/api-sdk-deprecation-radar)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes</p><p><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~api-sdk-deprecation-radar/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">FDA Food And Drug Enforcement Monitor (deepaksheoran172/fda-food-and-drug-enforcement-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain</p><p><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~fda-food-and-drug-enforcement-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">CPSC Recall Monitor (deepaksheoran172/cpsc-recall-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance</p><p><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~cpsc-recall-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">NHTSA Vehicle Recall Monitor (deepaksheoran172/nhtsa-vehicle-recall-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety</p><p><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~nhtsa-vehicle-recall-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">FDA 510(k) Clearance Intelligence (deepaksheoran172/fda-510k-clearance-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openfda 510k medical device clearance api, medtech regulatory approval intelligence</p><p><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~fda-510k-clearance-intelligence/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" rel="noopener" style="color:#2563eb;text-decoration:none;">OFAC SDN Delta Screener (deepaksheoran172/ofac-sdn-delta-screener)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist</p><p><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ofac-sdn-delta-screener/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">ECHA SVHC RASFF Chemical Alert Monitor (deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts</p><p><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~echa-svhc-rasff-chemical-alert-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">Usaspending Award Intelligence (deepaksheoran172/usaspending-award-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> usaspending.gov federal contract awards api, government prime contractor intelligence</p><p><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~usaspending-award-intelligence/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">TED EU Tender Monitor (deepaksheoran172/ted-eu-tender-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> eu ted tenders electronic daily api v3, european public procurement monitor</p><p><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ted-eu-tender-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" rel="noopener" style="color:#2563eb;text-decoration:none;">Grants Gov Opportunity Matcher (deepaksheoran172/grants-gov-opportunity-matcher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp</p><p><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~grants-gov-opportunity-matcher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" rel="noopener" style="color:#2563eb;text-decoration:none;">World Bank Project Pipeline Matcher (deepaksheoran172/world-bank-project-pipeline-matcher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> world bank project procurement api, global infrastructure funding pipeline</p><p><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~world-bank-project-pipeline-matcher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Sam Gov Opportunity Monitor (deepaksheoran172/sam-gov-opportunity-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor</p><p><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~sam-gov-opportunity-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" rel="noopener" style="color:#2563eb;text-decoration:none;">State And Local RFP Aggregator (deepaksheoran172/state-and-local-rfp-aggregator)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> us state municipal local rfp bid aggregator, socrata open procurement api</p><p><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~state-and-local-rfp-aggregator/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">SEC Filing Event Intelligence (deepaksheoran172/sec-filing-event-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel</p><p><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~sec-filing-event-intelligence/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" rel="noopener" style="color:#2563eb;text-decoration:none;">GLEIF LEI Resolver (deepaksheoran172/gleif-lei-resolver)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> gleif legal entity identifier lei api, corporate parent child ownership resolver</p><p><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~gleif-lei-resolver/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Companies House Event Monitor (deepaksheoran172/companies-house-event-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> uk companies house registry scraper keyless, british corporate filing kyc monitor</p><p><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~companies-house-event-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Opensanctions Screening Enricher (deepaksheoran172/opensanctions-screening-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> opensanctions global pep sanctions screening api, kyc compliance entity matcher</p><p><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~opensanctions-screening-enricher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Hacker News Launch And Trend Monitor (deepaksheoran172/hacker-news-launch-and-trend-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> algolia hacker news show hn launch monitor, tech trend velocity scraper</p><p><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~hacker-news-launch-and-trend-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" rel="noopener" style="color:#2563eb;text-decoration:none;">Github Competitive Repo Tracker (deepaksheoran172/github-competitive-repo-tracker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> github repository star velocity issue tracker, open source competitor intelligence</p><p><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~github-competitive-repo-tracker/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">RDAP Domain Registration Monitor (deepaksheoran172/rdap-domain-registration-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> icann rdap whois domain expiry registration monitor, brand protection api</p><p><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~rdap-domain-registration-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">TLS Certificate Expiry Auditor (deepaksheoran172/tls-certificate-expiry-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner</p><p><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~tls-certificate-expiry-auditor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">DNS Record Drift Monitor (deepaksheoran172/dns-record-drift-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> dns a mx txt cname ns drift monitor, subdomain takeover hijack detector</p><p><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~dns-record-drift-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Package Dependency Graph Enricher (deepaksheoran172/package-dependency-graph-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google deps.dev dependency graph openssf scorecard api, transitive package risk</p><p><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~package-dependency-graph-enricher/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Docker Hub Image Staleness Monitor (deepaksheoran172/docker-hub-image-staleness-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> docker hub container image tag staleness digest monitor, devops registry audit</p><p><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~docker-hub-image-staleness-monitor/run-sync-get-dataset-items</code></p></article>
-<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" rel="noopener" style="color:#2563eb;text-decoration:none;">npm Download Trend Reporter (deepaksheoran172/npm-download-trend-reporter)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> npm package weekly download growth velocity api, developer adoption trend tracker</p><p><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~npm-download-trend-reporter/run-sync-get-dataset-items</code></p></article>
-  </main>
-  <footer style="margin-top:48px;padding-top:24px;border-top:1px solid #cbd5e1;text-align:center;color:#64748b;font-size:0.9rem;">
-    <p>Maintained by deepaksheoran172 • All 62 actors run on high-performance Apify serverless container infrastructure.</p>
+
+  <div class="main-container">
+    <div class="toolbar">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search by keyword (e.g., 'email verifier', 'linkedin', 'tender', 'ofac', 'cve', 'shopify')..." oninput="filterActors()">
+      <div class="filter-pills">
+        <button class="pill active" onclick="setCategory('all', this)">All (62)</button>
+        <button class="pill" onclick="setCategory('b2b', this)">B2B Lead Gen & Email</button>
+        <button class="pill" onclick="setCategory('linkedin', this)">LinkedIn & Jobs</button>
+        <button class="pill" onclick="setCategory('youtube', this)">YouTube & Social</button>
+        <button class="pill" onclick="setCategory('govtech', this)">GovTech & Tenders</button>
+        <button class="pill" onclick="setCategory('cybersecurity', this)">Cybersecurity & DevSecOps</button>
+        <button class="pill" onclick="setCategory('ecommerce', this)">E-Commerce & SEO</button>
+        <button class="pill" onclick="setCategory('cloud', this)">Cloud Health & SRE</button>
+        <button class="pill" onclick="setCategory('compliance', this)">Compliance & Registries</button>
+        <button class="pill" onclick="setCategory('ai', this)">AI Agents & Ecosystem</button>
+      </div>
+    </div>
+
+    <div class="grid" id="actorsGrid">
+      
+    <div class="actor-card" data-category="b2b" data-search="bulk email verifier mx smtp bulk-email-verifier-mx-smtp bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner b2b lead gen & email">
+      <div class="card-header">
+        <span class="badge category-badge">B2B Lead Gen & Email</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" target="_blank" rel="noopener">Bulk Email Verifier MX SMTP</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/bulk-email-verifier-mx-smtp</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~bulk-email-verifier-mx-smtp/run-sync-get-dataset-items" class="endpoint-input" id="ep-bulk-email-verifier-mx-smtp">
+        <button class="btn-copy" onclick="copyEndpoint('ep-bulk-email-verifier-mx-smtp', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/bulk-email-verifier-mx-smtp-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="b2b" data-search="b2b decision maker email finder b2b-decision-maker-email-finder b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads b2b lead gen & email">
+      <div class="card-header">
+        <span class="badge category-badge">B2B Lead Gen & Email</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" target="_blank" rel="noopener">B2B Decision Maker Email Finder</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/b2b-decision-maker-email-finder</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~b2b-decision-maker-email-finder/run-sync-get-dataset-items" class="endpoint-input" id="ep-b2b-decision-maker-email-finder">
+        <button class="btn-copy" onclick="copyEndpoint('ep-b2b-decision-maker-email-finder', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/b2b-decision-maker-email-finder-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="b2b" data-search="social bio contact email extractor social-bio-contact-email-extractor social media bio email scraper, creator contact extractor, influencer lead generation b2b lead gen & email">
+      <div class="card-header">
+        <span class="badge category-badge">B2B Lead Gen & Email</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" target="_blank" rel="noopener">Social Bio Contact Email Extractor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/social-bio-contact-email-extractor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> social media bio email scraper, creator contact extractor, influencer lead generation</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~social-bio-contact-email-extractor/run-sync-get-dataset-items" class="endpoint-input" id="ep-social-bio-contact-email-extractor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-social-bio-contact-email-extractor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="b2b" data-search="local business website phone whatsapp scraper local-business-website-phone-whatsapp-scraper google maps whatsapp scraper, local business phone email extractor, b2b local leads b2b lead gen & email">
+      <div class="card-header">
+        <span class="badge category-badge">B2B Lead Gen & Email</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" target="_blank" rel="noopener">Local Business Website Phone Whatsapp Scraper</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/local-business-website-phone-whatsapp-scraper</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google maps whatsapp scraper, local business phone email extractor, b2b local leads</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~local-business-website-phone-whatsapp-scraper/run-sync-get-dataset-items" class="endpoint-input" id="ep-local-business-website-phone-whatsapp-scraper">
+        <button class="btn-copy" onclick="copyEndpoint('ep-local-business-website-phone-whatsapp-scraper', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/local-business-website-phone-whatsapp-scraper-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="youtube" data-search="youtube bulk transcript captions scraper youtube-bulk-transcript-captions-scraper youtube transcript api, bulk youtube captions downloader, llm rag video data youtube & social intelligence">
+      <div class="card-header">
+        <span class="badge category-badge">YouTube & Social Intelligence</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" target="_blank" rel="noopener">Youtube Bulk Transcript Captions Scraper</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/youtube-bulk-transcript-captions-scraper</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> youtube transcript api, bulk youtube captions downloader, llm rag video data</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~youtube-bulk-transcript-captions-scraper/run-sync-get-dataset-items" class="endpoint-input" id="ep-youtube-bulk-transcript-captions-scraper">
+        <button class="btn-copy" onclick="copyEndpoint('ep-youtube-bulk-transcript-captions-scraper', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="youtube" data-search="youtube channel sponsor email lead finder youtube-channel-sponsor-email-lead-finder youtube sponsor finder, youtuber business email scraper, brand deal lead generation youtube & social intelligence">
+      <div class="card-header">
+        <span class="badge category-badge">YouTube & Social Intelligence</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" target="_blank" rel="noopener">Youtube Channel Sponsor Email Lead Finder</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/youtube-channel-sponsor-email-lead-finder</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> youtube sponsor finder, youtuber business email scraper, brand deal lead generation</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~youtube-channel-sponsor-email-lead-finder/run-sync-get-dataset-items" class="endpoint-input" id="ep-youtube-channel-sponsor-email-lead-finder">
+        <button class="btn-copy" onclick="copyEndpoint('ep-youtube-channel-sponsor-email-lead-finder', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/youtube-channel-sponsor-email-lead-finder-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="youtube" data-search="youtube comments painpoint sentiment miner youtube-comments-painpoint-sentiment-miner youtube comments scraper, audience pain point miner, product research tool youtube & social intelligence">
+      <div class="card-header">
+        <span class="badge category-badge">YouTube & Social Intelligence</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" target="_blank" rel="noopener">Youtube Comments Painpoint Sentiment Miner</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/youtube-comments-painpoint-sentiment-miner</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> youtube comments scraper, audience pain point miner, product research tool</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~youtube-comments-painpoint-sentiment-miner/run-sync-get-dataset-items" class="endpoint-input" id="ep-youtube-comments-painpoint-sentiment-miner">
+        <button class="btn-copy" onclick="copyEndpoint('ep-youtube-comments-painpoint-sentiment-miner', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="youtube" data-search="youtube shorts viral hook trend tracker youtube-shorts-viral-hook-trend-tracker youtube shorts trend tracker, viral hook analyzer, short form video metrics youtube & social intelligence">
+      <div class="card-header">
+        <span class="badge category-badge">YouTube & Social Intelligence</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" target="_blank" rel="noopener">Youtube Shorts Viral Hook Trend Tracker</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/youtube-shorts-viral-hook-trend-tracker</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> youtube shorts trend tracker, viral hook analyzer, short form video metrics</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~youtube-shorts-viral-hook-trend-tracker/run-sync-get-dataset-items" class="endpoint-input" id="ep-youtube-shorts-viral-hook-trend-tracker">
+        <button class="btn-copy" onclick="copyEndpoint('ep-youtube-shorts-viral-hook-trend-tracker', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="linkedin" data-search="linkedin jobs scraper no login linkedin-jobs-scraper-no-login linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper linkedin & recruitment intent">
+      <div class="card-header">
+        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" target="_blank" rel="noopener">Linkedin Jobs Scraper No Login</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/linkedin-jobs-scraper-no-login</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~linkedin-jobs-scraper-no-login/run-sync-get-dataset-items" class="endpoint-input" id="ep-linkedin-jobs-scraper-no-login">
+        <button class="btn-copy" onclick="copyEndpoint('ep-linkedin-jobs-scraper-no-login', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/linkedin-jobs-scraper-no-login-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="linkedin" data-search="linkedin hiring company lead enricher linkedin-hiring-company-lead-enricher hiring company lead enricher, b2b recruiting intent signals, headhunter automation linkedin & recruitment intent">
+      <div class="card-header">
+        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" target="_blank" rel="noopener">Linkedin Hiring Company Lead Enricher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/linkedin-hiring-company-lead-enricher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> hiring company lead enricher, b2b recruiting intent signals, headhunter automation</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~linkedin-hiring-company-lead-enricher/run-sync-get-dataset-items" class="endpoint-input" id="ep-linkedin-hiring-company-lead-enricher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-linkedin-hiring-company-lead-enricher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="linkedin" data-search="linkedin remote salary filter linkedin-remote-salary-filter remote jobs salary scraper, compensation benchmark api, tech job aggregator linkedin & recruitment intent">
+      <div class="card-header">
+        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" target="_blank" rel="noopener">Linkedin Remote Salary Filter</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/linkedin-remote-salary-filter</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> remote jobs salary scraper, compensation benchmark api, tech job aggregator</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~linkedin-remote-salary-filter/run-sync-get-dataset-items" class="endpoint-input" id="ep-linkedin-remote-salary-filter">
+        <button class="btn-copy" onclick="copyEndpoint('ep-linkedin-remote-salary-filter', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="linkedin" data-search="linkedin public company profiler linkedin-public-company-profiler company profile enricher, firmographic data api, b2b account enrichment linkedin & recruitment intent">
+      <div class="card-header">
+        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" target="_blank" rel="noopener">Linkedin Public Company Profiler</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/linkedin-public-company-profiler</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> company profile enricher, firmographic data api, b2b account enrichment</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~linkedin-public-company-profiler/run-sync-get-dataset-items" class="endpoint-input" id="ep-linkedin-public-company-profiler">
+        <button class="btn-copy" onclick="copyEndpoint('ep-linkedin-public-company-profiler', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="store catalog redirect extractor store-catalog-redirect-extractor shopify catalog extractor, e-commerce redirect auditor, store product feed spy e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" target="_blank" rel="noopener">Store Catalog Redirect Extractor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/store-catalog-redirect-extractor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> shopify catalog extractor, e-commerce redirect auditor, store product feed spy</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~store-catalog-redirect-extractor/run-sync-get-dataset-items" class="endpoint-input" id="ep-store-catalog-redirect-extractor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-store-catalog-redirect-extractor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/store-catalog-redirect-extractor-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="domain security super auditor domain-security-super-auditor dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" target="_blank" rel="noopener">Domain Security Super Auditor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/domain-security-super-auditor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~domain-security-super-auditor/run-sync-get-dataset-items" class="endpoint-input" id="ep-domain-security-super-auditor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-domain-security-super-auditor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/domain-security-super-auditor-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="catalog feed normalizer catalog-feed-normalizer product catalog normalizer, e-commerce json feed cleaner, merchant center tool e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" target="_blank" rel="noopener">Catalog Feed Normalizer</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/catalog-feed-normalizer</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> product catalog normalizer, e-commerce json feed cleaner, merchant center tool</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~catalog-feed-normalizer/run-sync-get-dataset-items" class="endpoint-input" id="ep-catalog-feed-normalizer">
+        <button class="btn-copy" onclick="copyEndpoint('ep-catalog-feed-normalizer', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="website health checker website-health-checker website uptime response checker, broken link technical seo auditor, bulk http status e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-health-checker" target="_blank" rel="noopener">Website Health Checker</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/website-health-checker</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> website uptime response checker, broken link technical seo auditor, bulk http status</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~website-health-checker/run-sync-get-dataset-items" class="endpoint-input" id="ep-website-health-checker">
+        <button class="btn-copy" onclick="copyEndpoint('ep-website-health-checker', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/website-health-checker" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="indian public tender parser indian-public-tender-parser indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" target="_blank" rel="noopener">Indian Public Tender Parser</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/indian-public-tender-parser</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~indian-public-tender-parser/run-sync-get-dataset-items" class="endpoint-input" id="ep-indian-public-tender-parser">
+        <button class="btn-copy" onclick="copyEndpoint('ep-indian-public-tender-parser', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/indian-public-tender-parser-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="openrouter mcp registry openrouter-mcp-registry openrouter models api, mcp server registry, llm pricing context benchmark ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" target="_blank" rel="noopener">Openrouter MCP Registry</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/openrouter-mcp-registry</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> openrouter models api, mcp server registry, llm pricing context benchmark</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~openrouter-mcp-registry/run-sync-get-dataset-items" class="endpoint-input" id="ep-openrouter-mcp-registry">
+        <button class="btn-copy" onclick="copyEndpoint('ep-openrouter-mcp-registry', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/openrouter-mcp-registry-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="domain protocol signals enricher domain-protocol-signals-enricher domain dns http protocol signals, tech stack security enricher, b2b domain intel cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" target="_blank" rel="noopener">Domain Protocol Signals Enricher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/domain-protocol-signals-enricher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> domain dns http protocol signals, tech stack security enricher, b2b domain intel</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~domain-protocol-signals-enricher/run-sync-get-dataset-items" class="endpoint-input" id="ep-domain-protocol-signals-enricher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-domain-protocol-signals-enricher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="b2b" data-search="website contact extractor website-contact-extractor website email phone social scraper, contact page parser, zero proxy lead extractor b2b lead gen & email">
+      <div class="card-header">
+        <span class="badge category-badge">B2B Lead Gen & Email</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-contact-extractor" target="_blank" rel="noopener">Website Contact Extractor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/website-contact-extractor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> website email phone social scraper, contact page parser, zero proxy lead extractor</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~website-contact-extractor/run-sync-get-dataset-items" class="endpoint-input" id="ep-website-contact-extractor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-website-contact-extractor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/website-contact-extractor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/website-contact-extractor-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="google keyword suggester google-keyword-suggester google autocomplete keyword api, long tail seo keyword scraper, content research e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" target="_blank" rel="noopener">Google Keyword Suggester</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/google-keyword-suggester</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google autocomplete keyword api, long tail seo keyword scraper, content research</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~google-keyword-suggester/run-sync-get-dataset-items" class="endpoint-input" id="ep-google-keyword-suggester">
+        <button class="btn-copy" onclick="copyEndpoint('ep-google-keyword-suggester', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/google-keyword-suggester" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="linkedin" data-search="ats jobs extractor ats-jobs-extractor greenhouse lever ashby workable scraper, ats job postings api, hiring tracker linkedin & recruitment intent">
+      <div class="card-header">
+        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" target="_blank" rel="noopener">ATS Jobs Extractor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/ats-jobs-extractor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> greenhouse lever ashby workable scraper, ats job postings api, hiring tracker</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~ats-jobs-extractor/run-sync-get-dataset-items" class="endpoint-input" id="ep-ats-jobs-extractor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-ats-jobs-extractor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="app store reviews scraper app-store-reviews-scraper apple app store reviews api, mobile app sentiment scraper, competitor review monitor e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" target="_blank" rel="noopener">App Store Reviews Scraper</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/app-store-reviews-scraper</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> apple app store reviews api, mobile app sentiment scraper, competitor review monitor</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~app-store-reviews-scraper/run-sync-get-dataset-items" class="endpoint-input" id="ep-app-store-reviews-scraper">
+        <button class="btn-copy" onclick="copyEndpoint('ep-app-store-reviews-scraper', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="website screenshot pdf website-screenshot-pdf website screenshot to pdf api, headless browser visual capture, compliance archiving e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" target="_blank" rel="noopener">Website Screenshot PDF</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/website-screenshot-pdf</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> website screenshot to pdf api, headless browser visual capture, compliance archiving</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~website-screenshot-pdf/run-sync-get-dataset-items" class="endpoint-input" id="ep-website-screenshot-pdf">
+        <button class="btn-copy" onclick="copyEndpoint('ep-website-screenshot-pdf', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ecommerce" data-search="google ads transparency google-ads-transparency google ads transparency center scraper, competitor ad spy api, b2b ad intelligence e-commerce & web audit">
+      <div class="card-header">
+        <span class="badge category-badge">E-Commerce & Web Audit</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/google-ads-transparency" target="_blank" rel="noopener">Google Ads Transparency</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/google-ads-transparency</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google ads transparency center scraper, competitor ad spy api, b2b ad intelligence</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~google-ads-transparency/run-sync-get-dataset-items" class="endpoint-input" id="ep-google-ads-transparency">
+        <button class="btn-copy" onclick="copyEndpoint('ep-google-ads-transparency', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/google-ads-transparency" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="scanned document ocr scanned-document-ocr scanned pdf image ocr api, document text extraction, automated invoice parser ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" target="_blank" rel="noopener">Scanned Document OCR</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/scanned-document-ocr</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> scanned pdf image ocr api, document text extraction, automated invoice parser</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~scanned-document-ocr/run-sync-get-dataset-items" class="endpoint-input" id="ep-scanned-document-ocr">
+        <button class="btn-copy" onclick="copyEndpoint('ep-scanned-document-ocr', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/scanned-document-ocr" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="cisa kev delta monitor cisa-kev-delta-monitor cisa known exploited vulnerabilities api, kev cve alert feed, secops automation cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" target="_blank" rel="noopener">CISA KEV Delta Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/cisa-kev-delta-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> cisa known exploited vulnerabilities api, kev cve alert feed, secops automation</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~cisa-kev-delta-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-cisa-kev-delta-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-cisa-kev-delta-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/cisa-kev-delta-monitor-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="osv dependency cve scanner osv-dependency-cve-scanner google osv vulnerability scanner, pypi npm go maven cve checker, sbom security cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" target="_blank" rel="noopener">OSV Dependency CVE Scanner</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/osv-dependency-cve-scanner</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google osv vulnerability scanner, pypi npm go maven cve checker, sbom security</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~osv-dependency-cve-scanner/run-sync-get-dataset-items" class="endpoint-input" id="ep-osv-dependency-cve-scanner">
+        <button class="btn-copy" onclick="copyEndpoint('ep-osv-dependency-cve-scanner', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/osv-dependency-cve-scanner-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="runtime and container eol radar runtime-and-container-eol-radar endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" target="_blank" rel="noopener">Runtime And Container EOL Radar</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/runtime-and-container-eol-radar</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~runtime-and-container-eol-radar/run-sync-get-dataset-items" class="endpoint-input" id="ep-runtime-and-container-eol-radar">
+        <button class="btn-copy" onclick="copyEndpoint('ep-runtime-and-container-eol-radar', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="npm package health auditor npm-package-health-auditor npm package security deprecation auditor, supply chain health check, nodejs audit ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" target="_blank" rel="noopener">npm Package Health Auditor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/npm-package-health-auditor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> npm package security deprecation auditor, supply chain health check, nodejs audit</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~npm-package-health-auditor/run-sync-get-dataset-items" class="endpoint-input" id="ep-npm-package-health-auditor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-npm-package-health-auditor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="pypi package health auditor pypi-package-health-auditor pypi python package auditor, yanked release maintainer check, python supply chain ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" target="_blank" rel="noopener">PyPI Package Health Auditor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/pypi-package-health-auditor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> pypi python package auditor, yanked release maintainer check, python supply chain</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~pypi-package-health-auditor/run-sync-get-dataset-items" class="endpoint-input" id="ep-pypi-package-health-auditor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-pypi-package-health-auditor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="github actions pinning auditor github-actions-pinning-auditor github actions sha pinning security auditor, ci cd supply chain vulnerability cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" target="_blank" rel="noopener">Github Actions Pinning Auditor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/github-actions-pinning-auditor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> github actions sha pinning security auditor, ci cd supply chain vulnerability</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~github-actions-pinning-auditor/run-sync-get-dataset-items" class="endpoint-input" id="ep-github-actions-pinning-auditor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-github-actions-pinning-auditor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="openapi breaking change diff openapi-breaking-change-diff openapi swagger breaking change detector, api contract diff tool, ci cd api check ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" target="_blank" rel="noopener">OpenAPI Breaking Change Diff</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/openapi-breaking-change-diff</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> openapi swagger breaking change detector, api contract diff tool, ci cd api check</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~openapi-breaking-change-diff/run-sync-get-dataset-items" class="endpoint-input" id="ep-openapi-breaking-change-diff">
+        <button class="btn-copy" onclick="copyEndpoint('ep-openapi-breaking-change-diff', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cloud" data-search="statuspage incident aggregator statuspage-incident-aggregator atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status cloud health & sre">
+      <div class="card-header">
+        <span class="badge category-badge">Cloud Health & SRE</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" target="_blank" rel="noopener">Statuspage Incident Aggregator</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/statuspage-incident-aggregator</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~statuspage-incident-aggregator/run-sync-get-dataset-items" class="endpoint-input" id="ep-statuspage-incident-aggregator">
+        <button class="btn-copy" onclick="copyEndpoint('ep-statuspage-incident-aggregator', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cloud" data-search="aws health incident monitor aws-health-incident-monitor aws service health dashboard api, amazon web services outage monitor, sre alerting cloud health & sre">
+      <div class="card-header">
+        <span class="badge category-badge">Cloud Health & SRE</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" target="_blank" rel="noopener">AWS Health Incident Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/aws-health-incident-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> aws service health dashboard api, amazon web services outage monitor, sre alerting</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~aws-health-incident-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-aws-health-incident-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-aws-health-incident-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cloud" data-search="gcp incident monitor gcp-incident-monitor google cloud status incident api, gcp regional outage monitor, cloud reliability cloud health & sre">
+      <div class="card-header">
+        <span class="badge category-badge">Cloud Health & SRE</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" target="_blank" rel="noopener">GCP Incident Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/gcp-incident-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google cloud status incident api, gcp regional outage monitor, cloud reliability</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~gcp-incident-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-gcp-incident-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-gcp-incident-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cloud" data-search="azure status feed monitor azure-status-feed-monitor microsoft azure status rss api, azure cloud outage monitor, devops incident feed cloud health & sre">
+      <div class="card-header">
+        <span class="badge category-badge">Cloud Health & SRE</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" target="_blank" rel="noopener">Azure Status Feed Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/azure-status-feed-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> microsoft azure status rss api, azure cloud outage monitor, devops incident feed</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~azure-status-feed-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-azure-status-feed-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-azure-status-feed-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cloud" data-search="api sdk deprecation radar api-sdk-deprecation-radar rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes cloud health & sre">
+      <div class="card-header">
+        <span class="badge category-badge">Cloud Health & SRE</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" target="_blank" rel="noopener">API SDK Deprecation Radar</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/api-sdk-deprecation-radar</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~api-sdk-deprecation-radar/run-sync-get-dataset-items" class="endpoint-input" id="ep-api-sdk-deprecation-radar">
+        <button class="btn-copy" onclick="copyEndpoint('ep-api-sdk-deprecation-radar', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="fda food and drug enforcement monitor fda-food-and-drug-enforcement-monitor openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" target="_blank" rel="noopener">FDA Food And Drug Enforcement Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/fda-food-and-drug-enforcement-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~fda-food-and-drug-enforcement-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-fda-food-and-drug-enforcement-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-fda-food-and-drug-enforcement-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="cpsc recall monitor cpsc-recall-monitor cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" target="_blank" rel="noopener">CPSC Recall Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/cpsc-recall-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~cpsc-recall-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-cpsc-recall-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-cpsc-recall-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="nhtsa vehicle recall monitor nhtsa-vehicle-recall-monitor nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" target="_blank" rel="noopener">NHTSA Vehicle Recall Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/nhtsa-vehicle-recall-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~nhtsa-vehicle-recall-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-nhtsa-vehicle-recall-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-nhtsa-vehicle-recall-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="fda 510(k) clearance intelligence fda-510k-clearance-intelligence openfda 510k medical device clearance api, medtech regulatory approval intelligence recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" target="_blank" rel="noopener">FDA 510(k) Clearance Intelligence</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/fda-510k-clearance-intelligence</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> openfda 510k medical device clearance api, medtech regulatory approval intelligence</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~fda-510k-clearance-intelligence/run-sync-get-dataset-items" class="endpoint-input" id="ep-fda-510k-clearance-intelligence">
+        <button class="btn-copy" onclick="copyEndpoint('ep-fda-510k-clearance-intelligence', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="ofac sdn delta screener ofac-sdn-delta-screener us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" target="_blank" rel="noopener">OFAC SDN Delta Screener</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/ofac-sdn-delta-screener</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~ofac-sdn-delta-screener/run-sync-get-dataset-items" class="endpoint-input" id="ep-ofac-sdn-delta-screener">
+        <button class="btn-copy" onclick="copyEndpoint('ep-ofac-sdn-delta-screener', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/ofac-sdn-delta-screener-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="echa svhc rasff chemical alert monitor echa-svhc-rasff-chemical-alert-monitor eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" target="_blank" rel="noopener">ECHA SVHC RASFF Chemical Alert Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~echa-svhc-rasff-chemical-alert-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-echa-svhc-rasff-chemical-alert-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-echa-svhc-rasff-chemical-alert-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="usaspending award intelligence usaspending-award-intelligence usaspending.gov federal contract awards api, government prime contractor intelligence govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" target="_blank" rel="noopener">Usaspending Award Intelligence</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/usaspending-award-intelligence</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> usaspending.gov federal contract awards api, government prime contractor intelligence</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~usaspending-award-intelligence/run-sync-get-dataset-items" class="endpoint-input" id="ep-usaspending-award-intelligence">
+        <button class="btn-copy" onclick="copyEndpoint('ep-usaspending-award-intelligence', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="ted eu tender monitor ted-eu-tender-monitor eu ted tenders electronic daily api v3, european public procurement monitor govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" target="_blank" rel="noopener">TED EU Tender Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/ted-eu-tender-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> eu ted tenders electronic daily api v3, european public procurement monitor</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~ted-eu-tender-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-ted-eu-tender-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-ted-eu-tender-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="grants gov opportunity matcher grants-gov-opportunity-matcher grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" target="_blank" rel="noopener">Grants Gov Opportunity Matcher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/grants-gov-opportunity-matcher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~grants-gov-opportunity-matcher/run-sync-get-dataset-items" class="endpoint-input" id="ep-grants-gov-opportunity-matcher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-grants-gov-opportunity-matcher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/grants-gov-opportunity-matcher-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="world bank project pipeline matcher world-bank-project-pipeline-matcher world bank project procurement api, global infrastructure funding pipeline govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" target="_blank" rel="noopener">World Bank Project Pipeline Matcher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/world-bank-project-pipeline-matcher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> world bank project procurement api, global infrastructure funding pipeline</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~world-bank-project-pipeline-matcher/run-sync-get-dataset-items" class="endpoint-input" id="ep-world-bank-project-pipeline-matcher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-world-bank-project-pipeline-matcher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="sam gov opportunity monitor sam-gov-opportunity-monitor sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" target="_blank" rel="noopener">Sam Gov Opportunity Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/sam-gov-opportunity-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~sam-gov-opportunity-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-sam-gov-opportunity-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-sam-gov-opportunity-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        <a href="n8n-templates/sam-gov-opportunity-monitor-workflow.json" download class="btn-n8n" title="Download ready-to-import n8n workflow JSON">⚡ n8n Workflow</a>
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="govtech" data-search="state and local rfp aggregator state-and-local-rfp-aggregator us state municipal local rfp bid aggregator, socrata open procurement api govtech, tenders & procurement">
+      <div class="card-header">
+        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" target="_blank" rel="noopener">State And Local RFP Aggregator</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/state-and-local-rfp-aggregator</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> us state municipal local rfp bid aggregator, socrata open procurement api</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~state-and-local-rfp-aggregator/run-sync-get-dataset-items" class="endpoint-input" id="ep-state-and-local-rfp-aggregator">
+        <button class="btn-copy" onclick="copyEndpoint('ep-state-and-local-rfp-aggregator', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="sec filing event intelligence sec-filing-event-intelligence sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" target="_blank" rel="noopener">SEC Filing Event Intelligence</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/sec-filing-event-intelligence</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~sec-filing-event-intelligence/run-sync-get-dataset-items" class="endpoint-input" id="ep-sec-filing-event-intelligence">
+        <button class="btn-copy" onclick="copyEndpoint('ep-sec-filing-event-intelligence', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="gleif lei resolver gleif-lei-resolver gleif legal entity identifier lei api, corporate parent child ownership resolver recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" target="_blank" rel="noopener">GLEIF LEI Resolver</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/gleif-lei-resolver</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> gleif legal entity identifier lei api, corporate parent child ownership resolver</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~gleif-lei-resolver/run-sync-get-dataset-items" class="endpoint-input" id="ep-gleif-lei-resolver">
+        <button class="btn-copy" onclick="copyEndpoint('ep-gleif-lei-resolver', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="companies house event monitor companies-house-event-monitor uk companies house registry scraper keyless, british corporate filing kyc monitor recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" target="_blank" rel="noopener">Companies House Event Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/companies-house-event-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> uk companies house registry scraper keyless, british corporate filing kyc monitor</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~companies-house-event-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-companies-house-event-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-companies-house-event-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="compliance" data-search="opensanctions screening enricher opensanctions-screening-enricher opensanctions global pep sanctions screening api, kyc compliance entity matcher recalls, compliance & registries">
+      <div class="card-header">
+        <span class="badge category-badge">Recalls, Compliance & Registries</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" target="_blank" rel="noopener">Opensanctions Screening Enricher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/opensanctions-screening-enricher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> opensanctions global pep sanctions screening api, kyc compliance entity matcher</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~opensanctions-screening-enricher/run-sync-get-dataset-items" class="endpoint-input" id="ep-opensanctions-screening-enricher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-opensanctions-screening-enricher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="hacker news launch and trend monitor hacker-news-launch-and-trend-monitor algolia hacker news show hn launch monitor, tech trend velocity scraper ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" target="_blank" rel="noopener">Hacker News Launch And Trend Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/hacker-news-launch-and-trend-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> algolia hacker news show hn launch monitor, tech trend velocity scraper</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~hacker-news-launch-and-trend-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-hacker-news-launch-and-trend-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-hacker-news-launch-and-trend-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="github competitive repo tracker github-competitive-repo-tracker github repository star velocity issue tracker, open source competitor intelligence ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" target="_blank" rel="noopener">Github Competitive Repo Tracker</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/github-competitive-repo-tracker</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> github repository star velocity issue tracker, open source competitor intelligence</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~github-competitive-repo-tracker/run-sync-get-dataset-items" class="endpoint-input" id="ep-github-competitive-repo-tracker">
+        <button class="btn-copy" onclick="copyEndpoint('ep-github-competitive-repo-tracker', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="rdap domain registration monitor rdap-domain-registration-monitor icann rdap whois domain expiry registration monitor, brand protection api cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" target="_blank" rel="noopener">RDAP Domain Registration Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/rdap-domain-registration-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> icann rdap whois domain expiry registration monitor, brand protection api</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~rdap-domain-registration-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-rdap-domain-registration-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-rdap-domain-registration-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="tls certificate expiry auditor tls-certificate-expiry-auditor ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" target="_blank" rel="noopener">TLS Certificate Expiry Auditor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/tls-certificate-expiry-auditor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~tls-certificate-expiry-auditor/run-sync-get-dataset-items" class="endpoint-input" id="ep-tls-certificate-expiry-auditor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-tls-certificate-expiry-auditor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="cybersecurity" data-search="dns record drift monitor dns-record-drift-monitor dns a mx txt cname ns drift monitor, subdomain takeover hijack detector cybersecurity & devsecops">
+      <div class="card-header">
+        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" target="_blank" rel="noopener">DNS Record Drift Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/dns-record-drift-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> dns a mx txt cname ns drift monitor, subdomain takeover hijack detector</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~dns-record-drift-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-dns-record-drift-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-dns-record-drift-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="package dependency graph enricher package-dependency-graph-enricher google deps.dev dependency graph openssf scorecard api, transitive package risk ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" target="_blank" rel="noopener">Package Dependency Graph Enricher</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/package-dependency-graph-enricher</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> google deps.dev dependency graph openssf scorecard api, transitive package risk</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~package-dependency-graph-enricher/run-sync-get-dataset-items" class="endpoint-input" id="ep-package-dependency-graph-enricher">
+        <button class="btn-copy" onclick="copyEndpoint('ep-package-dependency-graph-enricher', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="docker hub image staleness monitor docker-hub-image-staleness-monitor docker hub container image tag staleness digest monitor, devops registry audit ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" target="_blank" rel="noopener">Docker Hub Image Staleness Monitor</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/docker-hub-image-staleness-monitor</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> docker hub container image tag staleness digest monitor, devops registry audit</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~docker-hub-image-staleness-monitor/run-sync-get-dataset-items" class="endpoint-input" id="ep-docker-hub-image-staleness-monitor">
+        <button class="btn-copy" onclick="copyEndpoint('ep-docker-hub-image-staleness-monitor', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+
+    <div class="actor-card" data-category="ai" data-search="npm download trend reporter npm-download-trend-reporter npm package weekly download growth velocity api, developer adoption trend tracker ai agents & developer ecosystem">
+      <div class="card-header">
+        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+        <span class="badge ppe-badge">$0.003/rec</span>
+      </div>
+      <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" target="_blank" rel="noopener">npm Download Trend Reporter</a></h3>
+      <p class="card-slug"><code>deepaksheoran172/npm-download-trend-reporter</code></p>
+      <p class="card-keywords"><strong>Best For:</strong> npm package weekly download growth velocity api, developer adoption trend tracker</p>
+      
+      <div class="card-endpoint">
+        <input type="text" readonly value="https://api.apify.com/v2/acts/deepaksheoran172~npm-download-trend-reporter/run-sync-get-dataset-items" class="endpoint-input" id="ep-npm-download-trend-reporter">
+        <button class="btn-copy" onclick="copyEndpoint('ep-npm-download-trend-reporter', this)">Copy cURL</button>
+      </div>
+
+      <div class="card-actions">
+        <a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" target="_blank" rel="noopener" class="btn-store">Try Free on Apify →</a>
+        
+      </div>
+    </div>
+    
+      <div class="empty-results" id="emptyNotice">No matching actors found. Try a different search term!</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Maintained by <strong>deepaksheoran172</strong> • Built with Pure Python Async Stdlib • Billed via Apify Pay-Per-Event ($0.003/rec)</p>
+    <p><a href="sitemap.xml" style="color:var(--primary);text-decoration:none;">XML Sitemap</a> • <a href="mcp-servers-manifest.json" style="color:var(--primary);text-decoration:none;">MCP Servers Manifest</a> • <a href="n8n-templates/" style="color:var(--primary);text-decoration:none;">n8n Workflow Templates</a></p>
   </footer>
+
+  <script>
+    let currentCategory = 'all';
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      filterActors();
+    }
+
+    function filterActors() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.actor-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const cardSearch = card.getAttribute('data-search');
+        
+        const matchesCategory = (currentCategory === 'all' || cardCat === currentCategory);
+        const matchesQuery = (!query || cardSearch.includes(query));
+
+        if (matchesCategory && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      document.getElementById('emptyNotice').style.display = (visibleCount === 0) ? 'block' : 'none';
+    }
+
+    function copyEndpoint(elementId, btn) {
+      const input = document.getElementById(elementId);
+      const textToCopy = `curl -X POST "${input.value}?token=YOUR_APIFY_TOKEN" -H "Content-Type: application/json" -d '{}'`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const orig = btn.innerText;
+        btn.innerText = 'Copied!';
+        btn.style.background = '#059669';
+        btn.style.color = '#ffffff';
+        setTimeout(() => {
+          btn.innerText = orig;
+          btn.style.background = '#e2e8f0';
+          btn.style.color = '#000000';
+        }, 2000);
+      });
+    }
+  </script>
 </body>
 </html>

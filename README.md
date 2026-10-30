@@ -8,6 +8,30 @@
 
 ---
 
+## 📦 Downloadable Ready-to-Import n8n Workflow Templates (`n8n-templates/`)
+
+We provide ready-to-import `.json` workflow templates for our core B2B actors. Import directly into your self-hosted n8n instance or n8n Cloud in seconds:
+
+| Template Name | Target Apify Actor | Direct Download Link |
+|---|---|---|
+| **Bulk Email Verifier (MX & SMTP)** | `deepaksheoran172/bulk-email-verifier-mx-smtp` | [Download JSON](n8n-templates/bulk-email-verifier-mx-smtp-workflow.json) |
+| **B2B Decision Maker Email Finder** | `deepaksheoran172/b2b-decision-maker-email-finder` | [Download JSON](n8n-templates/b2b-decision-maker-email-finder-workflow.json) |
+| **Local Business Phone & WhatsApp Scraper** | `deepaksheoran172/local-business-website-phone-whatsapp-scraper` | [Download JSON](n8n-templates/local-business-website-phone-whatsapp-scraper-workflow.json) |
+| **LinkedIn Public Jobs Scraper (No Login)** | `deepaksheoran172/linkedin-jobs-scraper-no-login` | [Download JSON](n8n-templates/linkedin-jobs-scraper-no-login-workflow.json) |
+| **YouTube Sponsor Email Finder** | `deepaksheoran172/youtube-channel-sponsor-email-lead-finder` | [Download JSON](n8n-templates/youtube-channel-sponsor-email-lead-finder-workflow.json) |
+| **Website Contact Extractor** | `deepaksheoran172/website-contact-extractor` | [Download JSON](n8n-templates/website-contact-extractor-workflow.json) |
+| **SAM.gov Federal Contracting Monitor** | `deepaksheoran172/sam-gov-opportunity-monitor` | [Download JSON](n8n-templates/sam-gov-opportunity-monitor-workflow.json) |
+| **Grants.gov Opportunity Matcher** | `deepaksheoran172/grants-gov-opportunity-matcher` | [Download JSON](n8n-templates/grants-gov-opportunity-matcher-workflow.json) |
+| **India Public Tender & GeM Parser** | `deepaksheoran172/indian-public-tender-parser` | [Download JSON](n8n-templates/indian-public-tender-parser-workflow.json) |
+| **Bulk Domain Security & SSL/DMARC Auditor** | `deepaksheoran172/domain-security-super-auditor` | [Download JSON](n8n-templates/domain-security-super-auditor-workflow.json) |
+| **OFAC SDN Sanctions Screener** | `deepaksheoran172/ofac-sdn-delta-screener` | [Download JSON](n8n-templates/ofac-sdn-delta-screener-workflow.json) |
+| **Shopify & WooCommerce Catalog Redirects** | `deepaksheoran172/store-catalog-redirect-extractor` | [Download JSON](n8n-templates/store-catalog-redirect-extractor-workflow.json) |
+| **CISA KEV Vulnerability Alert Monitor** | `deepaksheoran172/cisa-kev-delta-monitor` | [Download JSON](n8n-templates/cisa-kev-delta-monitor-workflow.json) |
+| **OSV Dependency CVE Scanner** | `deepaksheoran172/osv-dependency-cve-scanner` | [Download JSON](n8n-templates/osv-dependency-cve-scanner-workflow.json) |
+| **OpenRouter AI Models & Pricing Registry** | `deepaksheoran172/openrouter-mcp-registry` | [Download JSON](n8n-templates/openrouter-mcp-registry-workflow.json) |
+
+---
+
 ## 🔌 1-Click Integration Blueprints (n8n, Make.com, Claude MCP, Python)
 
 ### A. n8n / Make.com HTTP Request Node (Sync JSON Output in 1 Call)
