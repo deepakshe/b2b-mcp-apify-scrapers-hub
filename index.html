@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>62 Zero-Proxy B2B Scrapers, Lead Enrichers, GovTech & SecOps APIs on Apify | Deepak Sheoran</title>
+  <meta name="description" content="Production directory of 62 lightweight, zero-proxy Apify Actors and MCP Servers for B2B email verification, LinkedIn jobs, YouTube leads, SAM.gov tenders, OFAC sanctions, and CISA KEV monitoring." />
+  <link rel="canonical" href="https://deepaksheoran172.github.io/b2b-mcp-apify-scrapers-hub/" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Bulk Email Verifier MX SMTP - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "B2B Decision Maker Email Finder - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Social Bio Contact Email Extractor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/social-bio-contact-email-extractor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "social media bio email scraper, creator contact extractor, influencer lead generation"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Local Business Website Phone Whatsapp Scraper - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google maps whatsapp scraper, local business phone email extractor, b2b local leads"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Youtube Bulk Transcript Captions Scraper - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "youtube transcript api, bulk youtube captions downloader, llm rag video data"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Youtube Channel Sponsor Email Lead Finder - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "youtube sponsor finder, youtuber business email scraper, brand deal lead generation"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Youtube Comments Painpoint Sentiment Miner - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "youtube comments scraper, audience pain point miner, product research tool"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Youtube Shorts Viral Hook Trend Tracker - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "youtube shorts trend tracker, viral hook analyzer, short form video metrics"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Linkedin Jobs Scraper No Login - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Linkedin Hiring Company Lead Enricher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "hiring company lead enricher, b2b recruiting intent signals, headhunter automation"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Linkedin Remote Salary Filter - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/linkedin-remote-salary-filter",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "remote jobs salary scraper, compensation benchmark api, tech job aggregator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Linkedin Public Company Profiler - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/linkedin-public-company-profiler",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "company profile enricher, firmographic data api, b2b account enrichment"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Store Catalog Redirect Extractor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/store-catalog-redirect-extractor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "shopify catalog extractor, e-commerce redirect auditor, store product feed spy"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Domain Security Super Auditor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/domain-security-super-auditor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Catalog Feed Normalizer - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/catalog-feed-normalizer",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "product catalog normalizer, e-commerce json feed cleaner, merchant center tool"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Website Health Checker - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/website-health-checker",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "website uptime response checker, broken link technical seo auditor, bulk http status"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Indian Public Tender Parser - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/indian-public-tender-parser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Openrouter MCP Registry - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/openrouter-mcp-registry",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "openrouter models api, mcp server registry, llm pricing context benchmark"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Domain Protocol Signals Enricher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/domain-protocol-signals-enricher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "domain dns http protocol signals, tech stack security enricher, b2b domain intel"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Website Contact Extractor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/website-contact-extractor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "website email phone social scraper, contact page parser, zero proxy lead extractor"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Google Keyword Suggester - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/google-keyword-suggester",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google autocomplete keyword api, long tail seo keyword scraper, content research"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ATS Jobs Extractor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/ats-jobs-extractor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "greenhouse lever ashby workable scraper, ats job postings api, hiring tracker"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "App Store Reviews Scraper - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/app-store-reviews-scraper",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "apple app store reviews api, mobile app sentiment scraper, competitor review monitor"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Website Screenshot PDF - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/website-screenshot-pdf",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "website screenshot to pdf api, headless browser visual capture, compliance archiving"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Google Ads Transparency - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/google-ads-transparency",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google ads transparency center scraper, competitor ad spy api, b2b ad intelligence"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Scanned Document OCR - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/scanned-document-ocr",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "scanned pdf image ocr api, document text extraction, automated invoice parser"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "CISA KEV Delta Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/cisa-kev-delta-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "cisa known exploited vulnerabilities api, kev cve alert feed, secops automation"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "OSV Dependency CVE Scanner - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/osv-dependency-cve-scanner",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google osv vulnerability scanner, pypi npm go maven cve checker, sbom security"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Runtime And Container EOL Radar - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/runtime-and-container-eol-radar",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "npm Package Health Auditor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/npm-package-health-auditor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "npm package security deprecation auditor, supply chain health check, nodejs audit"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PyPI Package Health Auditor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/pypi-package-health-auditor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "pypi python package auditor, yanked release maintainer check, python supply chain"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Github Actions Pinning Auditor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/github-actions-pinning-auditor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "github actions sha pinning security auditor, ci cd supply chain vulnerability"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "OpenAPI Breaking Change Diff - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/openapi-breaking-change-diff",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "openapi swagger breaking change detector, api contract diff tool, ci cd api check"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Statuspage Incident Aggregator - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/statuspage-incident-aggregator",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "AWS Health Incident Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/aws-health-incident-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "aws service health dashboard api, amazon web services outage monitor, sre alerting"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GCP Incident Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/gcp-incident-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google cloud status incident api, gcp regional outage monitor, cloud reliability"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Azure Status Feed Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/azure-status-feed-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "microsoft azure status rss api, azure cloud outage monitor, devops incident feed"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "API SDK Deprecation Radar - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/api-sdk-deprecation-radar",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "FDA Food And Drug Enforcement Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "CPSC Recall Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/cpsc-recall-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NHTSA Vehicle Recall Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "FDA 510(k) Clearance Intelligence - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "openfda 510k medical device clearance api, medtech regulatory approval intelligence"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "OFAC SDN Delta Screener - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/ofac-sdn-delta-screener",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ECHA SVHC RASFF Chemical Alert Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Usaspending Award Intelligence - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/usaspending-award-intelligence",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "usaspending.gov federal contract awards api, government prime contractor intelligence"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "TED EU Tender Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/ted-eu-tender-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "eu ted tenders electronic daily api v3, european public procurement monitor"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Grants Gov Opportunity Matcher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "World Bank Project Pipeline Matcher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "world bank project procurement api, global infrastructure funding pipeline"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Sam Gov Opportunity Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "State And Local RFP Aggregator - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "us state municipal local rfp bid aggregator, socrata open procurement api"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "SEC Filing Event Intelligence - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/sec-filing-event-intelligence",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GLEIF LEI Resolver - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/gleif-lei-resolver",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "gleif legal entity identifier lei api, corporate parent child ownership resolver"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Companies House Event Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/companies-house-event-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "uk companies house registry scraper keyless, british corporate filing kyc monitor"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Opensanctions Screening Enricher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/opensanctions-screening-enricher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "opensanctions global pep sanctions screening api, kyc compliance entity matcher"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Hacker News Launch And Trend Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "algolia hacker news show hn launch monitor, tech trend velocity scraper"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Github Competitive Repo Tracker - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/github-competitive-repo-tracker",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "github repository star velocity issue tracker, open source competitor intelligence"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RDAP Domain Registration Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/rdap-domain-registration-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "icann rdap whois domain expiry registration monitor, brand protection api"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "TLS Certificate Expiry Auditor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "DNS Record Drift Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/dns-record-drift-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "dns a mx txt cname ns drift monitor, subdomain takeover hijack detector"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Package Dependency Graph Enricher - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/package-dependency-graph-enricher",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "google deps.dev dependency graph openssf scorecard api, transitive package risk"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Docker Hub Image Staleness Monitor - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "docker hub container image tag staleness digest monitor, devops registry audit"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "npm Download Trend Reporter - Zero-Proxy Apify API & MCP Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, API, n8n, Make, MCP",
+      "url": "https://apify.com/deepaksheoran172/npm-download-trend-reporter",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.003",
+        "priceCurrency": "USD",
+        "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+      },
+      "keywords": "npm package weekly download growth velocity api, developer adoption trend tracker"
+    }
+  ]
+}
+  </script>
+</head>
+<body style="font-family:system-ui,-apple-system,sans-serif;line-height:1.6;max-width:1100px;margin:0 auto;padding:24px;background:#f8fafc;color:#1e293b;">
+  <header style="margin-bottom:32px;text-align:center;">
+    <h1 style="color:#0f172a;font-size:2.2rem;margin-bottom:8px;">⚡ 62 Production B2B Scrapers, GovTech & SecOps MCP Tools</h1>
+    <p style="font-size:1.15rem;color:#475569;max-width:850px;margin:0 auto 16px;">Zero Proxy Bandwidth Fees ($0.00) • Sub-5 Second Asynchronous HTTP Execution • 100% n8n, Make.com, Cursor & Claude MCP Ready • Pay-Per-Event ($0.003/record)</p>
+    <div>
+      <a href="https://apify.com/deepaksheoran172" style="background:#00C853;color:#ffffff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;margin-right:8px;display:inline-block;">Visit Official Apify Store</a>
+      <a href="https://github.com/deepaksheoran172/b2b-mcp-apify-scrapers-hub" style="background:#0f172a;color:#ffffff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;">View on GitHub</a>
+    </div>
+  </header>
+  <main>
+    <article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" rel="noopener" style="color:#2563eb;text-decoration:none;">Bulk Email Verifier MX SMTP (deepaksheoran172/bulk-email-verifier-mx-smtp)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner</p><p><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~bulk-email-verifier-mx-smtp/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" rel="noopener" style="color:#2563eb;text-decoration:none;">B2B Decision Maker Email Finder (deepaksheoran172/b2b-decision-maker-email-finder)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads</p><p><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~b2b-decision-maker-email-finder/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Social Bio Contact Email Extractor (deepaksheoran172/social-bio-contact-email-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> social media bio email scraper, creator contact extractor, influencer lead generation</p><p><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~social-bio-contact-email-extractor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">Local Business Website Phone Whatsapp Scraper (deepaksheoran172/local-business-website-phone-whatsapp-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google maps whatsapp scraper, local business phone email extractor, b2b local leads</p><p><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~local-business-website-phone-whatsapp-scraper/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Bulk Transcript Captions Scraper (deepaksheoran172/youtube-bulk-transcript-captions-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube transcript api, bulk youtube captions downloader, llm rag video data</p><p><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-bulk-transcript-captions-scraper/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Channel Sponsor Email Lead Finder (deepaksheoran172/youtube-channel-sponsor-email-lead-finder)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube sponsor finder, youtuber business email scraper, brand deal lead generation</p><p><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-channel-sponsor-email-lead-finder/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Comments Painpoint Sentiment Miner (deepaksheoran172/youtube-comments-painpoint-sentiment-miner)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube comments scraper, audience pain point miner, product research tool</p><p><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-comments-painpoint-sentiment-miner/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" rel="noopener" style="color:#2563eb;text-decoration:none;">Youtube Shorts Viral Hook Trend Tracker (deepaksheoran172/youtube-shorts-viral-hook-trend-tracker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">YouTube & Social Intelligence</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> youtube shorts trend tracker, viral hook analyzer, short form video metrics</p><p><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~youtube-shorts-viral-hook-trend-tracker/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Jobs Scraper No Login (deepaksheoran172/linkedin-jobs-scraper-no-login)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper</p><p><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-jobs-scraper-no-login/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Hiring Company Lead Enricher (deepaksheoran172/linkedin-hiring-company-lead-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> hiring company lead enricher, b2b recruiting intent signals, headhunter automation</p><p><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-hiring-company-lead-enricher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Remote Salary Filter (deepaksheoran172/linkedin-remote-salary-filter)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> remote jobs salary scraper, compensation benchmark api, tech job aggregator</p><p><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-remote-salary-filter/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" rel="noopener" style="color:#2563eb;text-decoration:none;">Linkedin Public Company Profiler (deepaksheoran172/linkedin-public-company-profiler)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> company profile enricher, firmographic data api, b2b account enrichment</p><p><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~linkedin-public-company-profiler/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Store Catalog Redirect Extractor (deepaksheoran172/store-catalog-redirect-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> shopify catalog extractor, e-commerce redirect auditor, store product feed spy</p><p><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~store-catalog-redirect-extractor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">Domain Security Super Auditor (deepaksheoran172/domain-security-super-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api</p><p><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~domain-security-super-auditor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" rel="noopener" style="color:#2563eb;text-decoration:none;">Catalog Feed Normalizer (deepaksheoran172/catalog-feed-normalizer)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> product catalog normalizer, e-commerce json feed cleaner, merchant center tool</p><p><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~catalog-feed-normalizer/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-health-checker" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Health Checker (deepaksheoran172/website-health-checker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website uptime response checker, broken link technical seo auditor, bulk http status</p><p><a href="https://apify.com/deepaksheoran172/website-health-checker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-health-checker/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" rel="noopener" style="color:#2563eb;text-decoration:none;">Indian Public Tender Parser (deepaksheoran172/indian-public-tender-parser)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts</p><p><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~indian-public-tender-parser/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" rel="noopener" style="color:#2563eb;text-decoration:none;">Openrouter MCP Registry (deepaksheoran172/openrouter-mcp-registry)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openrouter models api, mcp server registry, llm pricing context benchmark</p><p><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~openrouter-mcp-registry/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Domain Protocol Signals Enricher (deepaksheoran172/domain-protocol-signals-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> domain dns http protocol signals, tech stack security enricher, b2b domain intel</p><p><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~domain-protocol-signals-enricher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-contact-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Contact Extractor (deepaksheoran172/website-contact-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">B2B Lead Gen & Email</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website email phone social scraper, contact page parser, zero proxy lead extractor</p><p><a href="https://apify.com/deepaksheoran172/website-contact-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-contact-extractor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" rel="noopener" style="color:#2563eb;text-decoration:none;">Google Keyword Suggester (deepaksheoran172/google-keyword-suggester)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google autocomplete keyword api, long tail seo keyword scraper, content research</p><p><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~google-keyword-suggester/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" rel="noopener" style="color:#2563eb;text-decoration:none;">ATS Jobs Extractor (deepaksheoran172/ats-jobs-extractor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">LinkedIn & Recruitment Intent</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> greenhouse lever ashby workable scraper, ats job postings api, hiring tracker</p><p><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ats-jobs-extractor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" rel="noopener" style="color:#2563eb;text-decoration:none;">App Store Reviews Scraper (deepaksheoran172/app-store-reviews-scraper)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> apple app store reviews api, mobile app sentiment scraper, competitor review monitor</p><p><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~app-store-reviews-scraper/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" rel="noopener" style="color:#2563eb;text-decoration:none;">Website Screenshot PDF (deepaksheoran172/website-screenshot-pdf)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> website screenshot to pdf api, headless browser visual capture, compliance archiving</p><p><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~website-screenshot-pdf/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/google-ads-transparency" rel="noopener" style="color:#2563eb;text-decoration:none;">Google Ads Transparency (deepaksheoran172/google-ads-transparency)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">E-Commerce & Web Audit</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google ads transparency center scraper, competitor ad spy api, b2b ad intelligence</p><p><a href="https://apify.com/deepaksheoran172/google-ads-transparency" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~google-ads-transparency/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" rel="noopener" style="color:#2563eb;text-decoration:none;">Scanned Document OCR (deepaksheoran172/scanned-document-ocr)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> scanned pdf image ocr api, document text extraction, automated invoice parser</p><p><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~scanned-document-ocr/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">CISA KEV Delta Monitor (deepaksheoran172/cisa-kev-delta-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> cisa known exploited vulnerabilities api, kev cve alert feed, secops automation</p><p><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~cisa-kev-delta-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" rel="noopener" style="color:#2563eb;text-decoration:none;">OSV Dependency CVE Scanner (deepaksheoran172/osv-dependency-cve-scanner)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google osv vulnerability scanner, pypi npm go maven cve checker, sbom security</p><p><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~osv-dependency-cve-scanner/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" rel="noopener" style="color:#2563eb;text-decoration:none;">Runtime And Container EOL Radar (deepaksheoran172/runtime-and-container-eol-radar)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance</p><p><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~runtime-and-container-eol-radar/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">npm Package Health Auditor (deepaksheoran172/npm-package-health-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> npm package security deprecation auditor, supply chain health check, nodejs audit</p><p><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~npm-package-health-auditor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">PyPI Package Health Auditor (deepaksheoran172/pypi-package-health-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> pypi python package auditor, yanked release maintainer check, python supply chain</p><p><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~pypi-package-health-auditor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">Github Actions Pinning Auditor (deepaksheoran172/github-actions-pinning-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> github actions sha pinning security auditor, ci cd supply chain vulnerability</p><p><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~github-actions-pinning-auditor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" rel="noopener" style="color:#2563eb;text-decoration:none;">OpenAPI Breaking Change Diff (deepaksheoran172/openapi-breaking-change-diff)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openapi swagger breaking change detector, api contract diff tool, ci cd api check</p><p><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~openapi-breaking-change-diff/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" rel="noopener" style="color:#2563eb;text-decoration:none;">Statuspage Incident Aggregator (deepaksheoran172/statuspage-incident-aggregator)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status</p><p><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~statuspage-incident-aggregator/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">AWS Health Incident Monitor (deepaksheoran172/aws-health-incident-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> aws service health dashboard api, amazon web services outage monitor, sre alerting</p><p><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~aws-health-incident-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">GCP Incident Monitor (deepaksheoran172/gcp-incident-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google cloud status incident api, gcp regional outage monitor, cloud reliability</p><p><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~gcp-incident-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Azure Status Feed Monitor (deepaksheoran172/azure-status-feed-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> microsoft azure status rss api, azure cloud outage monitor, devops incident feed</p><p><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~azure-status-feed-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" rel="noopener" style="color:#2563eb;text-decoration:none;">API SDK Deprecation Radar (deepaksheoran172/api-sdk-deprecation-radar)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cloud Health & SRE</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes</p><p><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~api-sdk-deprecation-radar/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">FDA Food And Drug Enforcement Monitor (deepaksheoran172/fda-food-and-drug-enforcement-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain</p><p><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~fda-food-and-drug-enforcement-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">CPSC Recall Monitor (deepaksheoran172/cpsc-recall-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance</p><p><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~cpsc-recall-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">NHTSA Vehicle Recall Monitor (deepaksheoran172/nhtsa-vehicle-recall-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety</p><p><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~nhtsa-vehicle-recall-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">FDA 510(k) Clearance Intelligence (deepaksheoran172/fda-510k-clearance-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> openfda 510k medical device clearance api, medtech regulatory approval intelligence</p><p><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~fda-510k-clearance-intelligence/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" rel="noopener" style="color:#2563eb;text-decoration:none;">OFAC SDN Delta Screener (deepaksheoran172/ofac-sdn-delta-screener)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist</p><p><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ofac-sdn-delta-screener/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">ECHA SVHC RASFF Chemical Alert Monitor (deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts</p><p><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~echa-svhc-rasff-chemical-alert-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">Usaspending Award Intelligence (deepaksheoran172/usaspending-award-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> usaspending.gov federal contract awards api, government prime contractor intelligence</p><p><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~usaspending-award-intelligence/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">TED EU Tender Monitor (deepaksheoran172/ted-eu-tender-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> eu ted tenders electronic daily api v3, european public procurement monitor</p><p><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~ted-eu-tender-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" rel="noopener" style="color:#2563eb;text-decoration:none;">Grants Gov Opportunity Matcher (deepaksheoran172/grants-gov-opportunity-matcher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp</p><p><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~grants-gov-opportunity-matcher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" rel="noopener" style="color:#2563eb;text-decoration:none;">World Bank Project Pipeline Matcher (deepaksheoran172/world-bank-project-pipeline-matcher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> world bank project procurement api, global infrastructure funding pipeline</p><p><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~world-bank-project-pipeline-matcher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Sam Gov Opportunity Monitor (deepaksheoran172/sam-gov-opportunity-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor</p><p><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~sam-gov-opportunity-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" rel="noopener" style="color:#2563eb;text-decoration:none;">State And Local RFP Aggregator (deepaksheoran172/state-and-local-rfp-aggregator)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">GovTech, Tenders & Procurement</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> us state municipal local rfp bid aggregator, socrata open procurement api</p><p><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~state-and-local-rfp-aggregator/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" rel="noopener" style="color:#2563eb;text-decoration:none;">SEC Filing Event Intelligence (deepaksheoran172/sec-filing-event-intelligence)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel</p><p><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~sec-filing-event-intelligence/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" rel="noopener" style="color:#2563eb;text-decoration:none;">GLEIF LEI Resolver (deepaksheoran172/gleif-lei-resolver)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> gleif legal entity identifier lei api, corporate parent child ownership resolver</p><p><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~gleif-lei-resolver/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Companies House Event Monitor (deepaksheoran172/companies-house-event-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> uk companies house registry scraper keyless, british corporate filing kyc monitor</p><p><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~companies-house-event-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Opensanctions Screening Enricher (deepaksheoran172/opensanctions-screening-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Recalls, Compliance & Registries</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> opensanctions global pep sanctions screening api, kyc compliance entity matcher</p><p><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~opensanctions-screening-enricher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Hacker News Launch And Trend Monitor (deepaksheoran172/hacker-news-launch-and-trend-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> algolia hacker news show hn launch monitor, tech trend velocity scraper</p><p><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~hacker-news-launch-and-trend-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" rel="noopener" style="color:#2563eb;text-decoration:none;">Github Competitive Repo Tracker (deepaksheoran172/github-competitive-repo-tracker)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> github repository star velocity issue tracker, open source competitor intelligence</p><p><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~github-competitive-repo-tracker/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">RDAP Domain Registration Monitor (deepaksheoran172/rdap-domain-registration-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> icann rdap whois domain expiry registration monitor, brand protection api</p><p><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~rdap-domain-registration-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" rel="noopener" style="color:#2563eb;text-decoration:none;">TLS Certificate Expiry Auditor (deepaksheoran172/tls-certificate-expiry-auditor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner</p><p><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~tls-certificate-expiry-auditor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">DNS Record Drift Monitor (deepaksheoran172/dns-record-drift-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">Cybersecurity & DevSecOps</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> dns a mx txt cname ns drift monitor, subdomain takeover hijack detector</p><p><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~dns-record-drift-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" rel="noopener" style="color:#2563eb;text-decoration:none;">Package Dependency Graph Enricher (deepaksheoran172/package-dependency-graph-enricher)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> google deps.dev dependency graph openssf scorecard api, transitive package risk</p><p><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~package-dependency-graph-enricher/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" rel="noopener" style="color:#2563eb;text-decoration:none;">Docker Hub Image Staleness Monitor (deepaksheoran172/docker-hub-image-staleness-monitor)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> docker hub container image tag staleness digest monitor, devops registry audit</p><p><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~docker-hub-image-staleness-monitor/run-sync-get-dataset-items</code></p></article>
+<article style="border:1px solid #e2e8f0;padding:16px;border-radius:8px;margin-bottom:12px;background:#ffffff;"><h3 style="margin-top:0;"><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" rel="noopener" style="color:#2563eb;text-decoration:none;">npm Download Trend Reporter (deepaksheoran172/npm-download-trend-reporter)</a></h3><p><strong>Category:</strong> <span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;">AI Agents & Developer Ecosystem</span> | <strong>Pricing:</strong> $0.003/record (Zero Proxy Cost)</p><p><strong>Keywords & Use Cases:</strong> npm package weekly download growth velocity api, developer adoption trend tracker</p><p><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" style="font-weight:600;color:#059669;">Launch on Apify Store →</a> | <code style="background:#f8fafc;padding:4px 8px;border-radius:4px;font-size:0.85em;">POST https://api.apify.com/v2/acts/deepaksheoran172~npm-download-trend-reporter/run-sync-get-dataset-items</code></p></article>
+  </main>
+  <footer style="margin-top:48px;padding-top:24px;border-top:1px solid #cbd5e1;text-align:center;color:#64748b;font-size:0.9rem;">
+    <p>Maintained by deepaksheoran172 • All 62 actors run on high-performance Apify serverless container infrastructure.</p>
+  </footer>
+</body>
+</html>

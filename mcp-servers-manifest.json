@@ -1,0 +1,938 @@
+{
+  "version": "1.0.0",
+  "author": "deepaksheoran172",
+  "updatedAt": "2026-10-30",
+  "totalServers": 62,
+  "servers": {
+    "bulk-email-verifier-mx-smtp": {
+      "name": "Bulk Email Verifier MX SMTP MCP Tool",
+      "description": "Extract structured data from bulk-email-verifier-mx-smtp using zero-proxy async HTTP. Trigger for: bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/bulk-email-verifier-mx-smtp"
+      },
+      "category": "B2B Lead Gen & Email",
+      "storeUrl": "https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp"
+    },
+    "b2b-decision-maker-email-finder": {
+      "name": "B2B Decision Maker Email Finder MCP Tool",
+      "description": "Extract structured data from b2b-decision-maker-email-finder using zero-proxy async HTTP. Trigger for: b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/b2b-decision-maker-email-finder"
+      },
+      "category": "B2B Lead Gen & Email",
+      "storeUrl": "https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder"
+    },
+    "social-bio-contact-email-extractor": {
+      "name": "Social Bio Contact Email Extractor MCP Tool",
+      "description": "Extract structured data from social-bio-contact-email-extractor using zero-proxy async HTTP. Trigger for: social media bio email scraper, creator contact extractor, influencer lead generation",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/social-bio-contact-email-extractor"
+      },
+      "category": "B2B Lead Gen & Email",
+      "storeUrl": "https://apify.com/deepaksheoran172/social-bio-contact-email-extractor"
+    },
+    "local-business-website-phone-whatsapp-scraper": {
+      "name": "Local Business Website Phone Whatsapp Scraper MCP Tool",
+      "description": "Extract structured data from local-business-website-phone-whatsapp-scraper using zero-proxy async HTTP. Trigger for: google maps whatsapp scraper, local business phone email extractor, b2b local leads",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/local-business-website-phone-whatsapp-scraper"
+      },
+      "category": "B2B Lead Gen & Email",
+      "storeUrl": "https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper"
+    },
+    "youtube-bulk-transcript-captions-scraper": {
+      "name": "Youtube Bulk Transcript Captions Scraper MCP Tool",
+      "description": "Extract structured data from youtube-bulk-transcript-captions-scraper using zero-proxy async HTTP. Trigger for: youtube transcript api, bulk youtube captions downloader, llm rag video data",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/youtube-bulk-transcript-captions-scraper"
+      },
+      "category": "YouTube & Social Intelligence",
+      "storeUrl": "https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper"
+    },
+    "youtube-channel-sponsor-email-lead-finder": {
+      "name": "Youtube Channel Sponsor Email Lead Finder MCP Tool",
+      "description": "Extract structured data from youtube-channel-sponsor-email-lead-finder using zero-proxy async HTTP. Trigger for: youtube sponsor finder, youtuber business email scraper, brand deal lead generation",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/youtube-channel-sponsor-email-lead-finder"
+      },
+      "category": "YouTube & Social Intelligence",
+      "storeUrl": "https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder"
+    },
+    "youtube-comments-painpoint-sentiment-miner": {
+      "name": "Youtube Comments Painpoint Sentiment Miner MCP Tool",
+      "description": "Extract structured data from youtube-comments-painpoint-sentiment-miner using zero-proxy async HTTP. Trigger for: youtube comments scraper, audience pain point miner, product research tool",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/youtube-comments-painpoint-sentiment-miner"
+      },
+      "category": "YouTube & Social Intelligence",
+      "storeUrl": "https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner"
+    },
+    "youtube-shorts-viral-hook-trend-tracker": {
+      "name": "Youtube Shorts Viral Hook Trend Tracker MCP Tool",
+      "description": "Extract structured data from youtube-shorts-viral-hook-trend-tracker using zero-proxy async HTTP. Trigger for: youtube shorts trend tracker, viral hook analyzer, short form video metrics",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/youtube-shorts-viral-hook-trend-tracker"
+      },
+      "category": "YouTube & Social Intelligence",
+      "storeUrl": "https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker"
+    },
+    "linkedin-jobs-scraper-no-login": {
+      "name": "Linkedin Jobs Scraper No Login MCP Tool",
+      "description": "Extract structured data from linkedin-jobs-scraper-no-login using zero-proxy async HTTP. Trigger for: linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/linkedin-jobs-scraper-no-login"
+      },
+      "category": "LinkedIn & Recruitment Intent",
+      "storeUrl": "https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login"
+    },
+    "linkedin-hiring-company-lead-enricher": {
+      "name": "Linkedin Hiring Company Lead Enricher MCP Tool",
+      "description": "Extract structured data from linkedin-hiring-company-lead-enricher using zero-proxy async HTTP. Trigger for: hiring company lead enricher, b2b recruiting intent signals, headhunter automation",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/linkedin-hiring-company-lead-enricher"
+      },
+      "category": "LinkedIn & Recruitment Intent",
+      "storeUrl": "https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher"
+    },
+    "linkedin-remote-salary-filter": {
+      "name": "Linkedin Remote Salary Filter MCP Tool",
+      "description": "Extract structured data from linkedin-remote-salary-filter using zero-proxy async HTTP. Trigger for: remote jobs salary scraper, compensation benchmark api, tech job aggregator",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/linkedin-remote-salary-filter"
+      },
+      "category": "LinkedIn & Recruitment Intent",
+      "storeUrl": "https://apify.com/deepaksheoran172/linkedin-remote-salary-filter"
+    },
+    "linkedin-public-company-profiler": {
+      "name": "Linkedin Public Company Profiler MCP Tool",
+      "description": "Extract structured data from linkedin-public-company-profiler using zero-proxy async HTTP. Trigger for: company profile enricher, firmographic data api, b2b account enrichment",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/linkedin-public-company-profiler"
+      },
+      "category": "LinkedIn & Recruitment Intent",
+      "storeUrl": "https://apify.com/deepaksheoran172/linkedin-public-company-profiler"
+    },
+    "store-catalog-redirect-extractor": {
+      "name": "Store Catalog Redirect Extractor MCP Tool",
+      "description": "Extract structured data from store-catalog-redirect-extractor using zero-proxy async HTTP. Trigger for: shopify catalog extractor, e-commerce redirect auditor, store product feed spy",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/store-catalog-redirect-extractor"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/store-catalog-redirect-extractor"
+    },
+    "domain-security-super-auditor": {
+      "name": "Domain Security Super Auditor MCP Tool",
+      "description": "Extract structured data from domain-security-super-auditor using zero-proxy async HTTP. Trigger for: dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/domain-security-super-auditor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/domain-security-super-auditor"
+    },
+    "catalog-feed-normalizer": {
+      "name": "Catalog Feed Normalizer MCP Tool",
+      "description": "Extract structured data from catalog-feed-normalizer using zero-proxy async HTTP. Trigger for: product catalog normalizer, e-commerce json feed cleaner, merchant center tool",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/catalog-feed-normalizer"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/catalog-feed-normalizer"
+    },
+    "website-health-checker": {
+      "name": "Website Health Checker MCP Tool",
+      "description": "Extract structured data from website-health-checker using zero-proxy async HTTP. Trigger for: website uptime response checker, broken link technical seo auditor, bulk http status",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/website-health-checker"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/website-health-checker"
+    },
+    "indian-public-tender-parser": {
+      "name": "Indian Public Tender Parser MCP Tool",
+      "description": "Extract structured data from indian-public-tender-parser using zero-proxy async HTTP. Trigger for: indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/indian-public-tender-parser"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/indian-public-tender-parser"
+    },
+    "openrouter-mcp-registry": {
+      "name": "Openrouter MCP Registry MCP Tool",
+      "description": "Extract structured data from openrouter-mcp-registry using zero-proxy async HTTP. Trigger for: openrouter models api, mcp server registry, llm pricing context benchmark",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/openrouter-mcp-registry"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/openrouter-mcp-registry"
+    },
+    "domain-protocol-signals-enricher": {
+      "name": "Domain Protocol Signals Enricher MCP Tool",
+      "description": "Extract structured data from domain-protocol-signals-enricher using zero-proxy async HTTP. Trigger for: domain dns http protocol signals, tech stack security enricher, b2b domain intel",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/domain-protocol-signals-enricher"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/domain-protocol-signals-enricher"
+    },
+    "website-contact-extractor": {
+      "name": "Website Contact Extractor MCP Tool",
+      "description": "Extract structured data from website-contact-extractor using zero-proxy async HTTP. Trigger for: website email phone social scraper, contact page parser, zero proxy lead extractor",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/website-contact-extractor"
+      },
+      "category": "B2B Lead Gen & Email",
+      "storeUrl": "https://apify.com/deepaksheoran172/website-contact-extractor"
+    },
+    "google-keyword-suggester": {
+      "name": "Google Keyword Suggester MCP Tool",
+      "description": "Extract structured data from google-keyword-suggester using zero-proxy async HTTP. Trigger for: google autocomplete keyword api, long tail seo keyword scraper, content research",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/google-keyword-suggester"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/google-keyword-suggester"
+    },
+    "ats-jobs-extractor": {
+      "name": "ATS Jobs Extractor MCP Tool",
+      "description": "Extract structured data from ats-jobs-extractor using zero-proxy async HTTP. Trigger for: greenhouse lever ashby workable scraper, ats job postings api, hiring tracker",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/ats-jobs-extractor"
+      },
+      "category": "LinkedIn & Recruitment Intent",
+      "storeUrl": "https://apify.com/deepaksheoran172/ats-jobs-extractor"
+    },
+    "app-store-reviews-scraper": {
+      "name": "App Store Reviews Scraper MCP Tool",
+      "description": "Extract structured data from app-store-reviews-scraper using zero-proxy async HTTP. Trigger for: apple app store reviews api, mobile app sentiment scraper, competitor review monitor",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/app-store-reviews-scraper"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/app-store-reviews-scraper"
+    },
+    "website-screenshot-pdf": {
+      "name": "Website Screenshot PDF MCP Tool",
+      "description": "Extract structured data from website-screenshot-pdf using zero-proxy async HTTP. Trigger for: website screenshot to pdf api, headless browser visual capture, compliance archiving",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/website-screenshot-pdf"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/website-screenshot-pdf"
+    },
+    "google-ads-transparency": {
+      "name": "Google Ads Transparency MCP Tool",
+      "description": "Extract structured data from google-ads-transparency using zero-proxy async HTTP. Trigger for: google ads transparency center scraper, competitor ad spy api, b2b ad intelligence",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/google-ads-transparency"
+      },
+      "category": "E-Commerce & Web Audit",
+      "storeUrl": "https://apify.com/deepaksheoran172/google-ads-transparency"
+    },
+    "scanned-document-ocr": {
+      "name": "Scanned Document OCR MCP Tool",
+      "description": "Extract structured data from scanned-document-ocr using zero-proxy async HTTP. Trigger for: scanned pdf image ocr api, document text extraction, automated invoice parser",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/scanned-document-ocr"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/scanned-document-ocr"
+    },
+    "cisa-kev-delta-monitor": {
+      "name": "CISA KEV Delta Monitor MCP Tool",
+      "description": "Extract structured data from cisa-kev-delta-monitor using zero-proxy async HTTP. Trigger for: cisa known exploited vulnerabilities api, kev cve alert feed, secops automation",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/cisa-kev-delta-monitor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/cisa-kev-delta-monitor"
+    },
+    "osv-dependency-cve-scanner": {
+      "name": "OSV Dependency CVE Scanner MCP Tool",
+      "description": "Extract structured data from osv-dependency-cve-scanner using zero-proxy async HTTP. Trigger for: google osv vulnerability scanner, pypi npm go maven cve checker, sbom security",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/osv-dependency-cve-scanner"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/osv-dependency-cve-scanner"
+    },
+    "runtime-and-container-eol-radar": {
+      "name": "Runtime And Container EOL Radar MCP Tool",
+      "description": "Extract structured data from runtime-and-container-eol-radar using zero-proxy async HTTP. Trigger for: endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/runtime-and-container-eol-radar"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/runtime-and-container-eol-radar"
+    },
+    "npm-package-health-auditor": {
+      "name": "npm Package Health Auditor MCP Tool",
+      "description": "Extract structured data from npm-package-health-auditor using zero-proxy async HTTP. Trigger for: npm package security deprecation auditor, supply chain health check, nodejs audit",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/npm-package-health-auditor"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/npm-package-health-auditor"
+    },
+    "pypi-package-health-auditor": {
+      "name": "PyPI Package Health Auditor MCP Tool",
+      "description": "Extract structured data from pypi-package-health-auditor using zero-proxy async HTTP. Trigger for: pypi python package auditor, yanked release maintainer check, python supply chain",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/pypi-package-health-auditor"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/pypi-package-health-auditor"
+    },
+    "github-actions-pinning-auditor": {
+      "name": "Github Actions Pinning Auditor MCP Tool",
+      "description": "Extract structured data from github-actions-pinning-auditor using zero-proxy async HTTP. Trigger for: github actions sha pinning security auditor, ci cd supply chain vulnerability",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/github-actions-pinning-auditor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/github-actions-pinning-auditor"
+    },
+    "openapi-breaking-change-diff": {
+      "name": "OpenAPI Breaking Change Diff MCP Tool",
+      "description": "Extract structured data from openapi-breaking-change-diff using zero-proxy async HTTP. Trigger for: openapi swagger breaking change detector, api contract diff tool, ci cd api check",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/openapi-breaking-change-diff"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/openapi-breaking-change-diff"
+    },
+    "statuspage-incident-aggregator": {
+      "name": "Statuspage Incident Aggregator MCP Tool",
+      "description": "Extract structured data from statuspage-incident-aggregator using zero-proxy async HTTP. Trigger for: atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/statuspage-incident-aggregator"
+      },
+      "category": "Cloud Health & SRE",
+      "storeUrl": "https://apify.com/deepaksheoran172/statuspage-incident-aggregator"
+    },
+    "aws-health-incident-monitor": {
+      "name": "AWS Health Incident Monitor MCP Tool",
+      "description": "Extract structured data from aws-health-incident-monitor using zero-proxy async HTTP. Trigger for: aws service health dashboard api, amazon web services outage monitor, sre alerting",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/aws-health-incident-monitor"
+      },
+      "category": "Cloud Health & SRE",
+      "storeUrl": "https://apify.com/deepaksheoran172/aws-health-incident-monitor"
+    },
+    "gcp-incident-monitor": {
+      "name": "GCP Incident Monitor MCP Tool",
+      "description": "Extract structured data from gcp-incident-monitor using zero-proxy async HTTP. Trigger for: google cloud status incident api, gcp regional outage monitor, cloud reliability",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/gcp-incident-monitor"
+      },
+      "category": "Cloud Health & SRE",
+      "storeUrl": "https://apify.com/deepaksheoran172/gcp-incident-monitor"
+    },
+    "azure-status-feed-monitor": {
+      "name": "Azure Status Feed Monitor MCP Tool",
+      "description": "Extract structured data from azure-status-feed-monitor using zero-proxy async HTTP. Trigger for: microsoft azure status rss api, azure cloud outage monitor, devops incident feed",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/azure-status-feed-monitor"
+      },
+      "category": "Cloud Health & SRE",
+      "storeUrl": "https://apify.com/deepaksheoran172/azure-status-feed-monitor"
+    },
+    "api-sdk-deprecation-radar": {
+      "name": "API SDK Deprecation Radar MCP Tool",
+      "description": "Extract structured data from api-sdk-deprecation-radar using zero-proxy async HTTP. Trigger for: rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/api-sdk-deprecation-radar"
+      },
+      "category": "Cloud Health & SRE",
+      "storeUrl": "https://apify.com/deepaksheoran172/api-sdk-deprecation-radar"
+    },
+    "fda-food-and-drug-enforcement-monitor": {
+      "name": "FDA Food And Drug Enforcement Monitor MCP Tool",
+      "description": "Extract structured data from fda-food-and-drug-enforcement-monitor using zero-proxy async HTTP. Trigger for: openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/fda-food-and-drug-enforcement-monitor"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor"
+    },
+    "cpsc-recall-monitor": {
+      "name": "CPSC Recall Monitor MCP Tool",
+      "description": "Extract structured data from cpsc-recall-monitor using zero-proxy async HTTP. Trigger for: cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/cpsc-recall-monitor"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/cpsc-recall-monitor"
+    },
+    "nhtsa-vehicle-recall-monitor": {
+      "name": "NHTSA Vehicle Recall Monitor MCP Tool",
+      "description": "Extract structured data from nhtsa-vehicle-recall-monitor using zero-proxy async HTTP. Trigger for: nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/nhtsa-vehicle-recall-monitor"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor"
+    },
+    "fda-510k-clearance-intelligence": {
+      "name": "FDA 510(k) Clearance Intelligence MCP Tool",
+      "description": "Extract structured data from fda-510k-clearance-intelligence using zero-proxy async HTTP. Trigger for: openfda 510k medical device clearance api, medtech regulatory approval intelligence",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/fda-510k-clearance-intelligence"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence"
+    },
+    "ofac-sdn-delta-screener": {
+      "name": "OFAC SDN Delta Screener MCP Tool",
+      "description": "Extract structured data from ofac-sdn-delta-screener using zero-proxy async HTTP. Trigger for: us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/ofac-sdn-delta-screener"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/ofac-sdn-delta-screener"
+    },
+    "echa-svhc-rasff-chemical-alert-monitor": {
+      "name": "ECHA SVHC RASFF Chemical Alert Monitor MCP Tool",
+      "description": "Extract structured data from echa-svhc-rasff-chemical-alert-monitor using zero-proxy async HTTP. Trigger for: eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor"
+    },
+    "usaspending-award-intelligence": {
+      "name": "Usaspending Award Intelligence MCP Tool",
+      "description": "Extract structured data from usaspending-award-intelligence using zero-proxy async HTTP. Trigger for: usaspending.gov federal contract awards api, government prime contractor intelligence",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/usaspending-award-intelligence"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/usaspending-award-intelligence"
+    },
+    "ted-eu-tender-monitor": {
+      "name": "TED EU Tender Monitor MCP Tool",
+      "description": "Extract structured data from ted-eu-tender-monitor using zero-proxy async HTTP. Trigger for: eu ted tenders electronic daily api v3, european public procurement monitor",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/ted-eu-tender-monitor"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/ted-eu-tender-monitor"
+    },
+    "grants-gov-opportunity-matcher": {
+      "name": "Grants Gov Opportunity Matcher MCP Tool",
+      "description": "Extract structured data from grants-gov-opportunity-matcher using zero-proxy async HTTP. Trigger for: grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/grants-gov-opportunity-matcher"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher"
+    },
+    "world-bank-project-pipeline-matcher": {
+      "name": "World Bank Project Pipeline Matcher MCP Tool",
+      "description": "Extract structured data from world-bank-project-pipeline-matcher using zero-proxy async HTTP. Trigger for: world bank project procurement api, global infrastructure funding pipeline",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/world-bank-project-pipeline-matcher"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher"
+    },
+    "sam-gov-opportunity-monitor": {
+      "name": "Sam Gov Opportunity Monitor MCP Tool",
+      "description": "Extract structured data from sam-gov-opportunity-monitor using zero-proxy async HTTP. Trigger for: sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/sam-gov-opportunity-monitor"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor"
+    },
+    "state-and-local-rfp-aggregator": {
+      "name": "State And Local RFP Aggregator MCP Tool",
+      "description": "Extract structured data from state-and-local-rfp-aggregator using zero-proxy async HTTP. Trigger for: us state municipal local rfp bid aggregator, socrata open procurement api",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/state-and-local-rfp-aggregator"
+      },
+      "category": "GovTech, Tenders & Procurement",
+      "storeUrl": "https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator"
+    },
+    "sec-filing-event-intelligence": {
+      "name": "SEC Filing Event Intelligence MCP Tool",
+      "description": "Extract structured data from sec-filing-event-intelligence using zero-proxy async HTTP. Trigger for: sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/sec-filing-event-intelligence"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/sec-filing-event-intelligence"
+    },
+    "gleif-lei-resolver": {
+      "name": "GLEIF LEI Resolver MCP Tool",
+      "description": "Extract structured data from gleif-lei-resolver using zero-proxy async HTTP. Trigger for: gleif legal entity identifier lei api, corporate parent child ownership resolver",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/gleif-lei-resolver"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/gleif-lei-resolver"
+    },
+    "companies-house-event-monitor": {
+      "name": "Companies House Event Monitor MCP Tool",
+      "description": "Extract structured data from companies-house-event-monitor using zero-proxy async HTTP. Trigger for: uk companies house registry scraper keyless, british corporate filing kyc monitor",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/companies-house-event-monitor"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/companies-house-event-monitor"
+    },
+    "opensanctions-screening-enricher": {
+      "name": "Opensanctions Screening Enricher MCP Tool",
+      "description": "Extract structured data from opensanctions-screening-enricher using zero-proxy async HTTP. Trigger for: opensanctions global pep sanctions screening api, kyc compliance entity matcher",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/opensanctions-screening-enricher"
+      },
+      "category": "Recalls, Compliance & Registries",
+      "storeUrl": "https://apify.com/deepaksheoran172/opensanctions-screening-enricher"
+    },
+    "hacker-news-launch-and-trend-monitor": {
+      "name": "Hacker News Launch And Trend Monitor MCP Tool",
+      "description": "Extract structured data from hacker-news-launch-and-trend-monitor using zero-proxy async HTTP. Trigger for: algolia hacker news show hn launch monitor, tech trend velocity scraper",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/hacker-news-launch-and-trend-monitor"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor"
+    },
+    "github-competitive-repo-tracker": {
+      "name": "Github Competitive Repo Tracker MCP Tool",
+      "description": "Extract structured data from github-competitive-repo-tracker using zero-proxy async HTTP. Trigger for: github repository star velocity issue tracker, open source competitor intelligence",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/github-competitive-repo-tracker"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/github-competitive-repo-tracker"
+    },
+    "rdap-domain-registration-monitor": {
+      "name": "RDAP Domain Registration Monitor MCP Tool",
+      "description": "Extract structured data from rdap-domain-registration-monitor using zero-proxy async HTTP. Trigger for: icann rdap whois domain expiry registration monitor, brand protection api",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/rdap-domain-registration-monitor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/rdap-domain-registration-monitor"
+    },
+    "tls-certificate-expiry-auditor": {
+      "name": "TLS Certificate Expiry Auditor MCP Tool",
+      "description": "Extract structured data from tls-certificate-expiry-auditor using zero-proxy async HTTP. Trigger for: ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/tls-certificate-expiry-auditor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor"
+    },
+    "dns-record-drift-monitor": {
+      "name": "DNS Record Drift Monitor MCP Tool",
+      "description": "Extract structured data from dns-record-drift-monitor using zero-proxy async HTTP. Trigger for: dns a mx txt cname ns drift monitor, subdomain takeover hijack detector",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/dns-record-drift-monitor"
+      },
+      "category": "Cybersecurity & DevSecOps",
+      "storeUrl": "https://apify.com/deepaksheoran172/dns-record-drift-monitor"
+    },
+    "package-dependency-graph-enricher": {
+      "name": "Package Dependency Graph Enricher MCP Tool",
+      "description": "Extract structured data from package-dependency-graph-enricher using zero-proxy async HTTP. Trigger for: google deps.dev dependency graph openssf scorecard api, transitive package risk",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/package-dependency-graph-enricher"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/package-dependency-graph-enricher"
+    },
+    "docker-hub-image-staleness-monitor": {
+      "name": "Docker Hub Image Staleness Monitor MCP Tool",
+      "description": "Extract structured data from docker-hub-image-staleness-monitor using zero-proxy async HTTP. Trigger for: docker hub container image tag staleness digest monitor, devops registry audit",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/docker-hub-image-staleness-monitor"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor"
+    },
+    "npm-download-trend-reporter": {
+      "name": "npm Download Trend Reporter MCP Tool",
+      "description": "Extract structured data from npm-download-trend-reporter using zero-proxy async HTTP. Trigger for: npm package weekly download growth velocity api, developer adoption trend tracker",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}",
+        "ACTOR_NAME": "deepaksheoran172/npm-download-trend-reporter"
+      },
+      "category": "AI Agents & Developer Ecosystem",
+      "storeUrl": "https://apify.com/deepaksheoran172/npm-download-trend-reporter"
+    }
+  }
+}
