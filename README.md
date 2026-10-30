@@ -2,6 +2,7 @@
 
 [![Apify Store](https://img.shields.io/badge/Apify_Store-62_Production_Actors-00C853?style=for-the-badge)](https://apify.com/deepaksheoran172)
 [![MCP Ready](https://img.shields.io/badge/Model_Context_Protocol-Claude_%26_Cursor_Ready-7C3AED?style=for-the-badge)](https://apify.com/deepaksheoran172)
+[![3D Icons Gallery](https://img.shields.io/badge/Luxury_3D_Icons-62_Bespoke_macOS_Grade-F59E0B?style=for-the-badge)](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/gallery.html)
 [![Pricing](https://img.shields.io/badge/Pay_Per_Event-$0.003_%2F_Record_(Zero_Proxy_Tax)-2563EB?style=for-the-badge)](https://apify.com/deepaksheoran172)
 
 > **Why Automation Builders & Agencies Switch to This Fleet:** Most scrapers require expensive Residential Proxies ($15–$50/GB) and heavy headless browsers. All 62 tools below are engineered on **pure async HTTP/REST/DNS protocols**, executing in **3–5 seconds inside 512MB RAM** with **$0.00 proxy fees** and **Zero-Charge-on-Error protection** ($3.00 per 1,000 verified records).
