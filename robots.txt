@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deepaksheoran172.github.io/b2b-mcp-apify-scrapers-hub/sitemap.xml
+Sitemap: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/sitemap.xml
