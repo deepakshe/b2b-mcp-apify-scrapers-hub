@@ -984,7 +984,7 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
-    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    
     .badge { font-size: 0.75rem; padding: 3px 8px; border-radius: 6px; font-weight: 700; }
     .category-badge { background: #f1f5f9; color: #334155; }
     .ppe-badge { background: #dcfce7; color: #166534; }
@@ -1069,6 +1069,43 @@
       grid-column: 1 / -1;
       display: none;
     }
+  
+    /* Luxury Apple/Stripe-Grade Card Icons */
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      gap: 12px;
+    }
+    .card-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+      background: #0f172a;
+    }
+    .actor-card:hover .card-icon-wrap {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    }
+    .actor-icon {
+      width: 56px;
+      height: 56px;
+      display: block;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+    .card-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
   </style>
 </head>
 <body>
@@ -1105,8 +1142,13 @@
       
     <div class="actor-card" data-category="b2b" data-search="bulk email verifier mx smtp bulk-email-verifier-mx-smtp bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner b2b lead gen & email">
       <div class="card-header">
-        <span class="badge category-badge">B2B Lead Gen & Email</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/bulk-email-verifier-mx-smtp.png" alt="Bulk Email Verifier MX SMTP Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">B2B Lead Gen & Email</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp" target="_blank" rel="noopener">Bulk Email Verifier MX SMTP</a></h3>
       <p class="card-slug"><code>deepaksheoran172/bulk-email-verifier-mx-smtp</code></p>
@@ -1126,8 +1168,13 @@
 
     <div class="actor-card" data-category="b2b" data-search="b2b decision maker email finder b2b-decision-maker-email-finder b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads b2b lead gen & email">
       <div class="card-header">
-        <span class="badge category-badge">B2B Lead Gen & Email</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/b2b-decision-maker-email-finder.png" alt="B2B Decision Maker Email Finder Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">B2B Lead Gen & Email</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder" target="_blank" rel="noopener">B2B Decision Maker Email Finder</a></h3>
       <p class="card-slug"><code>deepaksheoran172/b2b-decision-maker-email-finder</code></p>
@@ -1147,8 +1194,13 @@
 
     <div class="actor-card" data-category="b2b" data-search="social bio contact email extractor social-bio-contact-email-extractor social media bio email scraper, creator contact extractor, influencer lead generation b2b lead gen & email">
       <div class="card-header">
-        <span class="badge category-badge">B2B Lead Gen & Email</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/social-bio-contact-email-extractor.png" alt="Social Bio Contact Email Extractor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">B2B Lead Gen & Email</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/social-bio-contact-email-extractor" target="_blank" rel="noopener">Social Bio Contact Email Extractor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/social-bio-contact-email-extractor</code></p>
@@ -1168,8 +1220,13 @@
 
     <div class="actor-card" data-category="b2b" data-search="local business website phone whatsapp scraper local-business-website-phone-whatsapp-scraper google maps whatsapp scraper, local business phone email extractor, b2b local leads b2b lead gen & email">
       <div class="card-header">
-        <span class="badge category-badge">B2B Lead Gen & Email</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/local-business-website-phone-whatsapp-scraper.png" alt="Local Business Website Phone Whatsapp Scraper Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">B2B Lead Gen & Email</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper" target="_blank" rel="noopener">Local Business Website Phone Whatsapp Scraper</a></h3>
       <p class="card-slug"><code>deepaksheoran172/local-business-website-phone-whatsapp-scraper</code></p>
@@ -1189,8 +1246,13 @@
 
     <div class="actor-card" data-category="youtube" data-search="youtube bulk transcript captions scraper youtube-bulk-transcript-captions-scraper youtube transcript api, bulk youtube captions downloader, llm rag video data youtube & social intelligence">
       <div class="card-header">
-        <span class="badge category-badge">YouTube & Social Intelligence</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/youtube-bulk-transcript-captions-scraper.png" alt="Youtube Bulk Transcript Captions Scraper Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">YouTube & Social Intelligence</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper" target="_blank" rel="noopener">Youtube Bulk Transcript Captions Scraper</a></h3>
       <p class="card-slug"><code>deepaksheoran172/youtube-bulk-transcript-captions-scraper</code></p>
@@ -1210,8 +1272,13 @@
 
     <div class="actor-card" data-category="youtube" data-search="youtube channel sponsor email lead finder youtube-channel-sponsor-email-lead-finder youtube sponsor finder, youtuber business email scraper, brand deal lead generation youtube & social intelligence">
       <div class="card-header">
-        <span class="badge category-badge">YouTube & Social Intelligence</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/youtube-channel-sponsor-email-lead-finder.png" alt="Youtube Channel Sponsor Email Lead Finder Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">YouTube & Social Intelligence</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder" target="_blank" rel="noopener">Youtube Channel Sponsor Email Lead Finder</a></h3>
       <p class="card-slug"><code>deepaksheoran172/youtube-channel-sponsor-email-lead-finder</code></p>
@@ -1231,8 +1298,13 @@
 
     <div class="actor-card" data-category="youtube" data-search="youtube comments painpoint sentiment miner youtube-comments-painpoint-sentiment-miner youtube comments scraper, audience pain point miner, product research tool youtube & social intelligence">
       <div class="card-header">
-        <span class="badge category-badge">YouTube & Social Intelligence</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/youtube-comments-painpoint-sentiment-miner.png" alt="Youtube Comments Painpoint Sentiment Miner Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">YouTube & Social Intelligence</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner" target="_blank" rel="noopener">Youtube Comments Painpoint Sentiment Miner</a></h3>
       <p class="card-slug"><code>deepaksheoran172/youtube-comments-painpoint-sentiment-miner</code></p>
@@ -1252,8 +1324,13 @@
 
     <div class="actor-card" data-category="youtube" data-search="youtube shorts viral hook trend tracker youtube-shorts-viral-hook-trend-tracker youtube shorts trend tracker, viral hook analyzer, short form video metrics youtube & social intelligence">
       <div class="card-header">
-        <span class="badge category-badge">YouTube & Social Intelligence</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/youtube-shorts-viral-hook-trend-tracker.png" alt="Youtube Shorts Viral Hook Trend Tracker Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">YouTube & Social Intelligence</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker" target="_blank" rel="noopener">Youtube Shorts Viral Hook Trend Tracker</a></h3>
       <p class="card-slug"><code>deepaksheoran172/youtube-shorts-viral-hook-trend-tracker</code></p>
@@ -1273,8 +1350,13 @@
 
     <div class="actor-card" data-category="linkedin" data-search="linkedin jobs scraper no login linkedin-jobs-scraper-no-login linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper linkedin & recruitment intent">
       <div class="card-header">
-        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/linkedin-jobs-scraper-no-login.png" alt="Linkedin Jobs Scraper No Login Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login" target="_blank" rel="noopener">Linkedin Jobs Scraper No Login</a></h3>
       <p class="card-slug"><code>deepaksheoran172/linkedin-jobs-scraper-no-login</code></p>
@@ -1294,8 +1376,13 @@
 
     <div class="actor-card" data-category="linkedin" data-search="linkedin hiring company lead enricher linkedin-hiring-company-lead-enricher hiring company lead enricher, b2b recruiting intent signals, headhunter automation linkedin & recruitment intent">
       <div class="card-header">
-        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/linkedin-hiring-company-lead-enricher.png" alt="Linkedin Hiring Company Lead Enricher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher" target="_blank" rel="noopener">Linkedin Hiring Company Lead Enricher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/linkedin-hiring-company-lead-enricher</code></p>
@@ -1315,8 +1402,13 @@
 
     <div class="actor-card" data-category="linkedin" data-search="linkedin remote salary filter linkedin-remote-salary-filter remote jobs salary scraper, compensation benchmark api, tech job aggregator linkedin & recruitment intent">
       <div class="card-header">
-        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/linkedin-remote-salary-filter.png" alt="Linkedin Remote Salary Filter Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-remote-salary-filter" target="_blank" rel="noopener">Linkedin Remote Salary Filter</a></h3>
       <p class="card-slug"><code>deepaksheoran172/linkedin-remote-salary-filter</code></p>
@@ -1336,8 +1428,13 @@
 
     <div class="actor-card" data-category="linkedin" data-search="linkedin public company profiler linkedin-public-company-profiler company profile enricher, firmographic data api, b2b account enrichment linkedin & recruitment intent">
       <div class="card-header">
-        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/linkedin-public-company-profiler.png" alt="Linkedin Public Company Profiler Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/linkedin-public-company-profiler" target="_blank" rel="noopener">Linkedin Public Company Profiler</a></h3>
       <p class="card-slug"><code>deepaksheoran172/linkedin-public-company-profiler</code></p>
@@ -1357,8 +1454,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="store catalog redirect extractor store-catalog-redirect-extractor shopify catalog extractor, e-commerce redirect auditor, store product feed spy e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/store-catalog-redirect-extractor.png" alt="Store Catalog Redirect Extractor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/store-catalog-redirect-extractor" target="_blank" rel="noopener">Store Catalog Redirect Extractor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/store-catalog-redirect-extractor</code></p>
@@ -1378,8 +1480,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="domain security super auditor domain-security-super-auditor dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/domain-security-super-auditor.png" alt="Domain Security Super Auditor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/domain-security-super-auditor" target="_blank" rel="noopener">Domain Security Super Auditor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/domain-security-super-auditor</code></p>
@@ -1399,8 +1506,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="catalog feed normalizer catalog-feed-normalizer product catalog normalizer, e-commerce json feed cleaner, merchant center tool e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/catalog-feed-normalizer.png" alt="Catalog Feed Normalizer Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/catalog-feed-normalizer" target="_blank" rel="noopener">Catalog Feed Normalizer</a></h3>
       <p class="card-slug"><code>deepaksheoran172/catalog-feed-normalizer</code></p>
@@ -1420,8 +1532,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="website health checker website-health-checker website uptime response checker, broken link technical seo auditor, bulk http status e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/website-health-checker.png" alt="Website Health Checker Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-health-checker" target="_blank" rel="noopener">Website Health Checker</a></h3>
       <p class="card-slug"><code>deepaksheoran172/website-health-checker</code></p>
@@ -1441,8 +1558,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="indian public tender parser indian-public-tender-parser indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/indian-public-tender-parser.png" alt="Indian Public Tender Parser Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/indian-public-tender-parser" target="_blank" rel="noopener">Indian Public Tender Parser</a></h3>
       <p class="card-slug"><code>deepaksheoran172/indian-public-tender-parser</code></p>
@@ -1462,8 +1584,13 @@
 
     <div class="actor-card" data-category="ai" data-search="openrouter mcp registry openrouter-mcp-registry openrouter models api, mcp server registry, llm pricing context benchmark ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/openrouter-mcp-registry.png" alt="Openrouter MCP Registry Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/openrouter-mcp-registry" target="_blank" rel="noopener">Openrouter MCP Registry</a></h3>
       <p class="card-slug"><code>deepaksheoran172/openrouter-mcp-registry</code></p>
@@ -1483,8 +1610,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="domain protocol signals enricher domain-protocol-signals-enricher domain dns http protocol signals, tech stack security enricher, b2b domain intel cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/domain-protocol-signals-enricher.png" alt="Domain Protocol Signals Enricher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/domain-protocol-signals-enricher" target="_blank" rel="noopener">Domain Protocol Signals Enricher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/domain-protocol-signals-enricher</code></p>
@@ -1504,8 +1636,13 @@
 
     <div class="actor-card" data-category="b2b" data-search="website contact extractor website-contact-extractor website email phone social scraper, contact page parser, zero proxy lead extractor b2b lead gen & email">
       <div class="card-header">
-        <span class="badge category-badge">B2B Lead Gen & Email</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/website-contact-extractor.png" alt="Website Contact Extractor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">B2B Lead Gen & Email</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-contact-extractor" target="_blank" rel="noopener">Website Contact Extractor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/website-contact-extractor</code></p>
@@ -1525,8 +1662,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="google keyword suggester google-keyword-suggester google autocomplete keyword api, long tail seo keyword scraper, content research e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/google-keyword-suggester.png" alt="Google Keyword Suggester Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/google-keyword-suggester" target="_blank" rel="noopener">Google Keyword Suggester</a></h3>
       <p class="card-slug"><code>deepaksheoran172/google-keyword-suggester</code></p>
@@ -1546,8 +1688,13 @@
 
     <div class="actor-card" data-category="linkedin" data-search="ats jobs extractor ats-jobs-extractor greenhouse lever ashby workable scraper, ats job postings api, hiring tracker linkedin & recruitment intent">
       <div class="card-header">
-        <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/ats-jobs-extractor.png" alt="ATS Jobs Extractor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">LinkedIn & Recruitment Intent</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ats-jobs-extractor" target="_blank" rel="noopener">ATS Jobs Extractor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/ats-jobs-extractor</code></p>
@@ -1567,8 +1714,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="app store reviews scraper app-store-reviews-scraper apple app store reviews api, mobile app sentiment scraper, competitor review monitor e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/app-store-reviews-scraper.png" alt="App Store Reviews Scraper Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/app-store-reviews-scraper" target="_blank" rel="noopener">App Store Reviews Scraper</a></h3>
       <p class="card-slug"><code>deepaksheoran172/app-store-reviews-scraper</code></p>
@@ -1588,8 +1740,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="website screenshot pdf website-screenshot-pdf website screenshot to pdf api, headless browser visual capture, compliance archiving e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/website-screenshot-pdf.png" alt="Website Screenshot PDF Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/website-screenshot-pdf" target="_blank" rel="noopener">Website Screenshot PDF</a></h3>
       <p class="card-slug"><code>deepaksheoran172/website-screenshot-pdf</code></p>
@@ -1609,8 +1766,13 @@
 
     <div class="actor-card" data-category="ecommerce" data-search="google ads transparency google-ads-transparency google ads transparency center scraper, competitor ad spy api, b2b ad intelligence e-commerce & web audit">
       <div class="card-header">
-        <span class="badge category-badge">E-Commerce & Web Audit</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/google-ads-transparency.png" alt="Google Ads Transparency Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">E-Commerce & Web Audit</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/google-ads-transparency" target="_blank" rel="noopener">Google Ads Transparency</a></h3>
       <p class="card-slug"><code>deepaksheoran172/google-ads-transparency</code></p>
@@ -1630,8 +1792,13 @@
 
     <div class="actor-card" data-category="ai" data-search="scanned document ocr scanned-document-ocr scanned pdf image ocr api, document text extraction, automated invoice parser ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/scanned-document-ocr.png" alt="Scanned Document OCR Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/scanned-document-ocr" target="_blank" rel="noopener">Scanned Document OCR</a></h3>
       <p class="card-slug"><code>deepaksheoran172/scanned-document-ocr</code></p>
@@ -1651,8 +1818,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="cisa kev delta monitor cisa-kev-delta-monitor cisa known exploited vulnerabilities api, kev cve alert feed, secops automation cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/cisa-kev-delta-monitor.png" alt="CISA KEV Delta Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/cisa-kev-delta-monitor" target="_blank" rel="noopener">CISA KEV Delta Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/cisa-kev-delta-monitor</code></p>
@@ -1672,8 +1844,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="osv dependency cve scanner osv-dependency-cve-scanner google osv vulnerability scanner, pypi npm go maven cve checker, sbom security cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/osv-dependency-cve-scanner.png" alt="OSV Dependency CVE Scanner Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/osv-dependency-cve-scanner" target="_blank" rel="noopener">OSV Dependency CVE Scanner</a></h3>
       <p class="card-slug"><code>deepaksheoran172/osv-dependency-cve-scanner</code></p>
@@ -1693,8 +1870,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="runtime and container eol radar runtime-and-container-eol-radar endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/runtime-and-container-eol-radar.png" alt="Runtime And Container EOL Radar Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/runtime-and-container-eol-radar" target="_blank" rel="noopener">Runtime And Container EOL Radar</a></h3>
       <p class="card-slug"><code>deepaksheoran172/runtime-and-container-eol-radar</code></p>
@@ -1714,8 +1896,13 @@
 
     <div class="actor-card" data-category="ai" data-search="npm package health auditor npm-package-health-auditor npm package security deprecation auditor, supply chain health check, nodejs audit ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/npm-package-health-auditor.png" alt="npm Package Health Auditor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/npm-package-health-auditor" target="_blank" rel="noopener">npm Package Health Auditor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/npm-package-health-auditor</code></p>
@@ -1735,8 +1922,13 @@
 
     <div class="actor-card" data-category="ai" data-search="pypi package health auditor pypi-package-health-auditor pypi python package auditor, yanked release maintainer check, python supply chain ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/pypi-package-health-auditor.png" alt="PyPI Package Health Auditor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/pypi-package-health-auditor" target="_blank" rel="noopener">PyPI Package Health Auditor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/pypi-package-health-auditor</code></p>
@@ -1756,8 +1948,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="github actions pinning auditor github-actions-pinning-auditor github actions sha pinning security auditor, ci cd supply chain vulnerability cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/github-actions-pinning-auditor.png" alt="Github Actions Pinning Auditor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/github-actions-pinning-auditor" target="_blank" rel="noopener">Github Actions Pinning Auditor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/github-actions-pinning-auditor</code></p>
@@ -1777,8 +1974,13 @@
 
     <div class="actor-card" data-category="ai" data-search="openapi breaking change diff openapi-breaking-change-diff openapi swagger breaking change detector, api contract diff tool, ci cd api check ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/openapi-breaking-change-diff.png" alt="OpenAPI Breaking Change Diff Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/openapi-breaking-change-diff" target="_blank" rel="noopener">OpenAPI Breaking Change Diff</a></h3>
       <p class="card-slug"><code>deepaksheoran172/openapi-breaking-change-diff</code></p>
@@ -1798,8 +2000,13 @@
 
     <div class="actor-card" data-category="cloud" data-search="statuspage incident aggregator statuspage-incident-aggregator atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status cloud health & sre">
       <div class="card-header">
-        <span class="badge category-badge">Cloud Health & SRE</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/statuspage-incident-aggregator.png" alt="Statuspage Incident Aggregator Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cloud Health & SRE</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/statuspage-incident-aggregator" target="_blank" rel="noopener">Statuspage Incident Aggregator</a></h3>
       <p class="card-slug"><code>deepaksheoran172/statuspage-incident-aggregator</code></p>
@@ -1819,8 +2026,13 @@
 
     <div class="actor-card" data-category="cloud" data-search="aws health incident monitor aws-health-incident-monitor aws service health dashboard api, amazon web services outage monitor, sre alerting cloud health & sre">
       <div class="card-header">
-        <span class="badge category-badge">Cloud Health & SRE</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/aws-health-incident-monitor.png" alt="AWS Health Incident Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cloud Health & SRE</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/aws-health-incident-monitor" target="_blank" rel="noopener">AWS Health Incident Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/aws-health-incident-monitor</code></p>
@@ -1840,8 +2052,13 @@
 
     <div class="actor-card" data-category="cloud" data-search="gcp incident monitor gcp-incident-monitor google cloud status incident api, gcp regional outage monitor, cloud reliability cloud health & sre">
       <div class="card-header">
-        <span class="badge category-badge">Cloud Health & SRE</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/gcp-incident-monitor.png" alt="GCP Incident Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cloud Health & SRE</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/gcp-incident-monitor" target="_blank" rel="noopener">GCP Incident Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/gcp-incident-monitor</code></p>
@@ -1861,8 +2078,13 @@
 
     <div class="actor-card" data-category="cloud" data-search="azure status feed monitor azure-status-feed-monitor microsoft azure status rss api, azure cloud outage monitor, devops incident feed cloud health & sre">
       <div class="card-header">
-        <span class="badge category-badge">Cloud Health & SRE</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/azure-status-feed-monitor.png" alt="Azure Status Feed Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cloud Health & SRE</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/azure-status-feed-monitor" target="_blank" rel="noopener">Azure Status Feed Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/azure-status-feed-monitor</code></p>
@@ -1882,8 +2104,13 @@
 
     <div class="actor-card" data-category="cloud" data-search="api sdk deprecation radar api-sdk-deprecation-radar rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes cloud health & sre">
       <div class="card-header">
-        <span class="badge category-badge">Cloud Health & SRE</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/api-sdk-deprecation-radar.png" alt="API SDK Deprecation Radar Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cloud Health & SRE</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/api-sdk-deprecation-radar" target="_blank" rel="noopener">API SDK Deprecation Radar</a></h3>
       <p class="card-slug"><code>deepaksheoran172/api-sdk-deprecation-radar</code></p>
@@ -1903,8 +2130,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="fda food and drug enforcement monitor fda-food-and-drug-enforcement-monitor openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/fda-food-and-drug-enforcement-monitor.png" alt="FDA Food And Drug Enforcement Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor" target="_blank" rel="noopener">FDA Food And Drug Enforcement Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/fda-food-and-drug-enforcement-monitor</code></p>
@@ -1924,8 +2156,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="cpsc recall monitor cpsc-recall-monitor cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/cpsc-recall-monitor.png" alt="CPSC Recall Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" target="_blank" rel="noopener">CPSC Recall Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/cpsc-recall-monitor</code></p>
@@ -1945,8 +2182,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="nhtsa vehicle recall monitor nhtsa-vehicle-recall-monitor nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/nhtsa-vehicle-recall-monitor.png" alt="NHTSA Vehicle Recall Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor" target="_blank" rel="noopener">NHTSA Vehicle Recall Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/nhtsa-vehicle-recall-monitor</code></p>
@@ -1966,8 +2208,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="fda 510(k) clearance intelligence fda-510k-clearance-intelligence openfda 510k medical device clearance api, medtech regulatory approval intelligence recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/fda-510k-clearance-intelligence.png" alt="FDA 510(k) Clearance Intelligence Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence" target="_blank" rel="noopener">FDA 510(k) Clearance Intelligence</a></h3>
       <p class="card-slug"><code>deepaksheoran172/fda-510k-clearance-intelligence</code></p>
@@ -1987,8 +2234,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="ofac sdn delta screener ofac-sdn-delta-screener us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/ofac-sdn-delta-screener.png" alt="OFAC SDN Delta Screener Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ofac-sdn-delta-screener" target="_blank" rel="noopener">OFAC SDN Delta Screener</a></h3>
       <p class="card-slug"><code>deepaksheoran172/ofac-sdn-delta-screener</code></p>
@@ -2008,8 +2260,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="echa svhc rasff chemical alert monitor echa-svhc-rasff-chemical-alert-monitor eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/echa-svhc-rasff-chemical-alert-monitor.png" alt="ECHA SVHC RASFF Chemical Alert Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor" target="_blank" rel="noopener">ECHA SVHC RASFF Chemical Alert Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor</code></p>
@@ -2029,8 +2286,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="usaspending award intelligence usaspending-award-intelligence usaspending.gov federal contract awards api, government prime contractor intelligence govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/usaspending-award-intelligence.png" alt="Usaspending Award Intelligence Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/usaspending-award-intelligence" target="_blank" rel="noopener">Usaspending Award Intelligence</a></h3>
       <p class="card-slug"><code>deepaksheoran172/usaspending-award-intelligence</code></p>
@@ -2050,8 +2312,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="ted eu tender monitor ted-eu-tender-monitor eu ted tenders electronic daily api v3, european public procurement monitor govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/ted-eu-tender-monitor.png" alt="TED EU Tender Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/ted-eu-tender-monitor" target="_blank" rel="noopener">TED EU Tender Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/ted-eu-tender-monitor</code></p>
@@ -2071,8 +2338,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="grants gov opportunity matcher grants-gov-opportunity-matcher grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/grants-gov-opportunity-matcher.png" alt="Grants Gov Opportunity Matcher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher" target="_blank" rel="noopener">Grants Gov Opportunity Matcher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/grants-gov-opportunity-matcher</code></p>
@@ -2092,8 +2364,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="world bank project pipeline matcher world-bank-project-pipeline-matcher world bank project procurement api, global infrastructure funding pipeline govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/world-bank-project-pipeline-matcher.png" alt="World Bank Project Pipeline Matcher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher" target="_blank" rel="noopener">World Bank Project Pipeline Matcher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/world-bank-project-pipeline-matcher</code></p>
@@ -2113,8 +2390,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="sam gov opportunity monitor sam-gov-opportunity-monitor sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/sam-gov-opportunity-monitor.png" alt="Sam Gov Opportunity Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor" target="_blank" rel="noopener">Sam Gov Opportunity Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/sam-gov-opportunity-monitor</code></p>
@@ -2134,8 +2416,13 @@
 
     <div class="actor-card" data-category="govtech" data-search="state and local rfp aggregator state-and-local-rfp-aggregator us state municipal local rfp bid aggregator, socrata open procurement api govtech, tenders & procurement">
       <div class="card-header">
-        <span class="badge category-badge">GovTech, Tenders & Procurement</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/state-and-local-rfp-aggregator.png" alt="State And Local RFP Aggregator Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">GovTech, Tenders & Procurement</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator" target="_blank" rel="noopener">State And Local RFP Aggregator</a></h3>
       <p class="card-slug"><code>deepaksheoran172/state-and-local-rfp-aggregator</code></p>
@@ -2155,8 +2442,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="sec filing event intelligence sec-filing-event-intelligence sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/sec-filing-event-intelligence.png" alt="SEC Filing Event Intelligence Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/sec-filing-event-intelligence" target="_blank" rel="noopener">SEC Filing Event Intelligence</a></h3>
       <p class="card-slug"><code>deepaksheoran172/sec-filing-event-intelligence</code></p>
@@ -2176,8 +2468,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="gleif lei resolver gleif-lei-resolver gleif legal entity identifier lei api, corporate parent child ownership resolver recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/gleif-lei-resolver.png" alt="GLEIF LEI Resolver Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/gleif-lei-resolver" target="_blank" rel="noopener">GLEIF LEI Resolver</a></h3>
       <p class="card-slug"><code>deepaksheoran172/gleif-lei-resolver</code></p>
@@ -2197,8 +2494,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="companies house event monitor companies-house-event-monitor uk companies house registry scraper keyless, british corporate filing kyc monitor recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/companies-house-event-monitor.png" alt="Companies House Event Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/companies-house-event-monitor" target="_blank" rel="noopener">Companies House Event Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/companies-house-event-monitor</code></p>
@@ -2218,8 +2520,13 @@
 
     <div class="actor-card" data-category="compliance" data-search="opensanctions screening enricher opensanctions-screening-enricher opensanctions global pep sanctions screening api, kyc compliance entity matcher recalls, compliance & registries">
       <div class="card-header">
-        <span class="badge category-badge">Recalls, Compliance & Registries</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/opensanctions-screening-enricher.png" alt="Opensanctions Screening Enricher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Recalls, Compliance & Registries</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/opensanctions-screening-enricher" target="_blank" rel="noopener">Opensanctions Screening Enricher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/opensanctions-screening-enricher</code></p>
@@ -2239,8 +2546,13 @@
 
     <div class="actor-card" data-category="ai" data-search="hacker news launch and trend monitor hacker-news-launch-and-trend-monitor algolia hacker news show hn launch monitor, tech trend velocity scraper ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/hacker-news-launch-and-trend-monitor.png" alt="Hacker News Launch And Trend Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor" target="_blank" rel="noopener">Hacker News Launch And Trend Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/hacker-news-launch-and-trend-monitor</code></p>
@@ -2260,8 +2572,13 @@
 
     <div class="actor-card" data-category="ai" data-search="github competitive repo tracker github-competitive-repo-tracker github repository star velocity issue tracker, open source competitor intelligence ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/github-competitive-repo-tracker.png" alt="Github Competitive Repo Tracker Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/github-competitive-repo-tracker" target="_blank" rel="noopener">Github Competitive Repo Tracker</a></h3>
       <p class="card-slug"><code>deepaksheoran172/github-competitive-repo-tracker</code></p>
@@ -2281,8 +2598,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="rdap domain registration monitor rdap-domain-registration-monitor icann rdap whois domain expiry registration monitor, brand protection api cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/rdap-domain-registration-monitor.png" alt="RDAP Domain Registration Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/rdap-domain-registration-monitor" target="_blank" rel="noopener">RDAP Domain Registration Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/rdap-domain-registration-monitor</code></p>
@@ -2302,8 +2624,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="tls certificate expiry auditor tls-certificate-expiry-auditor ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/tls-certificate-expiry-auditor.png" alt="TLS Certificate Expiry Auditor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor" target="_blank" rel="noopener">TLS Certificate Expiry Auditor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/tls-certificate-expiry-auditor</code></p>
@@ -2323,8 +2650,13 @@
 
     <div class="actor-card" data-category="cybersecurity" data-search="dns record drift monitor dns-record-drift-monitor dns a mx txt cname ns drift monitor, subdomain takeover hijack detector cybersecurity & devsecops">
       <div class="card-header">
-        <span class="badge category-badge">Cybersecurity & DevSecOps</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/dns-record-drift-monitor.png" alt="DNS Record Drift Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">Cybersecurity & DevSecOps</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/dns-record-drift-monitor" target="_blank" rel="noopener">DNS Record Drift Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/dns-record-drift-monitor</code></p>
@@ -2344,8 +2676,13 @@
 
     <div class="actor-card" data-category="ai" data-search="package dependency graph enricher package-dependency-graph-enricher google deps.dev dependency graph openssf scorecard api, transitive package risk ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/package-dependency-graph-enricher.png" alt="Package Dependency Graph Enricher Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/package-dependency-graph-enricher" target="_blank" rel="noopener">Package Dependency Graph Enricher</a></h3>
       <p class="card-slug"><code>deepaksheoran172/package-dependency-graph-enricher</code></p>
@@ -2365,8 +2702,13 @@
 
     <div class="actor-card" data-category="ai" data-search="docker hub image staleness monitor docker-hub-image-staleness-monitor docker hub container image tag staleness digest monitor, devops registry audit ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/docker-hub-image-staleness-monitor.png" alt="Docker Hub Image Staleness Monitor Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor" target="_blank" rel="noopener">Docker Hub Image Staleness Monitor</a></h3>
       <p class="card-slug"><code>deepaksheoran172/docker-hub-image-staleness-monitor</code></p>
@@ -2386,8 +2728,13 @@
 
     <div class="actor-card" data-category="ai" data-search="npm download trend reporter npm-download-trend-reporter npm package weekly download growth velocity api, developer adoption trend tracker ai agents & developer ecosystem">
       <div class="card-header">
-        <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
-        <span class="badge ppe-badge">$0.003/rec</span>
+        <div class="card-icon-wrap">
+          <img src="icons/npm-download-trend-reporter.png" alt="npm Download Trend Reporter Icon" class="actor-icon" width="56" height="56" loading="lazy" />
+        </div>
+        <div class="card-badges">
+          <span class="badge category-badge">AI Agents & Developer Ecosystem</span>
+          <span class="badge ppe-badge">$0.003/rec</span>
+        </div>
       </div>
       <h3 class="card-title"><a href="https://apify.com/deepaksheoran172/npm-download-trend-reporter" target="_blank" rel="noopener">npm Download Trend Reporter</a></h3>
       <p class="card-slug"><code>deepaksheoran172/npm-download-trend-reporter</code></p>

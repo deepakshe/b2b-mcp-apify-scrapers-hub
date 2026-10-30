@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad_dns_record_drift_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040D0A" /><stop offset="50%" stop-color="#08201A" /><stop offset="100%" stop-color="#0C382E" />
+    </linearGradient>
+
+    <!-- Squircle Border Gradient -->
+    <linearGradient id="borderGrad_dns_record_drift_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" /><stop offset="50%" stop-color="#34D399" stop-opacity="0.4" /><stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Radial Glowing Orb Gradient -->
+    <radialGradient id="glowOrb_dns_record_drift_monitor" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#059669" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
+    <linearGradient id="specularGrad_dns_record_drift_monitor" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Hero Deep Elevation Drop Shadow -->
+    <filter id="heroShadow_dns_record_drift_monitor" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow_dns_record_drift_monitor" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Micro Badge Drop Shadow -->
+    <filter id="badgeShadow_dns_record_drift_monitor" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- ================= LAYER 1: SQUIRCLE BASE ================= -->
+  <rect x="32" y="32" width="448" height="448" rx="108" ry="108" fill="url(#bgGrad_dns_record_drift_monitor)" stroke="url(#borderGrad_dns_record_drift_monitor)" stroke-width="3.5" />
+
+  <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
+  <circle cx="256" cy="245" r="150" fill="url(#glowOrb_dns_record_drift_monitor)" />
+  
+        <g stroke="#10B981" stroke-opacity="0.14" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M 80 180 L 140 180 L 170 210 L 170 270" /><circle cx="80" cy="180" r="4" fill="#10B981" />
+          <path d="M 432 180 L 372 180 L 342 210 L 342 260" /><circle cx="432" cy="180" r="4" fill="#10B981" />
+          <path d="M 120 380 L 180 380 L 210 350 L 210 310" /><circle cx="120" cy="380" r="4" fill="#10B981" />
+          <path d="M 392 380 L 332 380 L 302 350 L 302 310" /><circle cx="392" cy="380" r="4" fill="#10B981" />
+        </g>
+        
+
+  <!-- ================= LAYER 3: TOP SPECULAR GLASS REFLECTION ================= -->
+  <path d="M 48 140 C 48 70, 70 48, 140 48 L 372 48 C 442 48, 464 70, 464 140 C 464 175, 410 195, 256 195 C 102 195, 48 175, 48 140 Z" fill="url(#specularGrad_dns_record_drift_monitor)" />
+
+  <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
+  <g filter="url(#heroShadow_dns_record_drift_monitor)">
+    
+        <!-- Authoritative DNS Tree Detecting Record Drift -->
+        <rect x="216" y="150" width="80" height="42" rx="10" fill="#047857" stroke="#34D399" stroke-width="2.5" />
+        <line x1="256" y1="192" x2="256" y2="235" stroke="#34D399" stroke-width="3" />
+        <line x1="186" y1="235" x2="326" y2="235" stroke="#34D399" stroke-width="3" />
+        <line x1="186" y1="235" x2="186" y2="265" stroke="#34D399" stroke-width="3" />
+        <line x1="326" y1="235" x2="326" y2="265" stroke="#34D399" stroke-width="3" />
+        <!-- Green Stable Record -->
+        <rect x="146" y="265" width="80" height="42" rx="10" fill="#022C22" stroke="#10B981" stroke-width="2" />
+        <!-- Red Drifted Record -->
+        <rect x="286" y="265" width="80" height="42" rx="10" fill="#450A0A" stroke="#EF4444" stroke-width="2.5" />
+        <!-- Drift Indicator Wave -->
+        <path d="M 230 330 Q 256 310 282 330" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+        
+  </g>
+
+  <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
+  <g filter="url(#badgeShadow_dns_record_drift_monitor)">
+    <rect x="336" y="56" width="112" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
+    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_dns_record_drift_monitor)" />
+    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">DNS</text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad_youtube_shorts_viral_hook_trend_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A070B" /><stop offset="50%" stop-color="#3F0C14" /><stop offset="100%" stop-color="#68101E" />
+    </linearGradient>
+
+    <!-- Squircle Border Gradient -->
+    <linearGradient id="borderGrad_youtube_shorts_viral_hook_trend_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#FBBF24" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Radial Glowing Orb Gradient -->
+    <radialGradient id="glowOrb_youtube_shorts_viral_hook_trend_tracker" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
+    <linearGradient id="specularGrad_youtube_shorts_viral_hook_trend_tracker" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Hero Deep Elevation Drop Shadow -->
+    <filter id="heroShadow_youtube_shorts_viral_hook_trend_tracker" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow_youtube_shorts_viral_hook_trend_tracker" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Micro Badge Drop Shadow -->
+    <filter id="badgeShadow_youtube_shorts_viral_hook_trend_tracker" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- ================= LAYER 1: SQUIRCLE BASE ================= -->
+  <rect x="32" y="32" width="448" height="448" rx="108" ry="108" fill="url(#bgGrad_youtube_shorts_viral_hook_trend_tracker)" stroke="url(#borderGrad_youtube_shorts_viral_hook_trend_tracker)" stroke-width="3.5" />
+
+  <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
+  <circle cx="256" cy="245" r="150" fill="url(#glowOrb_youtube_shorts_viral_hook_trend_tracker)" />
+  
+        <g stroke="#F43F5E" stroke-opacity="0.12" fill="none" stroke-width="2">
+          <circle cx="256" cy="256" r="80" stroke-dasharray="8 6" />
+          <circle cx="256" cy="256" r="130" stroke-dasharray="12 8" />
+          <circle cx="256" cy="256" r="180" stroke-dasharray="16 10" />
+        </g>
+        
+
+  <!-- ================= LAYER 3: TOP SPECULAR GLASS REFLECTION ================= -->
+  <path d="M 48 140 C 48 70, 70 48, 140 48 L 372 48 C 442 48, 464 70, 464 140 C 464 175, 410 195, 256 195 C 102 195, 48 175, 48 140 Z" fill="url(#specularGrad_youtube_shorts_viral_hook_trend_tracker)" />
+
+  <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
+  <g filter="url(#heroShadow_youtube_shorts_viral_hook_trend_tracker)">
+    
+        <!-- 9:16 Vertical Smartphone & Ascending Rocket Flame -->
+        <rect x="176" y="140" width="160" height="250" rx="26" fill="#1C0A0E" stroke="#FB7185" stroke-width="3.5" />
+        <rect x="226" y="152" width="60" height="5" rx="2.5" fill="#4C0519" />
+        <!-- Viral Flame Trajectory -->
+        <path d="M 256 340 Q 230 290 256 250 Q 275 220 256 185 Q 285 230 270 280 Z" fill="#F59E0B" />
+        <path d="M 256 340 Q 242 305 256 275 Q 266 255 256 230 Q 272 260 264 295 Z" fill="#EF4444" />
+        <!-- Ascending Trend Graph Line -->
+        <polyline points="196,310 226,290 256,240 316,190" fill="none" stroke="#FDE047" stroke-width="3.5" stroke-linecap="round" />
+        <circle cx="316" cy="190" r="6" fill="#FDE047" />
+        
+  </g>
+
+  <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
+  <g filter="url(#badgeShadow_youtube_shorts_viral_hook_trend_tracker)">
+    <rect x="336" y="56" width="112" height="42" rx="21" fill="#450A0A" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="356" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_youtube_shorts_viral_hook_trend_tracker)" />
+    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">HOOK</text>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad_gleif_lei_resolver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+    </linearGradient>
+
+    <!-- Squircle Border Gradient -->
+    <linearGradient id="borderGrad_gleif_lei_resolver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Radial Glowing Orb Gradient -->
+    <radialGradient id="glowOrb_gleif_lei_resolver" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
+    <linearGradient id="specularGrad_gleif_lei_resolver" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Hero Deep Elevation Drop Shadow -->
+    <filter id="heroShadow_gleif_lei_resolver" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow_gleif_lei_resolver" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Micro Badge Drop Shadow -->
+    <filter id="badgeShadow_gleif_lei_resolver" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- ================= LAYER 1: SQUIRCLE BASE ================= -->
+  <rect x="32" y="32" width="448" height="448" rx="108" ry="108" fill="url(#bgGrad_gleif_lei_resolver)" stroke="url(#borderGrad_gleif_lei_resolver)" stroke-width="3.5" />
+
+  <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
+  <circle cx="256" cy="245" r="150" fill="url(#glowOrb_gleif_lei_resolver)" />
+  
+        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
+          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
+          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
+          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
+          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
+          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
+          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
+          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        </g>
+        
+
+  <!-- ================= LAYER 3: TOP SPECULAR GLASS REFLECTION ================= -->
+  <path d="M 48 140 C 48 70, 70 48, 140 48 L 372 48 C 442 48, 464 70, 464 140 C 464 175, 410 195, 256 195 C 102 195, 48 175, 48 140 Z" fill="url(#specularGrad_gleif_lei_resolver)" />
+
+  <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
+  <g filter="url(#heroShadow_gleif_lei_resolver)">
+    
+        <!-- ISO 17442 Legal Entity Identifier Tree -->
+        <circle cx="256" cy="180" r="28" fill="#881337" stroke="#FDA4AF" stroke-width="3" />
+        <line x1="256" y1="208" x2="256" y2="245" stroke="#E11D48" stroke-width="3" />
+        <line x1="196" y1="245" x2="316" y2="245" stroke="#E11D48" stroke-width="3" />
+        <line x1="196" y1="245" x2="196" y2="275" stroke="#E11D48" stroke-width="3" />
+        <line x1="316" y1="245" x2="316" y2="275" stroke="#E11D48" stroke-width="3" />
+        <circle cx="196" cy="295" r="20" fill="#4C0519" stroke="#E11D48" stroke-width="2.5" />
+        <circle cx="316" cy="295" r="20" fill="#4C0519" stroke="#E11D48" stroke-width="2.5" />
+        <!-- 20-digit Code Pill -->
+        <rect x="156" y="340" width="200" height="30" rx="15" fill="#0F172A" stroke="#E11D48" stroke-width="2" />
+        <text x="256" y="360" font-family="monospace" font-weight="900" font-size="12" fill="#FDA4AF" text-anchor="middle">213800...LEI</text>
+        
+  </g>
+
+  <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
+  <g filter="url(#badgeShadow_gleif_lei_resolver)">
+    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
+    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_gleif_lei_resolver)" />
+    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">LEI</text>
+  </g>
+</svg>
