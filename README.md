@@ -187,3 +187,11 @@ Each high-value B2B Actor has a dedicated, zero-dependency Open-Source SDK and M
 | [`deepakshe/sam-gov-opportunity-monitor-mcp-api`](https://github.com/deepakshe/sam-gov-opportunity-monitor-mcp-api) | **GovTech, Tenders & Procurement** | [![Run](https://img.shields.io/badge/Store-Run-blue)](https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor) | [Workflow JSON](https://github.com/deepakshe/sam-gov-opportunity-monitor-mcp-api/blob/main/workflow.json) |
 | [`deepakshe/ofac-sdn-delta-screener-mcp-api`](https://github.com/deepakshe/ofac-sdn-delta-screener-mcp-api) | **Compliance, KYC & AML** | [![Run](https://img.shields.io/badge/Store-Run-blue)](https://apify.com/deepaksheoran172/ofac-sdn-delta-screener) | [Workflow JSON](https://github.com/deepakshe/ofac-sdn-delta-screener-mcp-api/blob/main/workflow.json) |
 | [`deepakshe/osv-dependency-cve-scanner-mcp-api`](https://github.com/deepakshe/osv-dependency-cve-scanner-mcp-api) | **Cybersecurity & Vulnerability Management** | [![Run](https://img.shields.io/badge/Store-Run-blue)](https://apify.com/deepaksheoran172/osv-dependency-cve-scanner) | [Workflow JSON](https://github.com/deepakshe/osv-dependency-cve-scanner-mcp-api/blob/main/workflow.json) |
+
+---
+
+## 🛡️ 100% Automated Self-Service & Zero-DM Guarantee
+
+- **Pure Self-Service:** All 62 scrapers, compliance monitors, and MCP tools execute 100% self-service via the serverless Apify Cloud API. No manual calls, onboarding, sales chats, or support tickets needed.
+- **Pay-Per-Result:** Only successful output items are billed. Zero-charge on failed executions.
+- **API Documentation:** For API key generation, webhooks, and concurrency documentation, see [Apify Platform Documentation](https://docs.apify.com/platform/actors/running/api).
