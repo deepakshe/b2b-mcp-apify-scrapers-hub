@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "deepaksheoran172",
-  "updatedAt": "2026-10-30",
-  "totalServers": 62,
+  "updatedAt": "2026-11-04",
+  "totalServers": 44,
   "servers": {
     "bulk-email-verifier-mx-smtp": {
-      "name": "Bulk Email Verifier MX SMTP MCP Tool",
-      "description": "Extract structured data from bulk-email-verifier-mx-smtp using zero-proxy async HTTP. Trigger for: bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner",
+      "name": "Bulk Email Verifier (DNS MX & Disposable Check) MCP Tool",
+      "description": "Verify email deliverability in bulk with DNS MX record checks, disposable domain detection, and syntax validation. Export cleaned email lists to CSV & Excel. Zero proxies, fast execution. Zapier & Make ready. PPE ($0.003/item with 10 free leads).",
       "command": "npx",
       "args": [
         "-y",
@@ -16,12 +16,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/bulk-email-verifier-mx-smtp"
       },
-      "category": "B2B Lead Gen & Email",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp"
     },
     "b2b-decision-maker-email-finder": {
-      "name": "B2B Decision Maker Email Finder MCP Tool",
-      "description": "Extract structured data from b2b-decision-maker-email-finder using zero-proxy async HTTP. Trigger for: b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads",
+      "name": "B2B Decision Maker Email Pattern & MX Validator MCP Tool",
+      "description": "Generate executive email pattern permutations (first.last, initials) and verify domain MX routing in zero-proxy mode. Export validated B2B leads to CSV & JSON. Zapier & Make ready. Pay-Per-Event ($0.003/record with 10 free preview leads).",
       "command": "npx",
       "args": [
         "-y",
@@ -31,12 +31,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/b2b-decision-maker-email-finder"
       },
-      "category": "B2B Lead Gen & Email",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder"
     },
     "social-bio-contact-email-extractor": {
-      "name": "Social Bio Contact Email Extractor MCP Tool",
-      "description": "Extract structured data from social-bio-contact-email-extractor using zero-proxy async HTTP. Trigger for: social media bio email scraper, creator contact extractor, influencer lead generation",
+      "name": "Social Bio Public Email & Contact Extractor MCP Tool",
+      "description": "Extract public business contact emails and outreach channels from public social profiles and creator bios. Export targeted influencer leads to CSV & JSON. Zero proxies, fast execution. Zapier & Make ready. PPE ($0.003/item with 10 free preview leads).",
       "command": "npx",
       "args": [
         "-y",
@@ -46,12 +46,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/social-bio-contact-email-extractor"
       },
-      "category": "B2B Lead Gen & Email",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/social-bio-contact-email-extractor"
     },
     "local-business-website-phone-whatsapp-scraper": {
-      "name": "Local Business Website Phone Whatsapp Scraper MCP Tool",
-      "description": "Extract structured data from local-business-website-phone-whatsapp-scraper using zero-proxy async HTTP. Trigger for: google maps whatsapp scraper, local business phone email extractor, b2b local leads",
+      "name": "Local Business Website Contact & WhatsApp Scraper MCP Tool",
+      "description": "Scrape local business websites for public phone numbers, WhatsApp click-to-chat links, and contact emails. Export hyper-local sales leads to CSV & Excel. Zero proxies, fast crawler. Zapier ready. PPE ($0.003/item with 10 free preview leads).",
       "command": "npx",
       "args": [
         "-y",
@@ -61,12 +61,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/local-business-website-phone-whatsapp-scraper"
       },
-      "category": "B2B Lead Gen & Email",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper"
     },
     "youtube-bulk-transcript-captions-scraper": {
-      "name": "Youtube Bulk Transcript Captions Scraper MCP Tool",
-      "description": "Extract structured data from youtube-bulk-transcript-captions-scraper using zero-proxy async HTTP. Trigger for: youtube transcript api, bulk youtube captions downloader, llm rag video data",
+      "name": "YouTube Bulk Captions & Subtitles Extractor MCP Tool",
+      "description": "Scrape full public captions and video transcripts from YouTube videos in bulk. Export timestamped text and markdown to JSON & TXT for AI LLM training. Zero proxies, fast execution. Zapier ready. PPE ($0.003/item with 10 free preview transcripts).",
       "command": "npx",
       "args": [
         "-y",
@@ -76,12 +76,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/youtube-bulk-transcript-captions-scraper"
       },
-      "category": "YouTube & Social Intelligence",
+      "category": "Ai",
       "storeUrl": "https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper"
     },
     "youtube-channel-sponsor-email-lead-finder": {
-      "name": "Youtube Channel Sponsor Email Lead Finder MCP Tool",
-      "description": "Extract structured data from youtube-channel-sponsor-email-lead-finder using zero-proxy async HTTP. Trigger for: youtube sponsor finder, youtuber business email scraper, brand deal lead generation",
+      "name": "YouTube Video Sponsor & Public Bio Lead Finder MCP Tool",
+      "description": "Discover brand sponsors, affiliate partnerships, and public business inquiry emails from top YouTube channels. Export creator sponsorship leads to CSV & JSON. Zero proxies. Zapier ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -91,12 +91,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/youtube-channel-sponsor-email-lead-finder"
       },
-      "category": "YouTube & Social Intelligence",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder"
     },
     "youtube-comments-painpoint-sentiment-miner": {
-      "name": "Youtube Comments Painpoint Sentiment Miner MCP Tool",
-      "description": "Extract structured data from youtube-comments-painpoint-sentiment-miner using zero-proxy async HTTP. Trigger for: youtube comments scraper, audience pain point miner, product research tool",
+      "name": "YouTube Public Comments Pain-Point & Topic Miner MCP Tool",
+      "description": "Mine public YouTube comments for customer pain points, product complaints, and feature requests. Export raw sentiment data to CSV & JSON for market research. Zero proxies. Zapier ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -106,12 +106,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/youtube-comments-painpoint-sentiment-miner"
       },
-      "category": "YouTube & Social Intelligence",
+      "category": "Ai",
       "storeUrl": "https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner"
     },
     "youtube-shorts-viral-hook-trend-tracker": {
-      "name": "Youtube Shorts Viral Hook Trend Tracker MCP Tool",
-      "description": "Extract structured data from youtube-shorts-viral-hook-trend-tracker using zero-proxy async HTTP. Trigger for: youtube shorts trend tracker, viral hook analyzer, short form video metrics",
+      "name": "YouTube Shorts Public Trends & Title Hook Tracker MCP Tool",
+      "description": "Track viral YouTube Shorts titles, view velocity, and engagement patterns in real-time. Export creator intelligence to CSV & JSON for video production. Zero proxies, fast run. Zapier ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -121,12 +121,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/youtube-shorts-viral-hook-trend-tracker"
       },
-      "category": "YouTube & Social Intelligence",
+      "category": "Social Media",
       "storeUrl": "https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker"
     },
     "linkedin-jobs-scraper-no-login": {
-      "name": "Linkedin Jobs Scraper No Login MCP Tool",
-      "description": "Extract structured data from linkedin-jobs-scraper-no-login using zero-proxy async HTTP. Trigger for: linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper",
+      "name": "Public Guest Job Listing Extractor (No Login) MCP Tool",
+      "description": "Scrape public LinkedIn job postings without login or session cookies. Extract job titles, company names, locations, and descriptions to clean JSON & CSV. Zero proxies, fast run. Zapier & Make ready. PPE ($0.003/item with 10 free preview jobs).",
       "command": "npx",
       "args": [
         "-y",
@@ -136,12 +136,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/linkedin-jobs-scraper-no-login"
       },
-      "category": "LinkedIn & Recruitment Intent",
+      "category": "Jobs",
       "storeUrl": "https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login"
     },
     "linkedin-hiring-company-lead-enricher": {
-      "name": "Linkedin Hiring Company Lead Enricher MCP Tool",
-      "description": "Extract structured data from linkedin-hiring-company-lead-enricher using zero-proxy async HTTP. Trigger for: hiring company lead enricher, b2b recruiting intent signals, headhunter automation",
+      "name": "Hiring Company Career Portal & Domain Enricher MCP Tool",
+      "description": "Extract hiring company career portals, estimated domains, and executive HR email patterns from public job signals. Export verified B2B hiring leads to CSV & JSON. Zero proxies required. Zapier ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -151,12 +151,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/linkedin-hiring-company-lead-enricher"
       },
-      "category": "LinkedIn & Recruitment Intent",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher"
     },
     "linkedin-remote-salary-filter": {
-      "name": "Linkedin Remote Salary Filter MCP Tool",
-      "description": "Extract structured data from linkedin-remote-salary-filter using zero-proxy async HTTP. Trigger for: remote jobs salary scraper, compensation benchmark api, tech job aggregator",
+      "name": "Remote Tech Job & Transparent Salary Filter MCP Tool",
+      "description": "Filter and extract remote tech job listings featuring transparent salary ranges and equity compensation. Export curated remote leads to clean CSV & JSON. Zero proxies required. Zapier & Make ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -166,12 +166,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/linkedin-remote-salary-filter"
       },
-      "category": "LinkedIn & Recruitment Intent",
+      "category": "Jobs",
       "storeUrl": "https://apify.com/deepaksheoran172/linkedin-remote-salary-filter"
     },
     "linkedin-public-company-profiler": {
-      "name": "Linkedin Public Company Profiler MCP Tool",
-      "description": "Extract structured data from linkedin-public-company-profiler using zero-proxy async HTTP. Trigger for: company profile enricher, firmographic data api, b2b account enrichment",
+      "name": "Company Public Web Firmographics & Schema Profiler MCP Tool",
+      "description": "Extract public corporate firmographics, employee size ranges, industries, and verified website domains. Export enriched B2B company accounts to CSV & JSON. Zero proxies, fast execution. Zapier ready. PPE ($0.003/item with 10 free records).",
       "command": "npx",
       "args": [
         "-y",
@@ -181,12 +181,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/linkedin-public-company-profiler"
       },
-      "category": "LinkedIn & Recruitment Intent",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/linkedin-public-company-profiler"
     },
     "store-catalog-redirect-extractor": {
-      "name": "Store Catalog Redirect Extractor MCP Tool",
-      "description": "Extract structured data from store-catalog-redirect-extractor using zero-proxy async HTTP. Trigger for: shopify catalog extractor, e-commerce redirect auditor, store product feed spy",
+      "name": "Shopify & WooCommerce Catalog + 301 Redirect Generator MCP Tool",
+      "description": "Extract Shopify & WooCommerce catalogs to 32-column import CSV, Excel & JSON. Generates 100% SEO-safe 301 redirect mappings in 60s. Zero proxies required. Zapier & Make ready. Active 60% Launch Discount ($0.05/run vs $250 manual agency migration).",
       "command": "npx",
       "args": [
         "-y",
@@ -196,12 +196,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/store-catalog-redirect-extractor"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Ecommerce",
       "storeUrl": "https://apify.com/deepaksheoran172/store-catalog-redirect-extractor"
     },
     "domain-security-super-auditor": {
-      "name": "Domain Security Super Auditor MCP Tool",
-      "description": "Extract structured data from domain-security-super-auditor using zero-proxy async HTTP. Trigger for: dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api",
+      "name": "Bulk Domain Security, SSL/TLS, Headers & DMARC Auditor MCP Tool",
+      "description": "Audit client domains in bulk for SSL/TLS validity, ciphers, HSTS, and SPF/DKIM/DMARC deliverability. Export Grade A+ to F security reports to JSON & CSV. Zero proxies, pure stdlib. Zapier & Make ready. Launch Discount ($1.00/1k domains vs $180 manual audit).",
       "command": "npx",
       "args": [
         "-y",
@@ -211,12 +211,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/domain-security-super-auditor"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/domain-security-super-auditor"
     },
     "catalog-feed-normalizer": {
-      "name": "Catalog Feed Normalizer MCP Tool",
-      "description": "Extract structured data from catalog-feed-normalizer using zero-proxy async HTTP. Trigger for: product catalog normalizer, e-commerce json feed cleaner, merchant center tool",
+      "name": "Shopify & WooCommerce Product Catalog Normalizer MCP Tool",
+      "description": "Normalize product catalog feeds for Shopify & WooCommerce into RFC-compliant CSV & JSON. Cleans dirty HTML, fixes currencies, and sanitizes spreadsheet formulas. Fast, zero proxies, Zapier ready. Active 60% Launch Discount ($0.50/1k items vs $120 manual cleanup).",
       "command": "npx",
       "args": [
         "-y",
@@ -226,12 +226,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/catalog-feed-normalizer"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Ecommerce",
       "storeUrl": "https://apify.com/deepaksheoran172/catalog-feed-normalizer"
     },
     "website-health-checker": {
-      "name": "Website Health Checker MCP Tool",
-      "description": "Extract structured data from website-health-checker using zero-proxy async HTTP. Trigger for: website uptime response checker, broken link technical seo auditor, bulk http status",
+      "name": "Website Health, 404 Broken Link & Redirect Auditor MCP Tool",
+      "description": "Audit websites in bulk for 404 broken links, redirects, SSL expiry, and security headers. Export full diagnostic reports to JSON, CSV & Excel. Zero proxies, ultra-fast. Zapier & Make webhook ready. Launch Discount ($0.80/1k URLs vs $150 manual agency audit).",
       "command": "npx",
       "args": [
         "-y",
@@ -241,12 +241,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/website-health-checker"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Seo Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/website-health-checker"
     },
     "indian-public-tender-parser": {
-      "name": "Indian Public Tender Parser MCP Tool",
-      "description": "Extract structured data from indian-public-tender-parser using zero-proxy async HTTP. Trigger for: indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts",
+      "name": "India Public Tender, GeM & CPPP eProcurement Extractor MCP Tool",
+      "description": "Scrape public tenders and procurement notices from GeM & CPPP India portals. Extract tender ID, cost, EMD, deadlines, and authority into clean JSON & CSV. Zero proxies required. Daily cron & Zapier ready. Launch Discount ($1.50/1k tenders vs $200 manual research).",
       "command": "npx",
       "args": [
         "-y",
@@ -256,12 +256,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/indian-public-tender-parser"
       },
-      "category": "GovTech, Tenders & Procurement",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/indian-public-tender-parser"
     },
     "openrouter-mcp-registry": {
-      "name": "Openrouter MCP Registry MCP Tool",
-      "description": "Extract structured data from openrouter-mcp-registry using zero-proxy async HTTP. Trigger for: openrouter models api, mcp server registry, llm pricing context benchmark",
+      "name": "OpenRouter LLM Token Pricing & MCP Tool Schema Registry MCP Tool",
+      "description": "Extract live AI model token rates, context windows, and Model Context Protocol (MCP) tool schemas from OpenRouter. Export clean JSON & CSV for LLM routing. Zero proxies, ultra-fast API. Zapier & webhook ready. Active Launch Discount ($0.50/1k records).",
       "command": "npx",
       "args": [
         "-y",
@@ -271,12 +271,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/openrouter-mcp-registry"
       },
-      "category": "AI Agents & Developer Ecosystem",
+      "category": "Ai",
       "storeUrl": "https://apify.com/deepaksheoran172/openrouter-mcp-registry"
     },
     "domain-protocol-signals-enricher": {
-      "name": "Domain Protocol Signals Enricher MCP Tool",
-      "description": "Extract structured data from domain-protocol-signals-enricher using zero-proxy async HTTP. Trigger for: domain dns http protocol signals, tech stack security enricher, b2b domain intel",
+      "name": "Domain Well-Known Protocol & App Link Signals Enricher MCP Tool",
+      "description": "Enrich domain lists with HTTP/3, CDN edge, security headers, and mobile app link signals (RFC 9116). Export enriched datasets to JSON & CSV. Zero proxies, ultra-fast multi-threaded scan. Zapier & Make ready. Launch Discount ($0.75/1k domains vs $160 manual scan).",
       "command": "npx",
       "args": [
         "-y",
@@ -286,12 +286,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/domain-protocol-signals-enricher"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/domain-protocol-signals-enricher"
     },
     "website-contact-extractor": {
-      "name": "Website Contact Extractor MCP Tool",
-      "description": "Extract structured data from website-contact-extractor using zero-proxy async HTTP. Trigger for: website email phone social scraper, contact page parser, zero proxy lead extractor",
+      "name": "Website Contact & Decision-Maker Email Extractor MCP Tool",
+      "description": "Extract public business emails, phone numbers, WhatsApp links, and social profiles (LinkedIn, X) from corporate websites. Export verified B2B leads to CSV & JSON. Zero proxies, fast SSRF-safe crawl. Zapier ready. Launch Discount ($2.90/1k leads vs $150 agency build).",
       "command": "npx",
       "args": [
         "-y",
@@ -301,12 +301,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/website-contact-extractor"
       },
-      "category": "B2B Lead Gen & Email",
+      "category": "Lead Generation",
       "storeUrl": "https://apify.com/deepaksheoran172/website-contact-extractor"
     },
     "google-keyword-suggester": {
-      "name": "Google Keyword Suggester MCP Tool",
-      "description": "Extract structured data from google-keyword-suggester using zero-proxy async HTTP. Trigger for: google autocomplete keyword api, long tail seo keyword scraper, content research",
+      "name": "Google Keyword Universe & Long-Tail SEO Suggester MCP Tool",
+      "description": "Scrape Google autocomplete search suggestions and long-tail SEO keywords at scale. Export keyword universes to CSV & JSON for content strategy. Fast, zero proxies, Zapier ready. Active Launch Discount ($1.20/1k keywords vs $99 monthly SEO tool subscription).",
       "command": "npx",
       "args": [
         "-y",
@@ -316,12 +316,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/google-keyword-suggester"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Seo Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/google-keyword-suggester"
     },
     "ats-jobs-extractor": {
-      "name": "ATS Jobs Extractor MCP Tool",
-      "description": "Extract structured data from ats-jobs-extractor using zero-proxy async HTTP. Trigger for: greenhouse lever ashby workable scraper, ats job postings api, hiring tracker",
+      "name": "Greenhouse, Lever & Ashby ATS Job & Hiring Scraper MCP Tool",
+      "description": "Scrape open job postings from Greenhouse, Lever, and Ashby by company name without login. Extract job titles, departments, locations, and apply URLs to JSON & CSV. Zero proxies. Zapier & Make ready. Launch Discount ($3.50/1k jobs vs $250 recruitment data).",
       "command": "npx",
       "args": [
         "-y",
@@ -331,12 +331,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/ats-jobs-extractor"
       },
-      "category": "LinkedIn & Recruitment Intent",
+      "category": "Jobs",
       "storeUrl": "https://apify.com/deepaksheoran172/ats-jobs-extractor"
     },
     "app-store-reviews-scraper": {
-      "name": "App Store Reviews Scraper MCP Tool",
-      "description": "Extract structured data from app-store-reviews-scraper using zero-proxy async HTTP. Trigger for: apple app store reviews api, mobile app sentiment scraper, competitor review monitor",
+      "name": "App Store & Google Play Customer Reviews Scraper MCP Tool",
+      "description": "Scrape user reviews, star ratings, and dates from Apple App Store and Google Play without proxies. Export customer feedback to CSV, Excel & JSON for sentiment analysis. Zapier & Make ready. Active Launch Discount ($3.00/1k reviews vs $180 review feed setup).",
       "command": "npx",
       "args": [
         "-y",
@@ -346,12 +346,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/app-store-reviews-scraper"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Marketing",
       "storeUrl": "https://apify.com/deepaksheoran172/app-store-reviews-scraper"
     },
     "website-screenshot-pdf": {
-      "name": "Website Screenshot PDF MCP Tool",
-      "description": "Extract structured data from website-screenshot-pdf using zero-proxy async HTTP. Trigger for: website screenshot to pdf api, headless browser visual capture, compliance archiving",
+      "name": "Website Screenshot & Full-Page PDF Capture Engine MCP Tool",
+      "description": "Capture pixel-perfect full-page screenshots (PNG) and vector document PDFs from web URLs. Fast viewport capture with SSRF protection and zero proxies. Export links to JSON & CSV. Zapier & Make webhook ready. Active Launch Discount ($2.50/1k pages vs $150 screenshot SaaS).",
       "command": "npx",
       "args": [
         "-y",
@@ -361,12 +361,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/website-screenshot-pdf"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/website-screenshot-pdf"
     },
     "google-ads-transparency": {
-      "name": "Google Ads Transparency MCP Tool",
-      "description": "Extract structured data from google-ads-transparency using zero-proxy async HTTP. Trigger for: google ads transparency center scraper, competitor ad spy api, b2b ad intelligence",
+      "name": "Google Ads Transparency & Competitor Creative Spy MCP Tool",
+      "description": "Discover active competitor ad creatives, ad formats, advertiser verified names, and display dates from Google Ads Transparency Center. Export spy intelligence to JSON & CSV. Zero proxies. Zapier ready. Active Launch Discount ($4.50/1k ads vs $250 ad spy SaaS).",
       "command": "npx",
       "args": [
         "-y",
@@ -376,12 +376,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/google-ads-transparency"
       },
-      "category": "E-Commerce & Web Audit",
+      "category": "Marketing",
       "storeUrl": "https://apify.com/deepaksheoran172/google-ads-transparency"
     },
     "scanned-document-ocr": {
-      "name": "Scanned Document OCR MCP Tool",
-      "description": "Extract structured data from scanned-document-ocr using zero-proxy async HTTP. Trigger for: scanned pdf image ocr api, document text extraction, automated invoice parser",
+      "name": "Scanned Document OCR & PDF Text Extractor Tool MCP Tool",
+      "description": "Extract text and structured data from scanned invoices, receipts, and PDF documents. Performs high-accuracy OCR with automatic rotation into clean JSON & TXT. Zero proxies. Zapier & Make ready. Active Launch Discount ($3.50/1k pages vs $200 manual data entry).",
       "command": "npx",
       "args": [
         "-y",
@@ -391,12 +391,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/scanned-document-ocr"
       },
-      "category": "AI Agents & Developer Ecosystem",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/scanned-document-ocr"
     },
     "cisa-kev-delta-monitor": {
-      "name": "CISA KEV Delta Monitor MCP Tool",
-      "description": "Extract structured data from cisa-kev-delta-monitor using zero-proxy async HTTP. Trigger for: cisa known exploited vulnerabilities api, kev cve alert feed, secops automation",
+      "name": "CISA KEV Delta Monitor (Known Exploited Vulnerabilities) MCP Tool",
+      "description": "Monitor CISA's official Known Exploited Vulnerabilities catalog for new actively exploited CVEs. Filter by vendor, date, and due date. Export security alerts to JSON & CSV. Zero proxies. Zapier & Slack webhook ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -406,12 +406,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/cisa-kev-delta-monitor"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/cisa-kev-delta-monitor"
     },
     "osv-dependency-cve-scanner": {
-      "name": "OSV Dependency CVE Scanner MCP Tool",
-      "description": "Extract structured data from osv-dependency-cve-scanner using zero-proxy async HTTP. Trigger for: google osv vulnerability scanner, pypi npm go maven cve checker, sbom security",
+      "name": "OSV Open Source Dependency CVE Scanner MCP Tool",
+      "description": "Scan open source dependencies (npm, PyPI, Go, Maven) for known CVEs and security advisories via Google's OSV database. Export vulnerability audit reports to JSON & CSV. Zero proxies. CI/CD & Zapier ready. PPE ($0.003/item with 10 free preview records).",
       "command": "npx",
       "args": [
         "-y",
@@ -421,12 +421,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/osv-dependency-cve-scanner"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/osv-dependency-cve-scanner"
     },
     "runtime-and-container-eol-radar": {
-      "name": "Runtime And Container EOL Radar MCP Tool",
-      "description": "Extract structured data from runtime-and-container-eol-radar using zero-proxy async HTTP. Trigger for: endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance",
+      "name": "Runtime & Base Container End-of-Life (EOL) Radar MCP Tool",
+      "description": "Track End-of-Life (EOL) dates and support cycles for programming runtimes, Linux distros, and container base images. Export compliance timelines to JSON & CSV. Zero proxies. Zapier & Make ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -436,12 +436,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/runtime-and-container-eol-radar"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/runtime-and-container-eol-radar"
     },
     "npm-package-health-auditor": {
-      "name": "npm Package Health Auditor MCP Tool",
-      "description": "Extract structured data from npm-package-health-auditor using zero-proxy async HTTP. Trigger for: npm package security deprecation auditor, supply chain health check, nodejs audit",
+      "name": "npm Package Health & Deprecation Auditor MCP Tool",
+      "description": "Audit npm packages for maintenance health, deprecation warnings, license compliance, and security advisories. Export package health metrics to JSON & CSV. Zero proxies, ultra-fast. Zapier & CI/CD ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -451,12 +451,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/npm-package-health-auditor"
       },
-      "category": "AI Agents & Developer Ecosystem",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/npm-package-health-auditor"
     },
     "pypi-package-health-auditor": {
-      "name": "PyPI Package Health Auditor MCP Tool",
-      "description": "Extract structured data from pypi-package-health-auditor using zero-proxy async HTTP. Trigger for: pypi python package auditor, yanked release maintainer check, python supply chain",
+      "name": "PyPI Package Health & Security Auditor MCP Tool",
+      "description": "Audit Python packages on PyPI for release staleness, security status, maintainer activity, and wheel availability. Export package audit reports to JSON & CSV. Zero proxies, ultra-fast. Zapier ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -466,12 +466,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/pypi-package-health-auditor"
       },
-      "category": "AI Agents & Developer Ecosystem",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/pypi-package-health-auditor"
     },
     "github-actions-pinning-auditor": {
-      "name": "Github Actions Pinning Auditor MCP Tool",
-      "description": "Extract structured data from github-actions-pinning-auditor using zero-proxy async HTTP. Trigger for: github actions sha pinning security auditor, ci cd supply chain vulnerability",
+      "name": "GitHub Actions Hash Pinning & Workflow Security Auditor MCP Tool",
+      "description": "Audit public GitHub Actions workflows for unpinned third-party actions and supply-chain vulnerabilities. Export hash pinning security reports to JSON & CSV. Zero proxies. Zapier & CI/CD ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -481,12 +481,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/github-actions-pinning-auditor"
       },
-      "category": "Cybersecurity & DevSecOps",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/github-actions-pinning-auditor"
     },
     "openapi-breaking-change-diff": {
-      "name": "OpenAPI Breaking Change Diff MCP Tool",
-      "description": "Extract structured data from openapi-breaking-change-diff using zero-proxy async HTTP. Trigger for: openapi swagger breaking change detector, api contract diff tool, ci cd api check",
+      "name": "OpenAPI Specification Breaking-Change Diff MCP Tool",
+      "description": "Detect breaking changes between two OpenAPI/Swagger specifications across endpoints, request schemas, and responses. Export API diff reports to JSON & CSV. Zero proxies. CI/CD & Zapier ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -496,12 +496,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/openapi-breaking-change-diff"
       },
-      "category": "AI Agents & Developer Ecosystem",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/openapi-breaking-change-diff"
     },
     "statuspage-incident-aggregator": {
-      "name": "Statuspage Incident Aggregator MCP Tool",
-      "description": "Extract structured data from statuspage-incident-aggregator using zero-proxy async HTTP. Trigger for: atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status",
+      "name": "Statuspage Incident & Component Aggregator MCP Tool",
+      "description": "Aggregate live incidents, component outages, and scheduled maintenance feeds from major cloud providers and SaaS Statuspages. Export alerts to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -511,12 +511,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/statuspage-incident-aggregator"
       },
-      "category": "Cloud Health & SRE",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/statuspage-incident-aggregator"
     },
     "aws-health-incident-monitor": {
-      "name": "AWS Health Incident Monitor MCP Tool",
-      "description": "Extract structured data from aws-health-incident-monitor using zero-proxy async HTTP. Trigger for: aws service health dashboard api, amazon web services outage monitor, sre alerting",
+      "name": "AWS Health Incident & Service Status Monitor MCP Tool",
+      "description": "Monitor public AWS Health and service availability status feeds across global regions and services. Export cloud incident alerts to JSON & CSV. Zero proxies, fast polling. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -526,12 +526,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/aws-health-incident-monitor"
       },
-      "category": "Cloud Health & SRE",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/aws-health-incident-monitor"
     },
     "gcp-incident-monitor": {
-      "name": "GCP Incident Monitor MCP Tool",
-      "description": "Extract structured data from gcp-incident-monitor using zero-proxy async HTTP. Trigger for: google cloud status incident api, gcp regional outage monitor, cloud reliability",
+      "name": "Google Cloud Platform (GCP) Incident Monitor MCP Tool",
+      "description": "Monitor Google Cloud Platform (GCP) service health dashboards for regional disruptions and incidents. Export cloud infrastructure alerts to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -541,12 +541,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/gcp-incident-monitor"
       },
-      "category": "Cloud Health & SRE",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/gcp-incident-monitor"
     },
     "azure-status-feed-monitor": {
-      "name": "Azure Status Feed Monitor MCP Tool",
-      "description": "Extract structured data from azure-status-feed-monitor using zero-proxy async HTTP. Trigger for: microsoft azure status rss api, azure cloud outage monitor, devops incident feed",
+      "name": "Microsoft Azure Status & Incident Monitor MCP Tool",
+      "description": "Track Microsoft Azure service health, cloud disruptions, and regional status updates in real-time. Export infrastructure incident logs to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -556,12 +556,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/azure-status-feed-monitor"
       },
-      "category": "Cloud Health & SRE",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/azure-status-feed-monitor"
     },
     "api-sdk-deprecation-radar": {
-      "name": "API SDK Deprecation Radar MCP Tool",
-      "description": "Extract structured data from api-sdk-deprecation-radar using zero-proxy async HTTP. Trigger for: rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes",
+      "name": "Public API & Model Deprecation Radar MCP Tool",
+      "description": "Monitor official deprecation notices and version sunsets for major public APIs, SDKs, and cloud services. Export deprecation radars to JSON & CSV. Zero proxies, fast run. Zapier ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -571,12 +571,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/api-sdk-deprecation-radar"
       },
-      "category": "Cloud Health & SRE",
+      "category": "Developer Tools",
       "storeUrl": "https://apify.com/deepaksheoran172/api-sdk-deprecation-radar"
     },
     "fda-food-and-drug-enforcement-monitor": {
-      "name": "FDA Food And Drug Enforcement Monitor MCP Tool",
-      "description": "Extract structured data from fda-food-and-drug-enforcement-monitor using zero-proxy async HTTP. Trigger for: openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain",
+      "name": "FDA Food & Drug Enforcement & Recall Monitor MCP Tool",
+      "description": "Monitor official FDA enforcement reports for drug, food, and medical device recalls and safety alerts. Export compliance intelligence to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -586,12 +586,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/fda-food-and-drug-enforcement-monitor"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor"
     },
     "cpsc-recall-monitor": {
-      "name": "CPSC Recall Monitor MCP Tool",
-      "description": "Extract structured data from cpsc-recall-monitor using zero-proxy async HTTP. Trigger for: cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance",
+      "name": "CPSC Consumer Product Safety Recall Monitor MCP Tool",
+      "description": "Track Consumer Product Safety Commission (CPSC) product recalls, injury hazards, and remedy announcements. Export safety alerts to clean JSON & CSV. Zero proxies. Zapier & Make ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -601,12 +601,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/cpsc-recall-monitor"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/cpsc-recall-monitor"
     },
     "nhtsa-vehicle-recall-monitor": {
-      "name": "NHTSA Vehicle Recall Monitor MCP Tool",
-      "description": "Extract structured data from nhtsa-vehicle-recall-monitor using zero-proxy async HTTP. Trigger for: nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety",
+      "name": "NHTSA Automotive Vehicle Safety Recall Monitor MCP Tool",
+      "description": "Monitor official NHTSA automotive safety recalls, defect investigations, and compliance campaigns by vehicle make and model. Export recall datasets to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -616,12 +616,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/nhtsa-vehicle-recall-monitor"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor"
     },
     "fda-510k-clearance-intelligence": {
-      "name": "FDA 510(k) Clearance Intelligence MCP Tool",
-      "description": "Extract structured data from fda-510k-clearance-intelligence using zero-proxy async HTTP. Trigger for: openfda 510k medical device clearance api, medtech regulatory approval intelligence",
+      "name": "FDA 510(k) Medical Device Clearance Intelligence MCP Tool",
+      "description": "Track FDA 510(k) premarket notifications and medical device clearances by applicant and device class. Export medical device market data to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -631,12 +631,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/fda-510k-clearance-intelligence"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence"
     },
     "ofac-sdn-delta-screener": {
-      "name": "OFAC SDN Delta Screener MCP Tool",
-      "description": "Extract structured data from ofac-sdn-delta-screener using zero-proxy async HTTP. Trigger for: us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist",
+      "name": "OFAC SDN Sanctions List Screener & Delta Auditor MCP Tool",
+      "description": "Screen and monitor the US Treasury OFAC Specially Designated Nationals (SDN) sanctions list for new entries and status deltas. Export compliance screening to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -646,12 +646,12 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/ofac-sdn-delta-screener"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/ofac-sdn-delta-screener"
     },
     "echa-svhc-rasff-chemical-alert-monitor": {
-      "name": "ECHA SVHC RASFF Chemical Alert Monitor MCP Tool",
-      "description": "Extract structured data from echa-svhc-rasff-chemical-alert-monitor using zero-proxy async HTTP. Trigger for: eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts",
+      "name": "ECHA SVHC European Chemical & Safety Alert Monitor MCP Tool",
+      "description": "Monitor EU European Chemicals Agency (ECHA) SVHC candidate lists and RASFF safety alerts for restricted substances. Export chemical compliance data to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).",
       "command": "npx",
       "args": [
         "-y",
@@ -661,7 +661,7 @@
         "APIFY_TOKEN": "${APIFY_TOKEN}",
         "ACTOR_NAME": "deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor"
       },
-      "category": "Recalls, Compliance & Registries",
+      "category": "Business",
       "storeUrl": "https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor"
     },
     "usaspending-award-intelligence": {

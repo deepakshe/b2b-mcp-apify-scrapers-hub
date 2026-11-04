@@ -1,5 +1,5 @@
 {
-  "name": "Apify Sync - CISA KEV Vulnerability Alert Monitor",
+  "name": "Apify Sync - CISA KEV Delta Monitor (Known Exploited Vulnerabilities)",
   "nodes": [
     {
       "parameters": {
@@ -38,7 +38,7 @@
         },
         "sendBody": true,
         "contentType": "json",
-        "body": "{\"days\": 14, \"maxItems\": 50}",
+        "body": "{\"vendor\": \"Microsoft\", \"days\": 30, \"webhookUrl\": \"\", \"enableDeltaMode\": false, \"maxItems\": 5}",
         "options": {
           "timeout": 300000
         }
@@ -48,21 +48,20 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        450,
+        420,
         300
-      ],
-      "notes": "Sync API Call to Apify Actor deepaksheoran172/cisa-kev-delta-monitor. Zero proxy cost, Pay-Per-Event pricing."
+      ]
     },
     {
       "parameters": {
-        "jsCode": "// Normalizes returned Apify dataset records for downstream CRM/Slack/Database nodes\nconst items = $input.all();\nreturn items.map(item => ({\n  json: {\n    ...item.json,\n    extractedAtUtc: new Date().toISOString(),\n    sourceActor: 'deepaksheoran172/cisa-kev-delta-monitor'\n  }\n}));"
+        "jsCode": "// Filter fresh items and prepare alerts\nconst items = $input.all();\nreturn items.filter(item => item.json && item.json.status !== 'NO_NEW_ITEMS');"
       },
       "id": "3",
-      "name": "Format & Normalize Records",
+      "name": "Filter Output",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        700,
+        640,
         300
       ]
     }
@@ -83,7 +82,7 @@
       "main": [
         [
           {
-            "node": "Format & Normalize Records",
+            "node": "Filter Output",
             "type": "main",
             "index": 0
           }
@@ -91,23 +90,7 @@
       ]
     }
   },
-  "active": false,
   "settings": {
     "executionOrder": "v1"
-  },
-  "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "apify-b2b-fleet-template"
-  },
-  "tags": [
-    {
-      "name": "Apify"
-    },
-    {
-      "name": "Zero-Proxy"
-    },
-    {
-      "name": "B2B"
-    }
-  ]
+  }
 }

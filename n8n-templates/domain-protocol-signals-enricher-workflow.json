@@ -1,0 +1,96 @@
+{
+  "name": "Apify Sync - Domain Well-Known Protocol & App Link Signals Enricher",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * 1-5"
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Daily Schedule (9 AM)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/deepaksheoran172~domain-protocol-signals-enricher/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "token",
+              "value": "={{ $env.APIFY_TOKEN || 'YOUR_APIFY_API_TOKEN' }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "{\"domains\": [\"cloudflare.com\", \"stripe.com\"], \"probe_app_links\": true, \"probe_identity_metadata\": true, \"probe_security_policies\": true, \"probe_domain_files\": true, \"concurrency\": 10, \"request_timeout_secs\": 10, \"max_domains\": 5}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "2",
+      "name": "Run domain-protocol-signals-enricher",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        420,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Filter fresh items and prepare alerts\nconst items = $input.all();\nreturn items.filter(item => item.json && item.json.status !== 'NO_NEW_ITEMS');"
+      },
+      "id": "3",
+      "name": "Filter Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Daily Schedule (9 AM)": {
+      "main": [
+        [
+          {
+            "node": "Run domain-protocol-signals-enricher",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run domain-protocol-signals-enricher": {
+      "main": [
+        [
+          {
+            "node": "Filter Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
