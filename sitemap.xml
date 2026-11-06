@@ -2,283 +2,331 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/gallery.html</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/mcp-servers-manifest.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/api-sdk-deprecation-radar-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/app-store-reviews-scraper-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/ats-jobs-extractor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/aws-health-incident-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/azure-status-feed-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/b2b-decision-maker-email-finder-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/bulk-email-verifier-mx-smtp-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/catalog-feed-normalizer-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/cisa-kev-delta-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/cpsc-recall-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/domain-protocol-signals-enricher-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/domain-security-super-auditor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/echa-svhc-rasff-chemical-alert-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/fda-510k-clearance-intelligence-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/fda-food-and-drug-enforcement-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/gcp-incident-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/github-actions-pinning-auditor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/google-ads-transparency-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/google-keyword-suggester-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/grants-gov-opportunity-matcher-workflow.json</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/indian-public-tender-parser-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/linkedin-hiring-company-lead-enricher-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/linkedin-jobs-scraper-no-login-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/linkedin-public-company-profiler-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/linkedin-remote-salary-filter-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/local-business-website-phone-whatsapp-scraper-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/nhtsa-vehicle-recall-monitor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/npm-package-health-auditor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/ofac-sdn-delta-screener-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/openapi-breaking-change-diff-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/openrouter-mcp-registry-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/osv-dependency-cve-scanner-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/pypi-package-health-auditor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/runtime-and-container-eol-radar-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/sam-gov-opportunity-monitor-workflow.json</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/scanned-document-ocr-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/social-bio-contact-email-extractor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/statuspage-incident-aggregator-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/store-catalog-redirect-extractor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool1_catalog_normalizer_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool2_website_health_checker_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool3_tender_parser_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool4_openrouter_mcp_registry_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool5_store_redirect_extractor_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool6_domain_security_auditor_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/tool7_domain_protocol_enricher_n8n.json</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/website-contact-extractor-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/website-health-checker-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/website-screenshot-pdf-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/youtube-bulk-transcript-captions-scraper-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/youtube-channel-sponsor-email-lead-finder-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/youtube-comments-painpoint-sentiment-miner-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/youtube-shorts-viral-hook-trend-tracker-workflow.json</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
