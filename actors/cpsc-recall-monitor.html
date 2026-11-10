@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="HibTJDzexrmA4d65n3E016kJeNl--oBg9-SpcxC_lNA" />
+  <title>CPSC Recall Monitor — Zero-Proxy Apify Actor & MCP Tool | Deepak Sheoran</title>
+  <meta name="description" content="Enterprise zero-proxy data extraction tool and MCP server for CPSC Recall Monitor. Automated zero-proxy API, n8n workflow, and Claude/Cursor MCP server. $0.003/record with zero proxy fees." />
+  <meta name="keywords" content="cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance, cpsc-recall-monitor, apify actor, zero proxy scraper, mcp server" />
+  <link rel="canonical" href="https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/cpsc-recall-monitor.html" />
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CPSC Recall Monitor — Zero-Proxy Apify Actor & MCP Tool" />
+  <meta property="og:description" content="Enterprise zero-proxy data extraction tool and MCP server for CPSC Recall Monitor." />
+  <meta property="og:url" content="https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/cpsc-recall-monitor.html" />
+  <meta property="og:image" content="https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/icons/cpsc-recall-monitor.png" />
+
+  <!-- Schema.org SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CPSC Recall Monitor - Zero-Proxy Apify API & MCP Tool",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Cloud, API, n8n, Make, MCP",
+    "url": "https://apify.com/deepaksheoran172/cpsc-recall-monitor",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.003",
+      "priceCurrency": "USD",
+      "description": "$3.00 per 1,000 extracted records (Pay-Per-Event, Zero charge on error)"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Deepak Sheoran",
+      "url": "https://github.com/deepakshe"
+    },
+    "keywords": "cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance"
+  }
+  </script>
+  
+  <style>
+    :root {
+      --bg: #090D16;
+      --card-bg: rgba(18, 24, 38, 0.85);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #38BDF8;
+      --green: #10B981;
+      --blue: #2563EB;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .breadcrumb {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      margin-bottom: 32px;
+    }
+    .hero-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .actor-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      object-fit: contain;
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .badge {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #E2E8F0;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .badge-live {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #34D399;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: #00C853;
+      color: #000000;
+    }
+    .btn-primary:hover {
+      background: #00E676;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .feature-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .feature-box h4 {
+      color: var(--accent);
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+    .feature-box p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    pre {
+      background: #020617;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      font-family: ui-monospace, Menlo, Monaco, 'Courier New', monospace;
+      font-size: 0.88rem;
+      color: #E2E8F0;
+      margin: 16px 0;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">← Back to All 63 B2B Scrapers</a> / <span>Recalls, Compliance & Registries</span> / <span>cpsc-recall-monitor</span>
+    </div>
+
+    <div class="card">
+      <div class="hero-header">
+        <img class="actor-icon" src="../icons/cpsc-recall-monitor.png" alt="CPSC Recall Monitor Icon" onerror="this.src='https://apify.com/favicon.ico'" />
+        <div>
+          <h1>CPSC Recall Monitor</h1>
+          <div class="badge-bar">
+            <span class="badge badge-live">🟢 100% Live & Verified</span>
+            <span class="badge">Recalls, Compliance & Registries</span>
+            <span class="badge">$0.003 / Record (Zero Proxy Tax)</span>
+            <span class="badge">RFC 4180 Validated</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:1.05rem;color:#E2E8F0;margin:16px 0;">Enterprise zero-proxy data extraction tool and MCP server for CPSC Recall Monitor.</p>
+
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://apify.com/deepaksheoran172/cpsc-recall-monitor" target="_blank" rel="noopener">🚀 Run on Apify Store</a>
+        <a class="btn btn-secondary" href="https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/n8n-templates/cpsc-recall-monitor-workflow.json" target="_blank" rel="noopener">⚡ 1-Click n8n Template</a>
+        <a class="btn btn-secondary" href="../index.html">🔍 Browse 63 Hub</a>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <h4>⚡ Zero Proxy Tax ($0.00)</h4>
+          <p>Engineered on async HTTP REST/DNS protocols. Zero residential proxy bandwidth fees guaranteed.</p>
+        </div>
+        <div class="feature-box">
+          <h4>🛡️ Zero Charge on Error</h4>
+          <p>Strict Pay-Per-Event billing model. If zero records are extracted, your spend is strictly $0.00.</p>
+        </div>
+        <div class="feature-box">
+          <h4>🤖 Model Context Protocol (MCP)</h4>
+          <p>Instantly callable as a native tool by Claude Desktop, Cursor, and Windsurf AI agents.</p>
+        </div>
+        <div class="feature-box">
+          <h4>⏱️ Sub-5s Execution</h4>
+          <p>Runs cleanly inside a lightweight 512MB RAM container without heavy headless browser overhead.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:28px;margin-bottom:8px;color:#FFFFFF;">Quick Integration Snippet (cURL)</h3>
+      <pre><code>curl -X POST "https://api.apify.com/v2/acts/deepaksheoran172~cpsc-recall-monitor/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{}'</code></pre>
+
+      <h3 style="margin-top:24px;margin-bottom:8px;color:#FFFFFF;">Claude Desktop / Cursor MCP Config</h3>
+      <pre><code>{
+  "mcpServers": {
+    "cpsc-recall-monitor": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN",
+        "ACTOR_NAME": "deepaksheoran172/cpsc-recall-monitor"
+      }
+    }
+  }
+}</code></pre>
+    </div>
+
+    <footer>
+      <p>Part of the <a href="../index.html" style="color:var(--accent);text-decoration:none;">63 Enterprise Apify Fleet</a> by Deepak Sheoran • Hosted on GitHub Pages & Verified by Google Search Console</p>
+    </footer>
+  </div>
+</body>
+</html>
