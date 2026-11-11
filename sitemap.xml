@@ -13,6 +13,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/tools/domain-security-checker.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/tools/shopify-redirect-generator.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/mcp-servers-manifest.json</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
