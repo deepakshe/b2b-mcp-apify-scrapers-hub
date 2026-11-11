@@ -1,0 +1,17 @@
+# Smithery.ai Model Context Protocol (MCP) Server Manifest
+# Repository: deepakshe/b2b-mcp-apify-scrapers-hub
+name: b2b-mcp-apify-scrapers-hub
+version: 1.0.0
+description: 63 Production Zero-Proxy B2B Data Scrapers, Lead Enrichers, and GovTech/SecOps APIs for Claude Desktop, Cursor, and Windsurf AI Agents.
+startCommand:
+  type: stdio
+  config:
+    command: npx
+    args:
+      - "-y"
+      - "@apify/actors-mcp-server"
+    env:
+      APIFY_TOKEN:
+        type: string
+        description: "Your Apify API Token (Free $5/month allowance included)"
+        required: true

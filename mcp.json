@@ -1,0 +1,392 @@
+{
+  "$schema": "https://json.schemastore.org/mcp.json",
+  "name": "b2b-mcp-apify-scrapers-hub",
+  "displayName": "63 Production Zero-Proxy B2B & SecOps MCP Suite",
+  "version": "1.0.0",
+  "description": "63 lightweight, zero-proxy Apify Actors wrapped as native Model Context Protocol (MCP) tools for Claude Desktop, Cursor, and Windsurf.",
+  "author": {
+    "name": "Deepak Sheoran",
+    "url": "https://github.com/deepakshe"
+  },
+  "repository": "https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub",
+  "tools": [
+    {
+      "name": "api-sdk-deprecation-radar",
+      "description": "Extract structured data from api-sdk-deprecation-radar using zero-proxy async HTTP. Trigger for: rfc 8594 sunset deprecation header monitor, api lifecycle radar, sdk breaking changes",
+      "category": "Cloud Health & SRE",
+      "url": "https://apify.com/deepaksheoran172/api-sdk-deprecation-radar"
+    },
+    {
+      "name": "app-store-reviews-scraper",
+      "description": "Extract structured data from app-store-reviews-scraper using zero-proxy async HTTP. Trigger for: apple app store reviews api, mobile app sentiment scraper, competitor review monitor",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/app-store-reviews-scraper"
+    },
+    {
+      "name": "ats-jobs-extractor",
+      "description": "Extract structured data from ats-jobs-extractor using zero-proxy async HTTP. Trigger for: greenhouse lever ashby workable scraper, ats job postings api, hiring tracker",
+      "category": "LinkedIn & Recruitment Intent",
+      "url": "https://apify.com/deepaksheoran172/ats-jobs-extractor"
+    },
+    {
+      "name": "aws-health-incident-monitor",
+      "description": "Extract structured data from aws-health-incident-monitor using zero-proxy async HTTP. Trigger for: aws service health dashboard api, amazon web services outage monitor, sre alerting",
+      "category": "Cloud Health & SRE",
+      "url": "https://apify.com/deepaksheoran172/aws-health-incident-monitor"
+    },
+    {
+      "name": "azure-status-feed-monitor",
+      "description": "Extract structured data from azure-status-feed-monitor using zero-proxy async HTTP. Trigger for: microsoft azure status rss api, azure cloud outage monitor, devops incident feed",
+      "category": "Cloud Health & SRE",
+      "url": "https://apify.com/deepaksheoran172/azure-status-feed-monitor"
+    },
+    {
+      "name": "b2b-decision-maker-email-finder",
+      "description": "Extract structured data from b2b-decision-maker-email-finder using zero-proxy async HTTP. Trigger for: b2b decision maker emails, ceo founder email finder, clay.com alternative, cold email leads",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder"
+    },
+    {
+      "name": "b2b-lead-domain-intelligence-suite",
+      "description": "Extract structured data from b2b-lead-domain-intelligence-suite using zero-proxy async HTTP. Trigger for: b2b company domain enrichment, dns mx security audit, corporate intent intelligence",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite"
+    },
+    {
+      "name": "bulk-email-verifier-mx-smtp",
+      "description": "Extract structured data from bulk-email-verifier-mx-smtp using zero-proxy async HTTP. Trigger for: bulk email verifier, mx smtp validation, millionverifier alternative, n8n email cleaner",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp"
+    },
+    {
+      "name": "catalog-feed-normalizer",
+      "description": "Extract structured data from catalog-feed-normalizer using zero-proxy async HTTP. Trigger for: product catalog normalizer, e-commerce json feed cleaner, merchant center tool",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/catalog-feed-normalizer"
+    },
+    {
+      "name": "cisa-kev-delta-monitor",
+      "description": "Extract structured data from cisa-kev-delta-monitor using zero-proxy async HTTP. Trigger for: cisa known exploited vulnerabilities api, kev cve alert feed, secops automation",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/cisa-kev-delta-monitor"
+    },
+    {
+      "name": "companies-house-event-monitor",
+      "description": "Extract structured data from companies-house-event-monitor using zero-proxy async HTTP. Trigger for: uk companies house registry scraper keyless, british corporate filing kyc monitor",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/companies-house-event-monitor"
+    },
+    {
+      "name": "cpsc-recall-monitor",
+      "description": "Extract structured data from cpsc-recall-monitor using zero-proxy async HTTP. Trigger for: cpsc saferproducts consumer recall api, product hazard monitor, e-commerce compliance",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/cpsc-recall-monitor"
+    },
+    {
+      "name": "dns-record-drift-monitor",
+      "description": "Extract structured data from dns-record-drift-monitor using zero-proxy async HTTP. Trigger for: dns a mx txt cname ns drift monitor, subdomain takeover hijack detector",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/dns-record-drift-monitor"
+    },
+    {
+      "name": "docker-hub-image-staleness-monitor",
+      "description": "Extract structured data from docker-hub-image-staleness-monitor using zero-proxy async HTTP. Trigger for: docker hub container image tag staleness digest monitor, devops registry audit",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor"
+    },
+    {
+      "name": "domain-protocol-signals-enricher",
+      "description": "Extract structured data from domain-protocol-signals-enricher using zero-proxy async HTTP. Trigger for: domain dns http protocol signals, tech stack security enricher, b2b domain intel",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/domain-protocol-signals-enricher"
+    },
+    {
+      "name": "domain-security-super-auditor",
+      "description": "Extract structured data from domain-security-super-auditor using zero-proxy async HTTP. Trigger for: dmarc spf dkim bulk checker, ssl tls security header auditor, domain posture api",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/domain-security-super-auditor"
+    },
+    {
+      "name": "echa-svhc-rasff-chemical-alert-monitor",
+      "description": "Extract structured data from echa-svhc-rasff-chemical-alert-monitor using zero-proxy async HTTP. Trigger for: eu echa svhc candidate list api, reach chemical compliance monitor, rasff alerts",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor"
+    },
+    {
+      "name": "fda-510k-clearance-intelligence",
+      "description": "Extract structured data from fda-510k-clearance-intelligence using zero-proxy async HTTP. Trigger for: openfda 510k medical device clearance api, medtech regulatory approval intelligence",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence"
+    },
+    {
+      "name": "fda-food-and-drug-enforcement-monitor",
+      "description": "Extract structured data from fda-food-and-drug-enforcement-monitor using zero-proxy async HTTP. Trigger for: openfda food drug recall enforcement api, class i ii iii recall monitor, supply chain",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor"
+    },
+    {
+      "name": "gcp-incident-monitor",
+      "description": "Extract structured data from gcp-incident-monitor using zero-proxy async HTTP. Trigger for: google cloud status incident api, gcp regional outage monitor, cloud reliability",
+      "category": "Cloud Health & SRE",
+      "url": "https://apify.com/deepaksheoran172/gcp-incident-monitor"
+    },
+    {
+      "name": "github-actions-pinning-auditor",
+      "description": "Extract structured data from github-actions-pinning-auditor using zero-proxy async HTTP. Trigger for: github actions sha pinning security auditor, ci cd supply chain vulnerability",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/github-actions-pinning-auditor"
+    },
+    {
+      "name": "github-competitive-repo-tracker",
+      "description": "Extract structured data from github-competitive-repo-tracker using zero-proxy async HTTP. Trigger for: github repository star velocity issue tracker, open source competitor intelligence",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/github-competitive-repo-tracker"
+    },
+    {
+      "name": "gleif-lei-resolver",
+      "description": "Extract structured data from gleif-lei-resolver using zero-proxy async HTTP. Trigger for: gleif legal entity identifier lei api, corporate parent child ownership resolver",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/gleif-lei-resolver"
+    },
+    {
+      "name": "google-ads-transparency",
+      "description": "Extract structured data from google-ads-transparency using zero-proxy async HTTP. Trigger for: google ads transparency center scraper, competitor ad spy api, b2b ad intelligence",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/google-ads-transparency"
+    },
+    {
+      "name": "google-keyword-suggester",
+      "description": "Extract structured data from google-keyword-suggester using zero-proxy async HTTP. Trigger for: google autocomplete keyword api, long tail seo keyword scraper, content research",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/google-keyword-suggester"
+    },
+    {
+      "name": "grants-gov-opportunity-matcher",
+      "description": "Extract structured data from grants-gov-opportunity-matcher using zero-proxy async HTTP. Trigger for: grants.gov federal funding api keyless, grant opportunity matcher, non-profit rfp",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher"
+    },
+    {
+      "name": "hacker-news-launch-and-trend-monitor",
+      "description": "Extract structured data from hacker-news-launch-and-trend-monitor using zero-proxy async HTTP. Trigger for: algolia hacker news show hn launch monitor, tech trend velocity scraper",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor"
+    },
+    {
+      "name": "indian-public-tender-parser",
+      "description": "Extract structured data from indian-public-tender-parser using zero-proxy async HTTP. Trigger for: indian government tenders api, eprocurement cppp gem scraper, b2b tender alerts",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/indian-public-tender-parser"
+    },
+    {
+      "name": "linkedin-hiring-company-lead-enricher",
+      "description": "Extract structured data from linkedin-hiring-company-lead-enricher using zero-proxy async HTTP. Trigger for: hiring company lead enricher, b2b recruiting intent signals, headhunter automation",
+      "category": "LinkedIn & Recruitment Intent",
+      "url": "https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher"
+    },
+    {
+      "name": "linkedin-jobs-scraper-no-login",
+      "description": "Extract structured data from linkedin-jobs-scraper-no-login using zero-proxy async HTTP. Trigger for: linkedin jobs scraper no login, zero proxy job board api, hiring intent scraper",
+      "category": "LinkedIn & Recruitment Intent",
+      "url": "https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login"
+    },
+    {
+      "name": "linkedin-public-company-profiler",
+      "description": "Extract structured data from linkedin-public-company-profiler using zero-proxy async HTTP. Trigger for: company profile enricher, firmographic data api, b2b account enrichment",
+      "category": "LinkedIn & Recruitment Intent",
+      "url": "https://apify.com/deepaksheoran172/linkedin-public-company-profiler"
+    },
+    {
+      "name": "linkedin-remote-salary-filter",
+      "description": "Extract structured data from linkedin-remote-salary-filter using zero-proxy async HTTP. Trigger for: remote jobs salary scraper, compensation benchmark api, tech job aggregator",
+      "category": "LinkedIn & Recruitment Intent",
+      "url": "https://apify.com/deepaksheoran172/linkedin-remote-salary-filter"
+    },
+    {
+      "name": "local-business-website-phone-whatsapp-scraper",
+      "description": "Extract structured data from local-business-website-phone-whatsapp-scraper using zero-proxy async HTTP. Trigger for: google maps whatsapp scraper, local business phone email extractor, b2b local leads",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper"
+    },
+    {
+      "name": "nhtsa-vehicle-recall-monitor",
+      "description": "Extract structured data from nhtsa-vehicle-recall-monitor using zero-proxy async HTTP. Trigger for: nhtsa vehicle safety recall api, automotive vin campaign monitor, fleet safety",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor"
+    },
+    {
+      "name": "npm-download-trend-reporter",
+      "description": "Extract structured data from npm-download-trend-reporter using zero-proxy async HTTP. Trigger for: npm package weekly download growth velocity api, developer adoption trend tracker",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/npm-download-trend-reporter"
+    },
+    {
+      "name": "npm-package-health-auditor",
+      "description": "Extract structured data from npm-package-health-auditor using zero-proxy async HTTP. Trigger for: npm package security deprecation auditor, supply chain health check, nodejs audit",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/npm-package-health-auditor"
+    },
+    {
+      "name": "ofac-sdn-delta-screener",
+      "description": "Extract structured data from ofac-sdn-delta-screener using zero-proxy async HTTP. Trigger for: us treasury ofac sdn sanctions screener api, aml kyc compliance check, watchlist",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/ofac-sdn-delta-screener"
+    },
+    {
+      "name": "openapi-breaking-change-diff",
+      "description": "Extract structured data from openapi-breaking-change-diff using zero-proxy async HTTP. Trigger for: openapi swagger breaking change detector, api contract diff tool, ci cd api check",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/openapi-breaking-change-diff"
+    },
+    {
+      "name": "openrouter-mcp-registry",
+      "description": "Extract structured data from openrouter-mcp-registry using zero-proxy async HTTP. Trigger for: openrouter models api, mcp server registry, llm pricing context benchmark",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/openrouter-mcp-registry"
+    },
+    {
+      "name": "opensanctions-screening-enricher",
+      "description": "Extract structured data from opensanctions-screening-enricher using zero-proxy async HTTP. Trigger for: opensanctions global pep sanctions screening api, kyc compliance entity matcher",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/opensanctions-screening-enricher"
+    },
+    {
+      "name": "osv-dependency-cve-scanner",
+      "description": "Extract structured data from osv-dependency-cve-scanner using zero-proxy async HTTP. Trigger for: google osv vulnerability scanner, pypi npm go maven cve checker, sbom security",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/osv-dependency-cve-scanner"
+    },
+    {
+      "name": "package-dependency-graph-enricher",
+      "description": "Extract structured data from package-dependency-graph-enricher using zero-proxy async HTTP. Trigger for: google deps.dev dependency graph openssf scorecard api, transitive package risk",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/package-dependency-graph-enricher"
+    },
+    {
+      "name": "pypi-package-health-auditor",
+      "description": "Extract structured data from pypi-package-health-auditor using zero-proxy async HTTP. Trigger for: pypi python package auditor, yanked release maintainer check, python supply chain",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/pypi-package-health-auditor"
+    },
+    {
+      "name": "rdap-domain-registration-monitor",
+      "description": "Extract structured data from rdap-domain-registration-monitor using zero-proxy async HTTP. Trigger for: icann rdap whois domain expiry registration monitor, brand protection api",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/rdap-domain-registration-monitor"
+    },
+    {
+      "name": "runtime-and-container-eol-radar",
+      "description": "Extract structured data from runtime-and-container-eol-radar using zero-proxy async HTTP. Trigger for: endoflife.date api, python nodejs ubuntu kubernetes eol tracker, devops compliance",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/runtime-and-container-eol-radar"
+    },
+    {
+      "name": "sam-gov-opportunity-monitor",
+      "description": "Extract structured data from sam-gov-opportunity-monitor using zero-proxy async HTTP. Trigger for: sam.gov federal contract opportunities api keyless, govcon rfp solicitation monitor",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor"
+    },
+    {
+      "name": "scanned-document-ocr",
+      "description": "Extract structured data from scanned-document-ocr using zero-proxy async HTTP. Trigger for: scanned pdf image ocr api, document text extraction, automated invoice parser",
+      "category": "AI Agents & Developer Ecosystem",
+      "url": "https://apify.com/deepaksheoran172/scanned-document-ocr"
+    },
+    {
+      "name": "sec-filing-event-intelligence",
+      "description": "Extract structured data from sec-filing-event-intelligence using zero-proxy async HTTP. Trigger for: sec edgar 8-k 10-k 10-q filings api, cik corporate event monitor, financial intel",
+      "category": "Recalls, Compliance & Registries",
+      "url": "https://apify.com/deepaksheoran172/sec-filing-event-intelligence"
+    },
+    {
+      "name": "social-bio-contact-email-extractor",
+      "description": "Extract structured data from social-bio-contact-email-extractor using zero-proxy async HTTP. Trigger for: social media bio email scraper, creator contact extractor, influencer lead generation",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/social-bio-contact-email-extractor"
+    },
+    {
+      "name": "state-and-local-rfp-aggregator",
+      "description": "Extract structured data from state-and-local-rfp-aggregator using zero-proxy async HTTP. Trigger for: us state municipal local rfp bid aggregator, socrata open procurement api",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator"
+    },
+    {
+      "name": "statuspage-incident-aggregator",
+      "description": "Extract structured data from statuspage-incident-aggregator using zero-proxy async HTTP. Trigger for: atlassian statuspage api aggregator, saas outage monitor, cloudflare github datadog status",
+      "category": "Cloud Health & SRE",
+      "url": "https://apify.com/deepaksheoran172/statuspage-incident-aggregator"
+    },
+    {
+      "name": "store-catalog-redirect-extractor",
+      "description": "Extract structured data from store-catalog-redirect-extractor using zero-proxy async HTTP. Trigger for: shopify catalog extractor, e-commerce redirect auditor, store product feed spy",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/store-catalog-redirect-extractor"
+    },
+    {
+      "name": "ted-eu-tender-monitor",
+      "description": "Extract structured data from ted-eu-tender-monitor using zero-proxy async HTTP. Trigger for: eu ted tenders electronic daily api v3, european public procurement monitor",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/ted-eu-tender-monitor"
+    },
+    {
+      "name": "tls-certificate-expiry-auditor",
+      "description": "Extract structured data from tls-certificate-expiry-auditor using zero-proxy async HTTP. Trigger for: ssl tls x509 certificate expiry san auditor, port 443 handshake security scanner",
+      "category": "Cybersecurity & DevSecOps",
+      "url": "https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor"
+    },
+    {
+      "name": "usaspending-award-intelligence",
+      "description": "Extract structured data from usaspending-award-intelligence using zero-proxy async HTTP. Trigger for: usaspending.gov federal contract awards api, government prime contractor intelligence",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/usaspending-award-intelligence"
+    },
+    {
+      "name": "website-contact-extractor",
+      "description": "Extract structured data from website-contact-extractor using zero-proxy async HTTP. Trigger for: website email phone social scraper, contact page parser, zero proxy lead extractor",
+      "category": "B2B Lead Gen & Email",
+      "url": "https://apify.com/deepaksheoran172/website-contact-extractor"
+    },
+    {
+      "name": "website-health-checker",
+      "description": "Extract structured data from website-health-checker using zero-proxy async HTTP. Trigger for: website uptime response checker, broken link technical seo auditor, bulk http status",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/website-health-checker"
+    },
+    {
+      "name": "website-screenshot-pdf",
+      "description": "Extract structured data from website-screenshot-pdf using zero-proxy async HTTP. Trigger for: website screenshot to pdf api, headless browser visual capture, compliance archiving",
+      "category": "E-Commerce & Web Audit",
+      "url": "https://apify.com/deepaksheoran172/website-screenshot-pdf"
+    },
+    {
+      "name": "world-bank-project-pipeline-matcher",
+      "description": "Extract structured data from world-bank-project-pipeline-matcher using zero-proxy async HTTP. Trigger for: world bank project procurement api, global infrastructure funding pipeline",
+      "category": "GovTech, Tenders & Procurement",
+      "url": "https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher"
+    },
+    {
+      "name": "youtube-bulk-transcript-captions-scraper",
+      "description": "Extract structured data from youtube-bulk-transcript-captions-scraper using zero-proxy async HTTP. Trigger for: youtube transcript api, bulk youtube captions downloader, llm rag video data",
+      "category": "YouTube & Social Intelligence",
+      "url": "https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper"
+    },
+    {
+      "name": "youtube-channel-sponsor-email-lead-finder",
+      "description": "Extract structured data from youtube-channel-sponsor-email-lead-finder using zero-proxy async HTTP. Trigger for: youtube sponsor finder, youtuber business email scraper, brand deal lead generation",
+      "category": "YouTube & Social Intelligence",
+      "url": "https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder"
+    },
+    {
+      "name": "youtube-comments-painpoint-sentiment-miner",
+      "description": "Extract structured data from youtube-comments-painpoint-sentiment-miner using zero-proxy async HTTP. Trigger for: youtube comments scraper, audience pain point miner, product research tool",
+      "category": "YouTube & Social Intelligence",
+      "url": "https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner"
+    },
+    {
+      "name": "youtube-shorts-viral-hook-trend-tracker",
+      "description": "Extract structured data from youtube-shorts-viral-hook-trend-tracker using zero-proxy async HTTP. Trigger for: youtube shorts trend tracker, viral hook analyzer, short form video metrics",
+      "category": "YouTube & Social Intelligence",
+      "url": "https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker"
+    }
+  ]
+}
