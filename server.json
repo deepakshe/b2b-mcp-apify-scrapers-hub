@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.deepakshe/b2b-mcp-apify-scrapers-hub",
+  "title": "B2B MCP Apify Scrapers & SecOps Hub",
+  "description": "63 production B2B scrapers, lead intelligence & security auditing tools on Apify: DNS security, catalog extraction, keyword research, ATS jobs, and email verification without proxies.",
+  "version": "1.0.0",
+  "websiteUrl": "https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub",
+  "repository": {
+    "url": "https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@apify/actors-mcp-server",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_TOKEN",
+          "description": "Your Apify API Token ($5 free monthly allowance included)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.apify.com/?tools=deepaksheoran172/b2b-lead-domain-intelligence-suite,deepaksheoran172/store-catalog-redirect-extractor,deepaksheoran172/domain-security-super-auditor"
+      }
+    }
+  ]
+}

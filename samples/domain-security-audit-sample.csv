@@ -1,0 +1,9 @@
+domain,spf_record,dmarc_policy,dmarc_record,spoofing_vulnerability,audit_score,actor_run_url
+shopify.com,v=spf1 include:_spf.google.com include:mail.zendesk.com include:sendgrid.net ~al,REJECT,v=DMARC1; p=reject; pct=100; fo=1; rua=mailto:dmarc-aggregate@shopify.com;ruf=ma,SECURE,95,https://apify.com/deepaksheoran172/domain-security-super-auditor
+stripe.com,v=spf1 ip4:198.2.180.60/32 ip4:13.111.2.227/32 include:spf1.stripe.com include:g,REJECT,v=DMARC1; p=reject; pct=100; fo=1; rua=mailto:dmarc-reports@stripe.com; ruf=mail,SECURE,95,https://apify.com/deepaksheoran172/domain-security-super-auditor
+wecanflyagency.com,v=spf1 include:_spf.google.com include:8841594.spf10.hubspotemail.net ~all,NONE/MISSING,v=DMARC1; p=none;,HIGH_SPOOFING_RISK,45,https://apify.com/deepaksheoran172/domain-security-super-auditor
+niccos.com,v=spf1 include:_spf.example.com ~all,NONE/MISSING,v=DMARC1; p=none;,HIGH_SPOOFING_RISK,45,https://apify.com/deepaksheoran172/domain-security-super-auditor
+stride.se,v=spf1 include:spf.protection.outlook.com include:spf-eu.emailsignatures365.com ,QUARANTINE,v=DMARC1; p=quarantine; pct=100,MEDIUM_RISK,80,https://apify.com/deepaksheoran172/domain-security-super-auditor
+nodusworks.com,v=spf1 include:_spf.google.com include:_spf.odoo.com mx ~all,QUARANTINE,v=DMARC1; p=quarantine; rua=mailto:info@nodusworks.com; fo=1; adkim=r; aspf=r,MEDIUM_RISK,80,https://apify.com/deepaksheoran172/domain-security-super-auditor
+ecomzier.com,v=spf1 include:_spf.google.com ~all,NONE/MISSING,v=DMARC1; p=none; rua=mailto:info@ecomzier.com,HIGH_SPOOFING_RISK,45,https://apify.com/deepaksheoran172/domain-security-super-auditor
+bluehorizonsmarketing.co.uk,v=spf1 +include:_spf.createsend.com +a +mx +ip4:62.182.22.90 +ip4:62.182.22.105 ,NONE/MISSING,v=DMARC1;p=none;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400,HIGH_SPOOFING_RISK,45,https://apify.com/deepaksheoran172/domain-security-super-auditor
