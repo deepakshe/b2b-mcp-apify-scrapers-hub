@@ -1,0 +1,4 @@
+Source URL / Old Path,Shopify Target Handle,Product Title,SKU,Price (USD),Redirect Status,301 Redirect Rule
+/products/ethiopian-ground-coffee-12oz,holiday-reserve-ethiopian-ground-coffee,Holiday Reserve Ethiopian Ground Coffee,COF-ETH-01,19.99,ACTIVE,301 -> /products/holiday-reserve-ethiopian-ground-coffee
+/products/pumpkin-spice-creamer-powder,enhanced-pumpkin-spice-creamer-14oz,"Enhanced Pumpkin Spice Creamer, 14.8 oz",CRM-PMP-14,32.99,ACTIVE,301 -> /products/enhanced-pumpkin-spice-creamer-14oz
+/products/instant-mushroom-latte-packet,mood-booster-instant-mushroom-latte,"The Mood Booster Instant Mushroom Latte, 4.7 oz",LAT-MSH-04,17.99,ACTIVE,301 -> /products/mood-booster-instant-mushroom-latte
