@@ -1,0 +1,8 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "deepakshe"
+  ],
+  "name": "b2b-mcp-apify-scrapers-hub",
+  "description": "63 production B2B scrapers, lead intelligence & security auditing tools on Apify: DNS security, catalog extraction, keyword research, ATS jobs, and email verification without proxies."
+}
