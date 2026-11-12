@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_youtube_comments_painpoint_sentiment_miner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A070B" /><stop offset="50%" stop-color="#3F0C14" /><stop offset="100%" stop-color="#68101E" />
+      <stop offset="0%" stop-color="#1F0407" /><stop offset="50%" stop-color="#3B080E" /><stop offset="100%" stop-color="#140204" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_youtube_comments_painpoint_sentiment_miner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#FBBF24" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FF4D4D" stop-opacity="0.95" /><stop offset="50%" stop-color="#FF0000" stop-opacity="0.5" /><stop offset="100%" stop-color="#B30000" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_youtube_comments_painpoint_sentiment_miner" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF0000" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF0000" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF0000" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,25 +61,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_youtube_comments_painpoint_sentiment_miner)">
     
-        <!-- 3D Conversation Bubbles & Sentiment Graph -->
-        <rect x="130" y="160" width="180" height="110" rx="24" fill="#3B0712" stroke="#F43F5E" stroke-width="3" />
-        <polygon points="160,270 180,270 160,295" fill="#3B0712" />
-        <!-- Mini Comment Lines -->
-        <rect x="155" y="190" width="120" height="8" rx="4" fill="#FDA4AF" />
-        <rect x="155" y="210" width="85" height="8" rx="4" fill="#FECDD3" />
-        <!-- Sentiment Radar Gauge Bubble -->
-        <circle cx="310" cy="270" r="50" fill="#1C1917" stroke="#F59E0B" stroke-width="3" />
-        <path d="M 280 270 Q 310 240 340 270" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" />
-        <circle cx="295" cy="285" r="5" fill="#EF4444" />
-        <circle cx="310" cy="260" r="6" fill="#10B981" />
-        <circle cx="325" cy="280" r="5" fill="#F59E0B" />
-        
+    <!-- YouTube Red Button -->
+    <g transform="translate(0, -20)">
+      <rect x="156" y="150" width="200" height="140" rx="36" fill="#FF0000" />
+      <polygon points="236,192 236,248 286,220" fill="#FFFFFF" />
+    </g>
+    <!-- 3D Glowing Comment Bubble -->
+    <path d="M 170 290 L 342 290 C 360 290, 374 304, 374 322 L 374 372 C 374 390, 360 404, 342 404 L 230 404 L 180 430 L 195 404 L 170 404 C 152 404, 138 390, 138 372 L 138 322 C 138 304, 152 290, 170 290 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="3" />
+    <!-- Sentiment Heatmap Dots -->
+    <circle cx="180" cy="350" r="14" fill="#10B981" /><text x="180" y="355" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">+</text>
+    <circle cx="256" cy="350" r="14" fill="#F59E0B" /><text x="256" y="355" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">~</text>
+    <circle cx="332" cy="350" r="14" fill="#EF4444" /><text x="332" y="355" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">-</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_youtube_comments_painpoint_sentiment_miner)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#450A0A" stroke="#F59E0B" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_youtube_comments_painpoint_sentiment_miner)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">SENT</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#450A0A" stroke="#EF4444" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#F87171" filter="url(#softGlow_youtube_comments_painpoint_sentiment_miner)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">YT MINER</text>
   </g>
 </svg>

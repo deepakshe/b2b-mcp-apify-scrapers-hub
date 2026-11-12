@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_cisa_kev_delta_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040D0A" /><stop offset="50%" stop-color="#08201A" /><stop offset="100%" stop-color="#0C382E" />
+      <stop offset="0%" stop-color="#05100B" /><stop offset="50%" stop-color="#0B2418" /><stop offset="100%" stop-color="#030C08" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_cisa_kev_delta_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" /><stop offset="50%" stop-color="#34D399" stop-opacity="0.4" /><stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_cisa_kev_delta_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#059669" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -62,24 +62,21 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_cisa_kev_delta_monitor)">
     
-        <!-- Fortified Cyber Vault Door with CVE Crosshair -->
-        <circle cx="256" cy="240" r="85" fill="#022C22" stroke="#10B981" stroke-width="4" />
-        <circle cx="256" cy="240" r="60" fill="#064E3B" stroke="#34D399" stroke-width="2" />
-        <!-- Vault Bolts -->
-        <circle cx="256" cy="165" r="6" fill="#6EE7B7" />
-        <circle cx="256" cy="315" r="6" fill="#6EE7B7" />
-        <circle cx="181" cy="240" r="6" fill="#6EE7B7" />
-        <circle cx="331" cy="240" r="6" fill="#6EE7B7" />
-        <!-- Laser Exploit Target Crosshair -->
-        <circle cx="256" cy="240" r="28" fill="#EF4444" stroke="#FFFFFF" stroke-width="2.5" />
-        <text x="256" y="247" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">CVE</text>
-        
+    <!-- CISA Alert Shield -->
+    <polygon points="256,140 346,180 346,270 256,330 166,270 166,180" fill="#450A0A" stroke="#EF4444" stroke-width="4" />
+    <!-- Warning Exclamation Mark -->
+    <polygon points="256,180 263,240 249,240" fill="#FFFFFF" />
+    <circle cx="256" cy="265" r="7" fill="#FFFFFF" />
+    <!-- Delta Matrix Pill -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#1F2937" stroke="#EF4444" stroke-width="2.5" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">ACTIVE ZERO-DAY DELTA</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_cisa_kev_delta_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_cisa_kev_delta_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">KEV</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_cisa_kev_delta_monitor)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">CISA KEV</text>
   </g>
 </svg>

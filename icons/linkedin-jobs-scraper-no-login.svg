@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_linkedin_jobs_scraper_no_login" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06101E" /><stop offset="50%" stop-color="#0B2545" /><stop offset="100%" stop-color="#133E68" />
+      <stop offset="0%" stop-color="#051626" /><stop offset="50%" stop-color="#082A4D" /><stop offset="100%" stop-color="#020D1A" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_linkedin_jobs_scraper_no_login" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8" /><stop offset="50%" stop-color="#38BDF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#93C5FD" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#0A66C2" stop-opacity="0.5" /><stop offset="100%" stop-color="#0284C7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_linkedin_jobs_scraper_no_login" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#0A66C2" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0A66C2" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -65,24 +65,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_linkedin_jobs_scraper_no_login)">
     
-        <!-- Executive Briefcase with Holographic Job Document -->
-        <rect x="146" y="200" width="220" height="150" rx="22" fill="#0B2545" stroke="#38BDF8" stroke-width="3" />
-        <path d="M 206 200 L 206 170 Q 206 155 221 155 L 291 155 Q 306 155 306 170 L 306 200" fill="none" stroke="#38BDF8" stroke-width="3.5" />
-        <!-- Briefcase Latches -->
-        <rect x="180" y="225" width="24" height="18" rx="4" fill="#38BDF8" />
-        <rect x="308" y="225" width="24" height="18" rx="4" fill="#38BDF8" />
-        <!-- Emerging Glowing Job Card -->
-        <rect x="186" y="250" width="140" height="70" rx="10" fill="#0369A1" stroke="#93C5FD" stroke-width="2" />
-        <rect x="206" y="268" width="70" height="8" rx="4" fill="#FFFFFF" />
-        <rect x="206" y="284" width="100" height="6" rx="3" fill="#BAE6FD" />
-        <rect x="206" y="298" width="50" height="6" rx="3" fill="#38BDF8" />
-        
+    <!-- LinkedIn Iconic Blue Square with White 'in' -->
+    <rect x="156" y="146" width="200" height="200" rx="36" fill="#0A66C2" stroke="#38BDF8" stroke-width="2" />
+    <!-- 'i' -->
+    <circle cx="204" cy="202" r="13" fill="#FFFFFF" />
+    <rect x="192" y="228" width="24" height="68" rx="4" fill="#FFFFFF" />
+    <!-- 'n' -->
+    <path d="M 238 228 L 260 228 L 260 242 C 267 232, 278 226, 294 226 C 314 226, 326 238, 326 260 L 326 296 L 302 296 L 302 264 C 302 254, 296 248, 286 248 C 274 248, 262 256, 262 270 L 262 296 L 238 296 Z" fill="#FFFFFF" />
+    <!-- Zero-Ban Guest Radar Badge -->
+    <rect x="146" y="372" width="220" height="36" rx="18" fill="#0C2D48" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="168" cy="390" r="6" fill="#10B981" />
+    <text x="264" y="396" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">PUBLIC GUEST API</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_linkedin_jobs_scraper_no_login)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#0C2340" stroke="#38BDF8" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#7DD3FC" filter="url(#softGlow_linkedin_jobs_scraper_no_login)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">JOBS</text>
+    <rect x="298" y="56" width="150" height="42" rx="21" fill="#082F49" stroke="#0A66C2" stroke-width="2.2" />
+    <circle cx="318" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_linkedin_jobs_scraper_no_login)" />
+    <text x="382" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">LI JOBS</text>
   </g>
 </svg>

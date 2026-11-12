@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_nhtsa_vehicle_recall_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#191106" /><stop offset="50%" stop-color="#32220C" /><stop offset="100%" stop-color="#130C04" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_nhtsa_vehicle_recall_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#D97706" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_nhtsa_vehicle_recall_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,10 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_nhtsa_vehicle_recall_monitor)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
+          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
+          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
+          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
         </g>
         
 
@@ -65,23 +61,25 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_nhtsa_vehicle_recall_monitor)">
     
-        <!-- Automotive Vehicle Chassis with Recall Diagnostic Beacon -->
-        <path d="M 160 260 L 190 200 L 322 200 L 352 260 L 362 270 L 150 270 Z" fill="#2E1024" stroke="#BE123C" stroke-width="3.5" />
-        <!-- Wheels -->
-        <circle cx="195" cy="275" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="3" />
-        <circle cx="195" cy="275" r="8" fill="#F43F5E" />
-        <circle cx="317" cy="275" r="22" fill="#0F172A" stroke="#E11D48" stroke-width="3" />
-        <circle cx="317" cy="275" r="8" fill="#F43F5E" />
-        <!-- Alert Emergency Beacon on Roof -->
-        <polygon points="248,190 264,190 270,200 242,200" fill="#F59E0B" />
-        <circle cx="256" cy="180" r="10" fill="#EF4444" stroke="#FDE047" stroke-width="2" />
-        
+    <!-- Aerodynamic Sports Car Front Profile -->
+    <path d="M 160 270 L 190 200 L 322 200 L 352 270 L 360 290 L 152 290 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="3" />
+    <!-- Windshield -->
+    <polygon points="200,205 312,205 330,250 182,250" fill="#0EA5E9" opacity="0.6" />
+    <!-- Headlights -->
+    <ellipse cx="180" cy="275" rx="14" ry="7" fill="#FEF08A" />
+    <ellipse cx="332" cy="275" rx="14" ry="7" fill="#FEF08A" />
+    <!-- Flashing Warning Beacon on Roof -->
+    <circle cx="256" cy="180" r="14" fill="#F59E0B" stroke="#FEF08A" stroke-width="3" />
+    <!-- Automotive Safety Pill -->
+    <rect x="146" y="346" width="220" height="38" rx="19" fill="#1F2937" stroke="#F59E0B" stroke-width="2.5" />
+    <text x="256" y="370" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">VIN &amp; SAFETY RECALL</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_nhtsa_vehicle_recall_monitor)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_nhtsa_vehicle_recall_monitor)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">NHTSA</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#451A03" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_nhtsa_vehicle_recall_monitor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">NHTSA AUTO</text>
   </g>
 </svg>

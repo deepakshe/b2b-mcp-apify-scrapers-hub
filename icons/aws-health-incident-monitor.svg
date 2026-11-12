@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_aws_health_incident_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#0E141D" /><stop offset="50%" stop-color="#192330" /><stop offset="100%" stop-color="#0A0F17" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_aws_health_incident_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FF9900" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#FBBF24" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_aws_health_incident_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF9900" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF9900" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF9900" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,22 +61,20 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_aws_health_incident_monitor)">
     
-        <!-- AWS Cloud Server Cube with Diagnostic Beacon -->
-        <polygon points="256,150 336,195 256,240 176,195" fill="#431407" stroke="#F97316" stroke-width="2.5" />
-        <polygon points="176,195 256,240 256,325 176,280" fill="#1C1917" stroke="#F97316" stroke-width="2.5" />
-        <polygon points="336,195 256,240 256,325 336,280" fill="#292524" stroke="#F97316" stroke-width="2.5" />
-        <!-- Orange AWS Smile Arrow Motif -->
-        <path d="M 200 270 Q 256 300 312 270" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" />
-        <polygon points="316,270 306,260 308,275" fill="#F59E0B" />
-        <!-- Green Diagnostic LED Sensor -->
-        <circle cx="256" cy="195" r="12" fill="#10B981" stroke="#A7F3D0" stroke-width="2" />
-        
+    <!-- AWS Cloud -->
+    <path d="M 190 260 C 170 260, 155 245, 155 225 C 155 208, 168 194, 184 191 C 192 165, 218 145, 250 145 C 285 145, 314 170, 318 202 C 334 205, 345 218, 345 235 C 345 255, 330 260, 310 260 Z" fill="#1E293B" stroke="#FF9900" stroke-width="3.5" />
+    <!-- Iconic Vibrant AWS Orange Curved Smile Arrow -->
+    <path d="M 160 300 C 220 350, 300 350, 350 300" fill="none" stroke="#FF9900" stroke-width="14" stroke-linecap="round" />
+    <polygon points="350,300 346,270 320,290" fill="#FF9900" />
+    <!-- SRE Health Pulse -->
+    <path d="M 170 220 L 220 220 L 235 190 L 255 240 L 270 210 L 285 220 L 330 220" fill="none" stroke="#10B981" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_aws_health_incident_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_aws_health_incident_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">AWS</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#232F3E" stroke="#FF9900" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_aws_health_incident_monitor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFFFF" letter-spacing="1.5">AWS HEALTH</text>
   </g>
 </svg>

@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_local_business_website_phone_whatsapp_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D1A" /><stop offset="50%" stop-color="#151C3B" /><stop offset="100%" stop-color="#1E295A" />
+      <stop offset="0%" stop-color="#061A14" /><stop offset="50%" stop-color="#0B3026" /><stop offset="100%" stop-color="#03120E" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_local_business_website_phone_whatsapp_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" /><stop offset="50%" stop-color="#818CF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#C084FC" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#25D366" stop-opacity="0.95" /><stop offset="50%" stop-color="#128C7E" stop-opacity="0.5" /><stop offset="100%" stop-color="#4ADE80" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_local_business_website_phone_whatsapp_scraper" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#06B6D4" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#25D366" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#25D366" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#25D366" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,13 +48,10 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_local_business_website_phone_whatsapp_scraper)" />
   
-        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
-          <line x1="60" y1="140" x2="452" y2="330" />
-          <line x1="60" y1="200" x2="452" y2="390" />
-          <line x1="60" y1="260" x2="452" y2="450" />
-          <line x1="452" y1="140" x2="60" y2="330" />
-          <line x1="452" y1="200" x2="60" y2="390" />
-          <line x1="452" y1="260" x2="60" y2="450" />
+        <g stroke="#F43F5E" stroke-opacity="0.12" fill="none" stroke-width="2">
+          <circle cx="256" cy="256" r="80" stroke-dasharray="8 6" />
+          <circle cx="256" cy="256" r="130" stroke-dasharray="12 8" />
+          <circle cx="256" cy="256" r="180" stroke-dasharray="16 10" />
         </g>
         
 
@@ -64,23 +61,21 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_local_business_website_phone_whatsapp_scraper)">
     
-        <!-- Storefront Awning & WhatsApp Beacon -->
-        <path d="M 140 220 L 372 220 L 360 260 L 152 260 Z" fill="#1E293B" stroke="#22C55E" stroke-width="3" />
-        <path d="M 140 220 L 175 260 L 210 220 L 256 260 L 302 220 L 337 260 L 372 220" fill="none" stroke="#4ADE80" stroke-width="3" />
-        <!-- Store Glass Base -->
-        <rect x="160" y="260" width="192" height="100" fill="#0B131F" stroke="#22C55E" stroke-width="2.5" />
-        <!-- Glowing WhatsApp Bubble -->
-        <circle cx="295" cy="180" r="38" fill="#15803D" stroke="#4ADE80" stroke-width="2.5" />
-        <path d="M 282 170 C 275 178, 275 188, 282 195 C 288 201, 298 201, 305 194" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
-        <circle cx="215" cy="180" r="28" fill="#0369A1" stroke="#38BDF8" stroke-width="2" />
-        <text x="215" y="186" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">TEL</text>
-        
+    <!-- WhatsApp 3D Chat Bubble -->
+    <circle cx="256" cy="246" r="95" fill="#25D366" stroke="#4ADE80" stroke-width="3" />
+    <path d="M 195 315 L 165 355 L 225 338 Z" fill="#128C7E" />
+    <!-- White Telephone Handset -->
+    <path d="M 220 195 C 215 190, 205 190, 200 195 L 188 207 C 182 213, 180 222, 184 230 C 196 258, 222 284, 250 296 C 258 300, 267 298, 273 292 L 285 280 C 290 275, 290 265, 285 260 L 265 240 C 260 235, 250 235, 245 240 L 238 247 C 230 242, 224 236, 219 228 L 226 221 C 231 216, 231 206, 226 201 Z" fill="#FFFFFF" />
+    <!-- Store Awning + Lead Pill -->
+    <rect x="156" y="370" width="200" height="36" rx="18" fill="#064E3B" stroke="#25D366" stroke-width="2.5" />
+    <text x="256" y="393" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">PHONE + WHATSAPP</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_local_business_website_phone_whatsapp_scraper)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_local_business_website_phone_whatsapp_scraper)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">WA</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#064E3B" stroke="#25D366" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#4ADE80" filter="url(#softGlow_local_business_website_phone_whatsapp_scraper)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">WHATSAPP</text>
   </g>
 </svg>

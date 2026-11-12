@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_cpsc_recall_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#191106" /><stop offset="50%" stop-color="#32220C" /><stop offset="100%" stop-color="#130C04" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_cpsc_recall_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#D97706" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_cpsc_recall_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,10 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_cpsc_recall_monitor)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
+          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
+          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
+          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
         </g>
         
 
@@ -65,20 +61,21 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_cpsc_recall_monitor)">
     
-        <!-- Warning Safety Hazard Triangle with Recall Scanner -->
-        <polygon points="256,150 356,310 156,310" fill="#4C0519" stroke="#E11D48" stroke-width="4" stroke-linejoin="round" />
-        <rect x="251" y="210" width="10" height="50" rx="5" fill="#FBBF24" />
-        <circle cx="256" cy="280" r="6" fill="#FBBF24" />
-        <!-- Magnifying Glass Scanner -->
-        <circle cx="310" cy="280" r="26" fill="none" stroke="#F43F5E" stroke-width="3.5" />
-        <line x1="330" y1="300" x2="350" y2="320" stroke="#F43F5E" stroke-width="4.5" stroke-linecap="round" />
-        
+    <!-- Consumer Product Safety Shield with Warning Triangle -->
+    <path d="M 256 140 Q 330 140 330 190 Q 330 280 256 330 Q 182 280 182 190 Q 182 140 256 140 Z" fill="#1E293B" stroke="#F59E0B" stroke-width="4" />
+    <polygon points="256,180 296,250 216,250" fill="#F59E0B" stroke="#FEF08A" stroke-width="2" />
+    <circle cx="256" cy="235" r="3.5" fill="#000000" />
+    <line x1="256" y1="205" x2="256" y2="225" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+    <!-- Recall Badge -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#451A03" stroke="#F59E0B" stroke-width="2.5" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">PRODUCT SAFETY RECALL</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_cpsc_recall_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_cpsc_recall_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">CPSC</text>
+    <rect x="234" y="56" width="214" height="42" rx="21" fill="#451A03" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="254" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_cpsc_recall_monitor)" />
+    <text x="350" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">CPSC SAFETY</text>
   </g>
 </svg>

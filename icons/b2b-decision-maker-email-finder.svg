@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_b2b_decision_maker_email_finder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D1A" /><stop offset="50%" stop-color="#151C3B" /><stop offset="100%" stop-color="#1E295A" />
+      <stop offset="0%" stop-color="#0A0E24" /><stop offset="50%" stop-color="#141C48" /><stop offset="100%" stop-color="#080B1C" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_b2b_decision_maker_email_finder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" /><stop offset="50%" stop-color="#818CF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#C084FC" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#6366F1" stop-opacity="0.5" /><stop offset="100%" stop-color="#A855F7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_b2b_decision_maker_email_finder" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#06B6D4" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -64,23 +64,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_b2b_decision_maker_email_finder)">
     
-        <!-- Executive Silhouette & Target Crosshair -->
-        <circle cx="256" cy="205" r="42" fill="#1E293B" stroke="#06B6D4" stroke-width="3" />
-        <path d="M 186 330 C 186 280, 220 265, 256 265 C 292 265, 326 280, 326 330 Z" fill="#1E293B" stroke="#06B6D4" stroke-width="3" />
-        <!-- Radar Target Rings -->
-        <circle cx="256" cy="250" r="95" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 6" />
-        <line x1="256" y1="140" x2="256" y2="360" stroke="#06B6D4" stroke-width="1.8" stroke-opacity="0.6" />
-        <line x1="145" y1="250" x2="367" y2="250" stroke="#06B6D4" stroke-width="1.8" stroke-opacity="0.6" />
-        <!-- Verified Floating Badge -->
-        <rect x="290" y="270" width="70" height="32" rx="16" fill="#0891B2" stroke="#67E8F9" stroke-width="2" />
-        <text x="325" y="292" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">@CEO</text>
-        
+    <!-- Executive Silhouette & Target Crosshair -->
+    <circle cx="256" cy="205" r="44" fill="#1E293B" stroke="#38BDF8" stroke-width="3.5" />
+    <path d="M 180 330 C 180 275, 215 260, 256 260 C 297 260, 332 275, 332 330 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="3.5" />
+    <!-- Radar Target Rings -->
+    <circle cx="256" cy="245" r="95" fill="none" stroke="#6366F1" stroke-width="2" stroke-dasharray="8 8" />
+    <!-- Floating Gold @CEO Pill -->
+    <rect x="270" y="270" width="100" height="36" rx="18" fill="#D97706" stroke="#FEF08A" stroke-width="2.5" />
+    <text x="320" y="293" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">@CEO</text>
+    <!-- Verified Email Tag -->
+    <rect x="156" y="360" width="200" height="34" rx="17" fill="#0C2340" stroke="#38BDF8" stroke-width="2" />
+    <text x="256" y="382" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">DIRECT DIAL &amp; MX VERIFIED</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_b2b_decision_maker_email_finder)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_b2b_decision_maker_email_finder)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">B2B</text>
+    <rect x="234" y="56" width="214" height="42" rx="21" fill="#1E1B4B" stroke="#6366F1" stroke-width="2.2" />
+    <circle cx="254" cy="77" r="5.5" fill="#A855F7" filter="url(#softGlow_b2b_decision_maker_email_finder)" />
+    <text x="350" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">C-LEVEL B2B</text>
   </g>
 </svg>

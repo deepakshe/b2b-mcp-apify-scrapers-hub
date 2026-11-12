@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_github_competitive_repo_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#0D1117" /><stop offset="50%" stop-color="#161B22" /><stop offset="100%" stop-color="#090D12" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_github_competitive_repo_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.9" /><stop offset="50%" stop-color="#6E7681" stop-opacity="0.5" /><stop offset="100%" stop-color="#A78BFA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_github_competitive_repo_tracker" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,11 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_github_competitive_repo_tracker)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#10B981" stroke-opacity="0.14" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M 80 180 L 140 180 L 170 210 L 170 270" /><circle cx="80" cy="180" r="4" fill="#10B981" />
+          <path d="M 432 180 L 372 180 L 342 210 L 342 260" /><circle cx="432" cy="180" r="4" fill="#10B981" />
+          <path d="M 120 380 L 180 380 L 210 350 L 210 310" /><circle cx="120" cy="380" r="4" fill="#10B981" />
+          <path d="M 392 380 L 332 380 L 302 350 L 302 310" /><circle cx="392" cy="380" r="4" fill="#10B981" />
         </g>
         
 
@@ -61,21 +62,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_github_competitive_repo_tracker)">
     
-        <!-- GitHub Branch Tree with Golden Star Velocity -->
-        <path d="M 216 280 L 216 180" stroke="#C084FC" stroke-width="5" stroke-linecap="round" />
-        <path d="M 216 230 C 216 200, 296 210, 296 180" fill="none" stroke="#C084FC" stroke-width="5" stroke-linecap="round" />
-        <circle cx="216" cy="280" r="12" fill="#7C3AED" stroke="#E9D5FF" stroke-width="3" />
-        <circle cx="216" cy="180" r="12" fill="#7C3AED" stroke="#E9D5FF" stroke-width="3" />
-        <circle cx="296" cy="180" r="12" fill="#7C3AED" stroke="#E9D5FF" stroke-width="3" />
-        <!-- Glowing Stargazer Star -->
-        <polygon points="256,280 263,298 282,298 267,310 273,328 256,317 239,328 245,310 230,298 249,298" fill="#FBBF24" stroke="#FDE047" stroke-width="1.5" />
-        
+    <!-- GitHub Octocat Silhouette on Left -->
+    <g transform="translate(190, 230) scale(0.9)">
+      <path d="M 0 -80 C -44 -80, -80 -44, -80 0 C -80 35, -57 65, -25 76 C -21 77, -23 72, -23 69 L -23 44 C -45 49, -50 33, -50 33 C -54 23, -60 20, -60 20 C -67 15, -59 15, -59 15 C -51 16, -47 24, -47 24 C -40 36, -29 32, -25 30 C -24 25, -22 22, -20 20 C -38 18, -56 11, -56 -20 C -56 -29, -53 -36, -47 -42 C -48 -44, -51 -52, -46 -63 C -46 -63, -39 -65, -23 -54 C -16 -56, -8 -57, 0 -57 C 8 -57, 16 -56, 23 -54 C 39 -65, 46 -63, 46 -63 C 51 -52, 48 -44, 47 -42 C 53 -36, 56 -29, 56 -20 C 56 11, 38 18, 20 20 C 22 22, 24 26, 24 32 L 24 69 C 24 72, 22 77, 26 76 C 58 65, 80 35, 80 0 C 80 -44, 44 -80, 0 -80 Z" fill="#FFFFFF" />
+    </g>
+    <!-- 3D Gold Star & Velocity Graph -->
+    <polygon points="330,170 342,206 380,206 349,228 361,264 330,242 299,264 311,228 280,206 318,206" fill="#F59E0B" stroke="#FEF08A" stroke-width="3" />
+    <!-- Rising Velocity Curve -->
+    <path d="M 230 360 C 280 360, 310 320, 370 280" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+    <polygon points="370,280 350,285 362,305" fill="#38BDF8" />
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_github_competitive_repo_tracker)">
-    <rect x="314" y="56" width="134" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="334" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_github_competitive_repo_tracker)" />
-    <text x="390" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">GITHUB</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#161B22" stroke="#8B5CF6" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#A78BFA" filter="url(#softGlow_github_competitive_repo_tracker)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">GH STARS</text>
   </g>
 </svg>

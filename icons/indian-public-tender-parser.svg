@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_indian_public_tender_parser" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0A1124" /><stop offset="50%" stop-color="#14213D" /><stop offset="100%" stop-color="#1E3258" />
+      <stop offset="0%" stop-color="#0A0E1A" /><stop offset="50%" stop-color="#141C33" /><stop offset="100%" stop-color="#0A1324" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_indian_public_tender_parser" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8" /><stop offset="50%" stop-color="#FCD34D" stop-opacity="0.4" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FF9933" stop-opacity="0.95" /><stop offset="50%" stop-color="#138808" stop-opacity="0.6" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_indian_public_tender_parser" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#D97706" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF9933" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF9933" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF9933" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -63,25 +63,26 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_indian_public_tender_parser)">
     
-        <!-- Capitol Dome Pillars with CPPP Procurement Scroll -->
-        <path d="M 210 190 Q 256 140 302 190 Z" fill="#D97706" stroke="#FBBF24" stroke-width="2.5" />
-        <rect x="186" y="190" width="140" height="15" fill="#F59E0B" />
-        <!-- 4 Classical Pillars -->
-        <line x1="200" y1="205" x2="200" y2="280" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
-        <line x1="237" y1="205" x2="237" y2="280" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
-        <line x1="275" y1="205" x2="275" y2="280" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
-        <line x1="312" y1="205" x2="312" y2="280" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
-        <rect x="180" y="280" width="152" height="18" rx="4" fill="#F59E0B" />
-        <!-- Rupee Tender Seal Medallion -->
-        <circle cx="256" cy="330" r="32" fill="#B45309" stroke="#FDE047" stroke-width="3" />
-        <text x="256" y="342" font-family="sans-serif" font-weight="900" font-size="28" fill="#FEF08A" text-anchor="middle">₹</text>
-        
+    <!-- Indian Ashoka Chakra Wheel -->
+    <circle cx="256" cy="220" r="75" fill="none" stroke="#000080" stroke-width="6" />
+    <circle cx="256" cy="220" r="14" fill="#000080" />
+    <!-- 24 Spokes representation -->
+    <g stroke="#000080" stroke-width="2">
+      <line x1="256" y1="145" x2="256" y2="295" />
+      <line x1="181" y1="220" x2="331" y2="220" />
+      <line x1="203" y1="167" x2="309" y2="273" />
+      <line x1="203" y1="273" x2="309" y2="167" />
+    </g>
+    <!-- Golden Procurement Gavel & Tender Scroll -->
+    <rect x="140" y="330" width="232" height="40" rx="10" fill="#FF9933" stroke="#FFFFFF" stroke-width="2" />
+    <text x="256" y="355" font-family="sans-serif" font-weight="900" font-size="15" fill="#000080" text-anchor="middle">BHARAT e-TENDERS</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_indian_public_tender_parser)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#451A03" stroke="#F59E0B" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_indian_public_tender_parser)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">CPPP</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#172554" stroke="#FF9933" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_indian_public_tender_parser)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">GeM / CPPP</text>
   </g>
 </svg>

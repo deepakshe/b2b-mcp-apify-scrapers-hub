@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_website_contact_extractor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D1A" /><stop offset="50%" stop-color="#151C3B" /><stop offset="100%" stop-color="#1E295A" />
+      <stop offset="0%" stop-color="#0A0E24" /><stop offset="50%" stop-color="#141C48" /><stop offset="100%" stop-color="#080B1C" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_website_contact_extractor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" /><stop offset="50%" stop-color="#818CF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#C084FC" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#6366F1" stop-opacity="0.5" /><stop offset="100%" stop-color="#A855F7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_website_contact_extractor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#06B6D4" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -64,26 +64,26 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_website_contact_extractor)">
     
-        <!-- Web Browser Extracting Verified Leads -->
-        <rect x="136" y="150" width="240" height="170" rx="18" fill="#0B132B" stroke="#0EA5E9" stroke-width="3" />
-        <rect x="136" y="150" width="240" height="32" rx="18" fill="#1E293B" />
-        <circle cx="156" cy="166" r="4.5" fill="#EF4444" />
-        <circle cx="170" cy="166" r="4.5" fill="#F59E0B" />
-        <circle cx="184" cy="166" r="4.5" fill="#10B981" />
-        <!-- Floating Extracted Cards -->
-        <rect x="170" y="210" width="172" height="120" rx="14" fill="#0369A1" stroke="#38BDF8" stroke-width="2.5" />
-        <circle cx="205" cy="245" r="16" fill="#38BDF8" />
-        <rect x="232" y="235" width="80" height="8" rx="4" fill="#FFFFFF" />
-        <rect x="232" y="250" width="60" height="6" rx="3" fill="#BAE6FD" />
-        <rect x="190" y="280" width="132" height="24" rx="8" fill="#0284C7" />
-        <text x="256" y="296" font-family="sans-serif" font-weight="800" font-size="12" fill="#FFFFFF" text-anchor="middle">PHONE + EMAIL</text>
-        
+    <!-- Browser Window Frame -->
+    <rect x="140" y="150" width="232" height="160" rx="18" fill="#0B132B" stroke="#0EA5E9" stroke-width="3" />
+    <rect x="140" y="150" width="232" height="30" rx="18" fill="#1E293B" />
+    <circle cx="160" cy="165" r="4.5" fill="#EF4444" />
+    <circle cx="174" cy="165" r="4.5" fill="#F59E0B" />
+    <circle cx="188" cy="165" r="4.5" fill="#10B981" />
+    <!-- Extracted Contact Cards 3D -->
+    <rect x="160" y="210" width="192" height="130" rx="16" fill="#0369A1" stroke="#38BDF8" stroke-width="2.5" />
+    <circle cx="195" cy="245" r="16" fill="#38BDF8" />
+    <rect x="220" y="235" width="90" height="8" rx="4" fill="#FFFFFF" />
+    <rect x="220" y="250" width="70" height="6" rx="3" fill="#BAE6FD" />
+    <rect x="175" y="280" width="162" height="34" rx="10" fill="#0284C7" />
+    <text x="256" y="302" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">PHONE + EMAIL + SOCIAL</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_website_contact_extractor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_website_contact_extractor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">LEAD</text>
+    <rect x="218" y="56" width="230" height="42" rx="21" fill="#1E1B4B" stroke="#6366F1" stroke-width="2.2" />
+    <circle cx="238" cy="77" r="5.5" fill="#A855F7" filter="url(#softGlow_website_contact_extractor)" />
+    <text x="342" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">LEAD EXTRACT</text>
   </g>
 </svg>

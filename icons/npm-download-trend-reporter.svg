@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_npm_download_trend_reporter" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#1F0407" /><stop offset="50%" stop-color="#380C10" /><stop offset="100%" stop-color="#140204" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_npm_download_trend_reporter" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.95" /><stop offset="50%" stop-color="#CB3837" stop-opacity="0.5" /><stop offset="100%" stop-color="#F87171" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_npm_download_trend_reporter" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#CB3837" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#CB3837" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#CB3837" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,14 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_npm_download_trend_reporter)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
+          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
+          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
+          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
+          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
+          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
+          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
+          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
         </g>
         
 
@@ -61,23 +65,28 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_npm_download_trend_reporter)">
     
-        <!-- Ascending Exponential Download Velocity Chart with Rocket -->
-        <rect x="150" y="160" width="212" height="160" rx="18" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="3" />
-        <!-- Bar Chart Columns -->
-        <rect x="175" y="270" width="22" height="35" rx="5" fill="#6D28D9" />
-        <rect x="207" y="245" width="22" height="60" rx="5" fill="#7C3AED" />
-        <rect x="239" y="215" width="22" height="90" rx="5" fill="#8B5CF6" />
-        <rect x="271" y="185" width="22" height="120" rx="5" fill="#A855F7" />
-        <rect x="303" y="155" width="22" height="150" rx="5" fill="#C084FC" />
-        <!-- Upward Arrow Rocket Curve -->
-        <path d="M 175 285 Q 256 260 325 155" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" />
-        
+    <!-- npm Red Cube on Left -->
+    <rect x="130" y="160" width="120" height="85" rx="14" fill="#CB3837" />
+    <g fill="#FFFFFF" transform="translate(145, 180) scale(0.55)">
+      <path d="M 0 0 L 45 0 L 45 80 L 30 80 L 30 30 L 15 30 L 15 80 L 0 80 Z" />
+      <path d="M 55 0 L 105 0 L 105 55 L 75 55 L 75 80 L 55 80 Z M 70 15 L 90 15 L 90 40 L 70 40 Z" />
+      <path d="M 115 0 L 165 0 L 165 80 L 150 80 L 150 30 L 140 30 L 140 80 L 125 80 L 125 30 L 115 30 Z" />
+    </g>
+    <!-- Exponential Download Graph -->
+    <path d="M 140 360 L 220 340 L 290 280 L 370 170" fill="none" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" />
+    <polygon points="370,170 345,178 360,198" fill="#F59E0B" />
+    <!-- Rising Flame -->
+    <circle cx="370" cy="170" r="12" fill="#EF4444" />
+    <!-- 10M+ Downloads Badge -->
+    <rect x="230" y="330" width="150" height="36" rx="18" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+    <text x="305" y="353" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">10M+ DL / MO</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_npm_download_trend_reporter)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_npm_download_trend_reporter)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">TREND</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#450A0A" stroke="#EF4444" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#F87171" filter="url(#softGlow_npm_download_trend_reporter)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">NPM TRENDS</text>
   </g>
 </svg>

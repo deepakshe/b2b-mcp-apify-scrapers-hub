@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_openrouter_mcp_registry" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#120824" /><stop offset="50%" stop-color="#220F45" /><stop offset="100%" stop-color="#0C0519" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_openrouter_mcp_registry" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.95" /><stop offset="50%" stop-color="#EC4899" stop-opacity="0.5" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_openrouter_mcp_registry" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,14 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_openrouter_mcp_registry)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#38BDF8" stroke-opacity="0.12" fill="#38BDF8" fill-opacity="0.25" stroke-width="1.5">
+          <line x1="120" y1="160" x2="200" y2="130" /><circle cx="120" cy="160" r="3" />
+          <line x1="200" y1="130" x2="310" y2="150" /><circle cx="200" cy="130" r="4" />
+          <line x1="310" y1="150" x2="390" y2="190" /><circle cx="310" cy="150" r="3" />
+          <line x1="120" y1="160" x2="160" y2="280" />
+          <line x1="160" y1="280" x2="256" y2="350" /><circle cx="160" cy="280" r="4" />
+          <line x1="256" y1="350" x2="370" y2="320" /><circle cx="256" cy="350" r="4" />
+          <line x1="370" y1="320" x2="390" y2="190" /><circle cx="370" cy="320" r="3" /><circle cx="390" cy="190" r="4" />
         </g>
         
 
@@ -61,30 +65,29 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_openrouter_mcp_registry)">
     
-        <!-- Neural Brain Nexus Connecting LLM Protocols -->
-        <circle cx="256" cy="235" r="48" fill="#2E1065" stroke="#A855F7" stroke-width="3.5" />
-        <!-- 6 Orbital Connected LLM Nodes -->
-        <circle cx="170" cy="170" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <circle cx="342" cy="170" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <circle cx="150" cy="250" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <circle cx="362" cy="250" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <circle cx="200" cy="320" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <circle cx="312" cy="320" r="16" fill="#4C1D95" stroke="#C084FC" stroke-width="2" />
-        <!-- Nexus Links -->
-        <line x1="256" y1="235" x2="170" y2="170" stroke="#8B5CF6" stroke-width="2.5" />
-        <line x1="256" y1="235" x2="342" y2="170" stroke="#8B5CF6" stroke-width="2.5" />
-        <line x1="256" y1="235" x2="150" y2="250" stroke="#8B5CF6" stroke-width="2.5" />
-        <line x1="256" y1="235" x2="362" y2="250" stroke="#8B5CF6" stroke-width="2.5" />
-        <line x1="256" y1="235" x2="200" y2="320" stroke="#8B5CF6" stroke-width="2.5" />
-        <line x1="256" y1="235" x2="312" y2="320" stroke="#8B5CF6" stroke-width="2.5" />
-        <circle cx="256" cy="235" r="15" fill="#C084FC" />
-        
+    <!-- Neural Network Synapse Nodes & MCP Plug -->
+    <g stroke="#C084FC" stroke-width="2.5">
+      <line x1="190" y1="190" x2="256" y2="160" /><circle cx="190" cy="190" r="14" fill="#A855F7" />
+      <line x1="322" y1="190" x2="256" y2="160" /><circle cx="322" cy="190" r="14" fill="#A855F7" />
+      <line x1="256" y1="160" x2="256" y2="240" /><circle cx="256" cy="160" r="18" fill="#EC4899" />
+      <line x1="190" y1="190" x2="256" y2="240" />
+      <line x1="322" y1="190" x2="256" y2="240" />
+    </g>
+    <!-- MCP Interface Connector -->
+    <rect x="200" y="270" width="112" height="50" rx="12" fill="#1E1B4B" stroke="#38BDF8" stroke-width="3" />
+    <rect x="225" y="285" width="14" height="20" rx="3" fill="#38BDF8" />
+    <rect x="250" y="285" width="14" height="20" rx="3" fill="#38BDF8" />
+    <rect x="275" y="285" width="14" height="20" rx="3" fill="#38BDF8" />
+    <!-- OpenRouter Registry Pill -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#2E1065" stroke="#C084FC" stroke-width="2" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">MODEL CONTEXT PROTOCOL</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_openrouter_mcp_registry)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_openrouter_mcp_registry)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">MCP</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#2E1065" stroke="#C084FC" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#EC4899" filter="url(#softGlow_openrouter_mcp_registry)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">OPENROUTER</text>
   </g>
 </svg>

@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_runtime_and_container_eol_radar" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#191106" /><stop offset="50%" stop-color="#32220C" /><stop offset="100%" stop-color="#130C04" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_runtime_and_container_eol_radar" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#D97706" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_runtime_and_container_eol_radar" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,22 +61,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_runtime_and_container_eol_radar)">
     
-        <!-- Runtime Container with End-of-Life Milestone Meter -->
-        <rect x="166" y="170" width="180" height="140" rx="18" fill="#1E1B4B" stroke="#A855F7" stroke-width="3" />
-        <!-- Container Cargo Ribs -->
-        <line x1="206" y1="170" x2="206" y2="310" stroke="#6D28D9" stroke-width="2.5" />
-        <line x1="256" y1="170" x2="256" y2="310" stroke="#6D28D9" stroke-width="2.5" />
-        <line x1="306" y1="170" x2="306" y2="310" stroke="#6D28D9" stroke-width="2.5" />
-        <!-- EOL Warning Alert Seal -->
-        <circle cx="256" cy="330" r="30" fill="#7F1D1D" stroke="#EF4444" stroke-width="3" />
-        <text x="256" y="337" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">EOL</text>
-        
+    <!-- Container Box with Glowing Hourglass -->
+    <polygon points="256,150 336,195 256,240 176,195" fill="#451A03" stroke="#F59E0B" stroke-width="2.5" />
+    <polygon points="176,195 256,240 256,325 176,280" fill="#32220C" stroke="#F59E0B" stroke-width="2.5" />
+    <polygon points="336,195 256,240 256,325 336,280" fill="#191106" stroke="#F59E0B" stroke-width="2.5" />
+    <!-- Hourglass -->
+    <polygon points="240,210 272,210 240,260 272,260" fill="none" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+    <!-- EOL Radar Pill -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#451A03" stroke="#F59E0B" stroke-width="2.5" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">NODE &amp; PYTHON EOL RADAR</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_runtime_and_container_eol_radar)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_runtime_and_container_eol_radar)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">EOL</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#451A03" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_runtime_and_container_eol_radar)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">EOL RADAR</text>
   </g>
 </svg>

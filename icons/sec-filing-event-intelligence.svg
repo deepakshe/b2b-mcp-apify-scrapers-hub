@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_sec_filing_event_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#04150E" /><stop offset="50%" stop-color="#092B1C" /><stop offset="100%" stop-color="#03100A" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_sec_filing_event_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_sec_filing_event_intelligence" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_sec_filing_event_intelligence)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#10B981" stroke-opacity="0.08" stroke-width="1.5">
+          <line x1="60" y1="120" x2="452" y2="120" stroke-dasharray="4 8" />
+          <line x1="60" y1="180" x2="452" y2="180" />
+          <line x1="60" y1="240" x2="452" y2="240" stroke-dasharray="6 6" />
+          <line x1="60" y1="300" x2="452" y2="300" />
+          <line x1="60" y1="360" x2="452" y2="360" stroke-dasharray="4 8" />
+          <line x1="60" y1="420" x2="452" y2="420" />
         </g>
         
 
@@ -65,24 +64,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_sec_filing_event_intelligence)">
     
-        <!-- SEC 10-K / 8-K Filing Dossier & Insider Radar -->
-        <rect x="176" y="150" width="160" height="210" rx="14" fill="#1C1917" stroke="#BE123C" stroke-width="3" />
-        <rect x="196" y="180" width="120" height="30" rx="6" fill="#881337" />
-        <text x="256" y="201" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">FORM 10-K</text>
-        <!-- Document Text Rows -->
-        <rect x="196" y="225" width="120" height="7" rx="3.5" fill="#64748B" />
-        <rect x="196" y="245" width="90" height="7" rx="3.5" fill="#64748B" />
-        <rect x="196" y="265" width="110" height="7" rx="3.5" fill="#64748B" />
-        <!-- Audit Radar Crosshair -->
-        <circle cx="280" cy="310" r="30" fill="#9F1239" stroke="#FDA4AF" stroke-width="2.5" />
-        <circle cx="280" cy="310" r="10" fill="#FFFFFF" />
-        
+    <!-- Official SEC EDGAR Filing Document -->
+    <rect x="160" y="150" width="192" height="160" rx="12" fill="#064E3B" stroke="#34D399" stroke-width="3" />
+    <text x="256" y="195" font-family="sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle">SEC EDGAR</text>
+    <rect x="185" y="215" width="142" height="10" rx="5" fill="#34D399" />
+    <rect x="185" y="235" width="100" height="10" rx="5" fill="#34D399" />
+    <!-- 8-K / 10-K Material Event Red Seal -->
+    <rect x="156" y="270" width="200" height="42" rx="10" fill="#EF4444" stroke="#FFFFFF" stroke-width="2" />
+    <text x="256" y="297" font-family="sans-serif" font-weight="900" font-size="15" fill="#FFFFFF" text-anchor="middle">FORM 8-K / 10-K</text>
+    <!-- Live Filing Feed Pill -->
+    <rect x="146" y="360" width="220" height="34" rx="17" fill="#064E3B" stroke="#10B981" stroke-width="2" />
+    <text x="256" y="382" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">REAL-TIME FILING ALERTS</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_sec_filing_event_intelligence)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_sec_filing_event_intelligence)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">SEC</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#064E3B" stroke="#10B981" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_sec_filing_event_intelligence)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">SEC EDGAR</text>
   </g>
 </svg>

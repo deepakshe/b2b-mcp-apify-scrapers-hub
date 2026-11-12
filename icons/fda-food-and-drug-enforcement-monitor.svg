@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_fda_food_and_drug_enforcement_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#1A080C" /><stop offset="50%" stop-color="#341118" /><stop offset="100%" stop-color="#120508" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_fda_food_and_drug_enforcement_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.95" /><stop offset="50%" stop-color="#E11D48" stop-opacity="0.5" /><stop offset="100%" stop-color="#FDA4AF" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_fda_food_and_drug_enforcement_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -65,25 +65,26 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_fda_food_and_drug_enforcement_monitor)">
     
-        <!-- Split Pharmaceutical Capsule & Compliance Shield -->
-        <g transform="translate(256, 230) rotate(-40)">
-          <!-- Left Half Capsule (Red) -->
-          <path d="M -60 -25 L -10 -25 L -10 25 L -60 25 A 25 25 0 0 1 -60 -25 Z" fill="#E11D48" stroke="#FDA4AF" stroke-width="2.5" />
-          <!-- Right Half Capsule (White) -->
-          <path d="M -10 -25 L 40 -25 A 25 25 0 0 1 40 25 L -10 25 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5" />
-          <!-- Separation seam -->
-          <line x1="-10" y1="-25" x2="-10" y2="25" stroke="#94A3B8" stroke-width="2" />
-        </g>
-        <!-- FDA Inspection Stamp -->
-        <circle cx="256" cy="300" r="35" fill="#881337" stroke="#F43F5E" stroke-width="3" />
-        <text x="256" y="307" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">SAFE</text>
-        
+    <!-- Laboratory Flask & Prescription Capsule -->
+    <g transform="translate(200, 230)">
+      <path d="M -15 -60 L 15 -60 L 15 -30 L 45 30 C 50 40, 40 50, 25 50 L -25 50 C -40 50, -50 40, -45 30 L -15 -30 Z" fill="#1E293B" stroke="#EF4444" stroke-width="3" />
+      <line x1="-30" y1="20" x2="30" y2="20" stroke="#EF4444" stroke-width="2" stroke-dasharray="4 4" />
+    </g>
+    <!-- Pill Capsule Right -->
+    <g transform="translate(300, 230) rotate(45)">
+      <rect x="-18" y="-45" width="36" height="45" rx="18" fill="#EF4444" />
+      <rect x="-18" y="0" width="36" height="45" rx="18" fill="#FFFFFF" />
+    </g>
+    <!-- Enforcement Alert Pill -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#4C0519" stroke="#EF4444" stroke-width="2.5" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">FDA ENFORCEMENT</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_fda_food_and_drug_enforcement_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_fda_food_and_drug_enforcement_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">FDA</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_fda_food_and_drug_enforcement_monitor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">FDA RECALL</text>
   </g>
 </svg>

@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_hacker_news_launch_and_trend_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#1F0E05" /><stop offset="50%" stop-color="#3B1C0B" /><stop offset="100%" stop-color="#170A03" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_hacker_news_launch_and_trend_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.95" /><stop offset="50%" stop-color="#FF6600" stop-opacity="0.5" /><stop offset="100%" stop-color="#F97316" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_hacker_news_launch_and_trend_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF6600" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF6600" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_hacker_news_launch_and_trend_monitor)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#10B981" stroke-opacity="0.08" stroke-width="1.5">
+          <line x1="60" y1="120" x2="452" y2="120" stroke-dasharray="4 8" />
+          <line x1="60" y1="180" x2="452" y2="180" />
+          <line x1="60" y1="240" x2="452" y2="240" stroke-dasharray="6 6" />
+          <line x1="60" y1="300" x2="452" y2="300" />
+          <line x1="60" y1="360" x2="452" y2="360" stroke-dasharray="4 8" />
+          <line x1="60" y1="420" x2="452" y2="420" />
         </g>
         
 
@@ -61,19 +64,25 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_hacker_news_launch_and_trend_monitor)">
     
-        <!-- Orange Y-Combinator Faceted Prism & Upvote Triangle -->
-        <rect x="166" y="160" width="180" height="160" rx="28" fill="#EA580C" stroke="#FED7AA" stroke-width="3" />
-        <!-- Y Glyph -->
-        <path d="M 216 205 L 256 250 L 256 295 M 256 250 L 296 205" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-        <!-- Ascending Upvote Triangle -->
-        <polygon points="256,120 280,150 232,150" fill="#22C55E" stroke="#86EFAC" stroke-width="2" />
-        
+    <!-- Y Combinator Official Orange Square -->
+    <rect x="156" y="146" width="200" height="200" rx="28" fill="#FF6600" stroke="#FB923C" stroke-width="3" />
+    <!-- Bold White 'Y' -->
+    <polygon points="210,195 238,250 238,295 274,295 274,250 302,195 270,195 256,230 242,195" fill="#FFFFFF" />
+    <!-- Rising Launch Rocket -->
+    <g transform="translate(320, 290)">
+      <polygon points="40,0 20,40 60,40" fill="#FBBF24" />
+      <polygon points="20,40 40,70 60,40" fill="#EF4444" />
+    </g>
+    <!-- Frontpage Rank #1 Badge -->
+    <rect x="146" y="372" width="220" height="36" rx="18" fill="#431407" stroke="#F97316" stroke-width="2" />
+    <text x="256" y="395" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">#1 ON FRONTPAGE</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_hacker_news_launch_and_trend_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_hacker_news_launch_and_trend_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">HN</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#431407" stroke="#F97316" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#FB923C" filter="url(#softGlow_hacker_news_launch_and_trend_monitor)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">HN TRENDS</text>
   </g>
 </svg>

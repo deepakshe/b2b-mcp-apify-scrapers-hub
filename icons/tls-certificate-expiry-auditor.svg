@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_tls_certificate_expiry_auditor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040D0A" /><stop offset="50%" stop-color="#08201A" /><stop offset="100%" stop-color="#0C382E" />
+      <stop offset="0%" stop-color="#05100B" /><stop offset="50%" stop-color="#0B2418" /><stop offset="100%" stop-color="#030C08" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_tls_certificate_expiry_auditor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" /><stop offset="50%" stop-color="#34D399" stop-opacity="0.4" /><stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_tls_certificate_expiry_auditor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#059669" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -62,20 +62,21 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_tls_certificate_expiry_auditor)">
     
-        <!-- Cryptographic Padlock & Expiry Clock -->
-        <rect x="186" y="210" width="140" height="110" rx="18" fill="#022C22" stroke="#10B981" stroke-width="3" />
-        <path d="M 216 210 L 216 170 Q 216 140 256 140 Q 296 140 296 170 L 296 210" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" />
-        <!-- Center Clock Face -->
-        <circle cx="256" cy="265" r="28" fill="#064E3B" stroke="#6EE7B7" stroke-width="2.5" />
-        <line x1="256" y1="265" x2="256" y2="245" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-        <line x1="256" y1="265" x2="272" y2="265" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-        
+    <!-- TLS Certificate Ribbon -->
+    <rect x="160" y="160" width="192" height="150" rx="16" fill="#064E3B" stroke="#34D399" stroke-width="3" />
+    <circle cx="256" cy="210" r="24" fill="#10B981" />
+    <path d="M 245 210 L 253 218 L 268 202" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <!-- Countdown Expiry Warning Clock -->
+    <rect x="146" y="340" width="220" height="44" rx="22" fill="#1E293B" stroke="#F59E0B" stroke-width="2.5" />
+    <circle cx="175" cy="362" r="10" fill="#F59E0B" />
+    <text x="265" y="368" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">DAYS REMAINING: 14</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_tls_certificate_expiry_auditor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_tls_certificate_expiry_auditor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">TLS</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_tls_certificate_expiry_auditor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">TLS EXPIRY</text>
   </g>
 </svg>

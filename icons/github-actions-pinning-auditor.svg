@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_github_actions_pinning_auditor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040D0A" /><stop offset="50%" stop-color="#08201A" /><stop offset="100%" stop-color="#0C382E" />
+      <stop offset="0%" stop-color="#0D1117" /><stop offset="50%" stop-color="#161B22" /><stop offset="100%" stop-color="#090D12" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_github_actions_pinning_auditor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" /><stop offset="50%" stop-color="#34D399" stop-opacity="0.4" /><stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.9" /><stop offset="50%" stop-color="#6E7681" stop-opacity="0.5" /><stop offset="100%" stop-color="#A78BFA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_github_actions_pinning_auditor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#059669" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -62,22 +62,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_github_actions_pinning_auditor)">
     
-        <!-- CI/CD Workflow Pipeline with Commit SHA Pin Lock -->
-        <circle cx="170" cy="240" r="24" fill="#047857" stroke="#34D399" stroke-width="3" />
-        <circle cx="256" cy="240" r="28" fill="#064E3B" stroke="#6EE7B7" stroke-width="3.5" />
-        <circle cx="342" cy="240" r="24" fill="#047857" stroke="#34D399" stroke-width="3" />
-        <line x1="194" y1="240" x2="228" y2="240" stroke="#34D399" stroke-width="4" />
-        <line x1="284" y1="240" x2="318" y2="240" stroke="#34D399" stroke-width="4" />
-        <!-- Center SHA Lock Pin -->
-        <rect x="246" y="232" width="20" height="16" rx="3" fill="#F59E0B" />
-        <path d="M 251 232 L 251 224 Q 251 218 256 218 Q 261 218 261 224 L 261 232" fill="none" stroke="#F59E0B" stroke-width="2.5" />
-        
+    <!-- GitHub Octocat Silhouette -->
+    <g transform="translate(256, 230) scale(1.1)">
+      <path d="M 0 -80 C -44 -80, -80 -44, -80 0 C -80 35, -57 65, -25 76 C -21 77, -23 72, -23 69 L -23 44 C -45 49, -50 33, -50 33 C -54 23, -60 20, -60 20 C -67 15, -59 15, -59 15 C -51 16, -47 24, -47 24 C -40 36, -29 32, -25 30 C -24 25, -22 22, -20 20 C -38 18, -56 11, -56 -20 C -56 -29, -53 -36, -47 -42 C -48 -44, -51 -52, -46 -63 C -46 -63, -39 -65, -23 -54 C -16 -56, -8 -57, 0 -57 C 8 -57, 16 -56, 23 -54 C 39 -65, 46 -63, 46 -63 C 51 -52, 48 -44, 47 -42 C 53 -36, 56 -29, 56 -20 C 56 11, 38 18, 20 20 C 22 22, 24 26, 24 32 L 24 69 C 24 72, 22 77, 26 76 C 58 65, 80 35, 80 0 C 80 -44, 44 -80, 0 -80 Z" fill="#FFFFFF" />
+    </g>
+    <!-- Golden Security Hash Pin & Lock -->
+    <rect x="290" y="270" width="80" height="70" rx="14" fill="#D97706" stroke="#FEF08A" stroke-width="3" />
+    <path d="M 310 270 L 310 250 C 310 235, 350 235, 350 250 L 350 270" fill="none" stroke="#FEF08A" stroke-width="6" />
+    <circle cx="330" cy="300" r="7" fill="#FFFFFF" />
+    <line x1="330" y1="305" x2="330" y2="325" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_github_actions_pinning_auditor)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_github_actions_pinning_auditor)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">CI/CD</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#161B22" stroke="#8B5CF6" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#A78BFA" filter="url(#softGlow_github_actions_pinning_auditor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">GH ACTIONS</text>
   </g>
 </svg>

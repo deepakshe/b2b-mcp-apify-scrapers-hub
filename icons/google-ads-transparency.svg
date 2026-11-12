@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_google_ads_transparency" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1315" /><stop offset="50%" stop-color="#132426" /><stop offset="100%" stop-color="#1A3D3B" />
+      <stop offset="0%" stop-color="#0D1117" /><stop offset="50%" stop-color="#161B22" /><stop offset="100%" stop-color="#090D12" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_google_ads_transparency" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.4" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.95" /><stop offset="50%" stop-color="#EA4335" stop-opacity="0.6" /><stop offset="100%" stop-color="#34A853" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_google_ads_transparency" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#4285F4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#4285F4" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,13 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_google_ads_transparency)" />
   
-        <g stroke="#10B981" stroke-opacity="0.08" stroke-width="1.5">
-          <line x1="60" y1="120" x2="452" y2="120" stroke-dasharray="4 8" />
-          <line x1="60" y1="180" x2="452" y2="180" />
-          <line x1="60" y1="240" x2="452" y2="240" stroke-dasharray="6 6" />
-          <line x1="60" y1="300" x2="452" y2="300" />
-          <line x1="60" y1="360" x2="452" y2="360" stroke-dasharray="4 8" />
-          <line x1="60" y1="420" x2="452" y2="420" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -64,21 +64,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_google_ads_transparency)">
     
-        <!-- 3D Billboard Creative Screen & Analytics -->
-        <polygon points="156,160 356,160 336,270 176,270" fill="#0F172A" stroke="#F59E0B" stroke-width="3" />
-        <rect x="180" y="180" width="152" height="65" fill="#1E293B" />
-        <polygon points="210,195 240,230 200,230" fill="#10B981" />
-        <circle cx="270" cy="205" r="10" fill="#F59E0B" />
-        <!-- Billboard Stand & Bar Chart -->
-        <line x1="256" y1="270" x2="256" y2="340" stroke="#F59E0B" stroke-width="5" />
-        <line x1="210" y1="340" x2="302" y2="340" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" />
-        
+    <!-- Google Ads Official 3D Geometry -->
+    <g transform="translate(256, 240)">
+      <circle cx="-60" cy="40" r="38" fill="#FBBC05" />
+      <path d="M -60 40 L 40 -60" stroke="#4285F4" stroke-width="76" stroke-linecap="round" />
+      <line x1="-30" y1="-70" x2="70" y2="30" stroke="#34A853" stroke-width="60" stroke-linecap="round" />
+      <!-- Spyglass Loupe -->
+      <circle cx="50" cy="50" r="42" fill="none" stroke="#FFFFFF" stroke-width="8" />
+      <line x1="80" y1="80" x2="115" y2="115" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+    </g>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_google_ads_transparency)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#064E3B" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_google_ads_transparency)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">ADS</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#1E293B" stroke="#4285F4" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#EA4335" filter="url(#softGlow_google_ads_transparency)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFFFF" letter-spacing="1.5">GOOGLE ADS</text>
   </g>
 </svg>

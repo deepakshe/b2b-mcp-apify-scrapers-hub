@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_package_dependency_graph_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#0D1117" /><stop offset="50%" stop-color="#161B22" /><stop offset="100%" stop-color="#090D12" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_package_dependency_graph_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.95" /><stop offset="50%" stop-color="#EA4335" stop-opacity="0.6" /><stop offset="100%" stop-color="#34A853" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_package_dependency_graph_enricher" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#4285F4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#4285F4" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_package_dependency_graph_enricher)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -61,26 +64,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_package_dependency_graph_enricher)">
     
-        <!-- Multi-tier Package Dependency Tree -->
-        <circle cx="256" cy="170" r="24" fill="#6D28D9" stroke="#C084FC" stroke-width="3" />
-        <line x1="256" y1="194" x2="196" y2="250" stroke="#8B5CF6" stroke-width="3" />
-        <line x1="256" y1="194" x2="316" y2="250" stroke="#8B5CF6" stroke-width="3" />
-        <circle cx="196" cy="250" r="18" fill="#4C1D95" stroke="#A855F7" stroke-width="2.5" />
-        <circle cx="316" cy="250" r="18" fill="#4C1D95" stroke="#A855F7" stroke-width="2.5" />
-        <!-- Tier 3 Leaves -->
-        <line x1="196" y1="268" x2="160" y2="315" stroke="#8B5CF6" stroke-width="2" />
-        <line x1="196" y1="268" x2="220" y2="315" stroke="#8B5CF6" stroke-width="2" />
-        <circle cx="160" cy="315" r="12" fill="#2E1065" stroke="#C084FC" stroke-width="2" />
-        <circle cx="220" cy="315" r="12" fill="#2E1065" stroke="#C084FC" stroke-width="2" />
-        <line x1="316" y1="268" x2="350" y2="315" stroke="#8B5CF6" stroke-width="2" />
-        <circle cx="350" cy="315" r="12" fill="#2E1065" stroke="#C084FC" stroke-width="2" />
-        
+    <!-- Directed Acyclic Graph (DAG) Network -->
+    <g stroke="#38BDF8" stroke-width="3" fill="#0F172A">
+      <line x1="256" y1="160" x2="190" y2="230" /><circle cx="256" cy="160" r="18" stroke="#4285F4" stroke-width="3" />
+      <line x1="256" y1="160" x2="322" y2="230" /><circle cx="190" cy="230" r="16" stroke="#34A853" stroke-width="3" />
+      <line x1="190" y1="230" x2="220" y2="300" /><circle cx="322" cy="230" r="16" stroke="#FBBC05" stroke-width="3" />
+      <line x1="322" y1="230" x2="290" y2="300" /><circle cx="220" cy="300" r="14" stroke="#EA4335" stroke-width="3" />
+      <line x1="220" y1="300" x2="290" y2="300" /><circle cx="290" cy="300" r="14" stroke="#34A853" stroke-width="3" />
+    </g>
+    <!-- deps.dev Pill -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#1E293B" stroke="#4285F4" stroke-width="2.5" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">GOOGLE DEPS.DEV GRAPH</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_package_dependency_graph_enricher)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_package_dependency_graph_enricher)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">GRAPH</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#1E293B" stroke="#4285F4" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#EA4335" filter="url(#softGlow_package_dependency_graph_enricher)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFFFF" letter-spacing="1.5">DEPS.DEV</text>
   </g>
 </svg>

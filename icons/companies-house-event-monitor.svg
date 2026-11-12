@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_companies_house_event_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#08101E" /><stop offset="50%" stop-color="#101D36" /><stop offset="100%" stop-color="#060C17" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_companies_house_event_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.95" /><stop offset="50%" stop-color="#EF4444" stop-opacity="0.5" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_companies_house_event_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,12 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_companies_house_event_monitor)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#F59E0B" stroke-opacity="0.12" fill="none" stroke-width="1.5">
+          <circle cx="256" cy="256" r="90" />
+          <circle cx="256" cy="256" r="140" stroke-dasharray="6 6" />
+          <circle cx="256" cy="256" r="190" />
+          <line x1="256" y1="60" x2="256" y2="452" stroke-opacity="0.08" />
+          <line x1="60" y1="256" x2="452" y2="256" stroke-opacity="0.08" />
         </g>
         
 
@@ -65,24 +63,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_companies_house_event_monitor)">
     
-        <!-- British Royal Crown Registry Book with Alert Bell -->
-        <!-- Royal Crown Motif -->
-        <path d="M 216 195 L 230 160 L 256 185 L 282 160 L 296 195 Z" fill="#881337" stroke="#FBBF24" stroke-width="2.5" />
-        <circle cx="230" cy="155" r="4" fill="#FDE047" />
-        <circle cx="256" cy="180" r="5" fill="#FDE047" />
-        <circle cx="282" cy="155" r="4" fill="#FDE047" />
-        <!-- Registry Ledger Document -->
-        <rect x="186" y="200" width="140" height="140" rx="12" fill="#1C1917" stroke="#BE123C" stroke-width="3" />
-        <rect x="206" y="230" width="100" height="7" rx="3.5" fill="#E2E8F0" />
-        <rect x="206" y="250" width="80" height="7" rx="3.5" fill="#94A3B8" />
-        <rect x="206" y="270" width="90" height="7" rx="3.5" fill="#94A3B8" />
-        
+    <!-- British Crown & Royal Crest -->
+    <path d="M 190 260 L 322 260 L 332 200 L 290 225 L 256 170 L 222 225 L 180 200 Z" fill="#D97706" stroke="#FEF08A" stroke-width="3" />
+    <rect x="190" y="260" width="132" height="18" rx="4" fill="#00247D" />
+    <circle cx="210" cy="269" r="4" fill="#FFFFFF" />
+    <circle cx="256" cy="269" r="4" fill="#FFFFFF" />
+    <circle cx="302" cy="269" r="4" fill="#FFFFFF" />
+    <!-- UK Companies House Official Pill -->
+    <rect x="146" y="340" width="220" height="42" rx="10" fill="#00247D" stroke="#FFFFFF" stroke-width="2.5" />
+    <text x="256" y="366" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">COMPANIES HOUSE UK</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_companies_house_event_monitor)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_companies_house_event_monitor)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">UK-CH</text>
+    <rect x="282" y="56" width="166" height="42" rx="21" fill="#1E293B" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="302" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_companies_house_event_monitor)" />
+    <text x="374" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">UK CREST</text>
   </g>
 </svg>

@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_rdap_domain_registration_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040D0A" /><stop offset="50%" stop-color="#08201A" /><stop offset="100%" stop-color="#0C382E" />
+      <stop offset="0%" stop-color="#06121E" /><stop offset="50%" stop-color="#0D2238" /><stop offset="100%" stop-color="#040D17" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_rdap_domain_registration_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" /><stop offset="50%" stop-color="#34D399" stop-opacity="0.4" /><stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.5" /><stop offset="100%" stop-color="#7DD3FC" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_rdap_domain_registration_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#059669" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#0EA5E9" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,11 +48,10 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_rdap_domain_registration_monitor)" />
   
-        <g stroke="#10B981" stroke-opacity="0.14" fill="none" stroke-width="2" stroke-linecap="round">
-          <path d="M 80 180 L 140 180 L 170 210 L 170 270" /><circle cx="80" cy="180" r="4" fill="#10B981" />
-          <path d="M 432 180 L 372 180 L 342 210 L 342 260" /><circle cx="432" cy="180" r="4" fill="#10B981" />
-          <path d="M 120 380 L 180 380 L 210 350 L 210 310" /><circle cx="120" cy="380" r="4" fill="#10B981" />
-          <path d="M 392 380 L 332 380 L 302 350 L 302 310" /><circle cx="392" cy="380" r="4" fill="#10B981" />
+        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
+          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
+          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
+          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
         </g>
         
 
@@ -62,21 +61,21 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_rdap_domain_registration_monitor)">
     
-        <!-- WHOIS / RDAP Registry Book with Hourglass -->
-        <rect x="166" y="160" width="180" height="150" rx="16" fill="#022C22" stroke="#10B981" stroke-width="3" />
-        <line x1="256" y1="160" x2="256" y2="310" stroke="#34D399" stroke-width="3" />
-        <!-- Hourglass Emitted Below -->
-        <polygon points="236,325 276,325 256,345 276,365 236,365 256,345" fill="#F59E0B" stroke="#FDE047" stroke-width="2" />
-        <!-- Verified Checked Domain Emblem -->
-        <circle cx="210" cy="235" r="18" fill="#064E3B" stroke="#6EE7B7" stroke-width="2" />
-        <path d="M 203 235 L 208 240 L 218 230" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-        
+    <!-- Domain Registration Certificate -->
+    <rect x="160" y="160" width="192" height="150" rx="16" fill="#1E293B" stroke="#38BDF8" stroke-width="3" />
+    <text x="256" y="200" font-family="sans-serif" font-weight="900" font-size="20" fill="#38BDF8" text-anchor="middle">.COM DOMAIN</text>
+    <rect x="180" y="220" width="152" height="10" rx="5" fill="#64748B" />
+    <rect x="180" y="240" width="110" height="10" rx="5" fill="#64748B" />
+    <!-- Calendar Renewal Countdown -->
+    <rect x="146" y="356" width="220" height="36" rx="18" fill="#0C2340" stroke="#38BDF8" stroke-width="2" />
+    <text x="256" y="379" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">RDAP EXPIRY TRACKER</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_rdap_domain_registration_monitor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_rdap_domain_registration_monitor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">RDAP</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_rdap_domain_registration_monitor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">RDAP WHOIS</text>
   </g>
 </svg>

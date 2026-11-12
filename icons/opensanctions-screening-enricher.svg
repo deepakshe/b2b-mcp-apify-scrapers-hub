@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_opensanctions_screening_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#05100B" /><stop offset="50%" stop-color="#0B2418" /><stop offset="100%" stop-color="#030C08" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_opensanctions_screening_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.95" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.5" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_opensanctions_screening_enricher" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,11 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_opensanctions_screening_enricher)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#10B981" stroke-opacity="0.14" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M 80 180 L 140 180 L 170 210 L 170 270" /><circle cx="80" cy="180" r="4" fill="#10B981" />
+          <path d="M 432 180 L 372 180 L 342 210 L 342 260" /><circle cx="432" cy="180" r="4" fill="#10B981" />
+          <path d="M 120 380 L 180 380 L 210 350 L 210 310" /><circle cx="120" cy="380" r="4" fill="#10B981" />
+          <path d="M 392 380 L 332 380 L 302 350 L 302 310" /><circle cx="392" cy="380" r="4" fill="#10B981" />
         </g>
         
 
@@ -65,25 +62,24 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_opensanctions_screening_enricher)">
     
-        <!-- International Passport Silhouette with Biometric Screening -->
-        <rect x="176" y="150" width="160" height="220" rx="18" fill="#1C1917" stroke="#E11D48" stroke-width="3" />
-        <!-- Passport Golden Emblem -->
-        <circle cx="256" cy="220" r="32" fill="none" stroke="#FB7185" stroke-width="2.5" />
-        <circle cx="256" cy="220" r="14" fill="#BE123C" />
-        <!-- Biometric Fingerprint / Laser Barcode -->
-        <g stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round">
-          <line x1="206" y1="280" x2="306" y2="280" />
-          <line x1="206" y1="295" x2="280" y2="295" />
-          <line x1="206" y1="310" x2="295" y2="310" />
-          <line x1="206" y1="325" x2="270" y2="325" />
-        </g>
-        
+    <!-- Global World Wireframe Sphere -->
+    <circle cx="256" cy="240" r="85" fill="#0B132B" stroke="#38BDF8" stroke-width="3" />
+    <ellipse cx="256" cy="240" rx="85" ry="35" fill="none" stroke="#38BDF8" stroke-width="2" />
+    <ellipse cx="256" cy="240" rx="35" ry="85" fill="none" stroke="#38BDF8" stroke-width="2" />
+    <!-- Red Screener Reticle -->
+    <circle cx="256" cy="240" r="45" fill="none" stroke="#EF4444" stroke-width="3" stroke-dasharray="6 4" />
+    <line x1="256" y1="180" x2="256" y2="300" stroke="#EF4444" stroke-width="2" />
+    <line x1="196" y1="240" x2="316" y2="240" stroke="#EF4444" stroke-width="2" />
+    <!-- Screen Pill -->
+    <rect x="146" y="360" width="220" height="34" rx="17" fill="#1E293B" stroke="#EF4444" stroke-width="2" />
+    <text x="256" y="382" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">PEP + SANCTIONS LIST</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_opensanctions_screening_enricher)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_opensanctions_screening_enricher)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">PEP</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#022C22" stroke="#10B981" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_opensanctions_screening_enricher)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">SANCTIONS</text>
   </g>
 </svg>

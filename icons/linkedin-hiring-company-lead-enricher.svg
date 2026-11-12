@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_linkedin_hiring_company_lead_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06101E" /><stop offset="50%" stop-color="#0B2545" /><stop offset="100%" stop-color="#133E68" />
+      <stop offset="0%" stop-color="#051626" /><stop offset="50%" stop-color="#082A4D" /><stop offset="100%" stop-color="#020D1A" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_linkedin_hiring_company_lead_enricher" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8" /><stop offset="50%" stop-color="#38BDF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#93C5FD" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#0A66C2" stop-opacity="0.5" /><stop offset="100%" stop-color="#0284C7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_linkedin_hiring_company_lead_enricher" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#0A66C2" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0A66C2" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -65,26 +65,35 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_linkedin_hiring_company_lead_enricher)">
     
-        <!-- Skyscraper Corporate Headquarters with Radar Intent Beam -->
-        <rect x="176" y="170" width="100" height="190" rx="10" fill="#0B2545" stroke="#0284C7" stroke-width="3" />
-        <!-- Building Windows Grid -->
-        <g fill="#38BDF8" opacity="0.6">
-          <rect x="192" y="190" width="16" height="16" rx="3" /><rect x="218" y="190" width="16" height="16" rx="3" /><rect x="244" y="190" width="16" height="16" rx="3" />
-          <rect x="192" y="220" width="16" height="16" rx="3" /><rect x="218" y="220" width="16" height="16" rx="3" /><rect x="244" y="220" width="16" height="16" rx="3" />
-          <rect x="192" y="250" width="16" height="16" rx="3" /><rect x="218" y="250" width="16" height="16" rx="3" /><rect x="244" y="250" width="16" height="16" rx="3" />
-        </g>
-        <rect x="286" y="220" width="70" height="140" rx="8" fill="#082F49" stroke="#0284C7" stroke-width="2.5" />
-        <!-- Intent Radar Signal Waves -->
-        <circle cx="226" cy="140" r="15" fill="#0284C7" stroke="#38BDF8" stroke-width="2.5" />
-        <path d="M 200 120 Q 226 95 252 120" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
-        <path d="M 180 100 Q 226 65 272 100" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" />
-        
+    <!-- LinkedIn Blue Square Background -->
+    <rect x="140" y="140" width="130" height="130" rx="26" fill="#0A66C2" />
+    <circle cx="175" cy="180" r="9" fill="#FFFFFF" />
+    <rect x="166" y="196" width="18" height="46" rx="3" fill="#FFFFFF" />
+    <path d="M 198 196 L 214 196 L 214 206 C 220 198, 228 194, 240 194 C 254 194, 262 202, 262 218 L 262 242 L 244 242 L 244 220 C 244 214, 240 210, 232 210 C 224 210, 216 216, 216 226 L 216 242 L 198 242 Z" fill="#FFFFFF" />
+    <!-- 3D Corporate Skyscraper -->
+    <rect x="290" y="180" width="100" height="190" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="2.5" />
+    <g fill="#38BDF8" opacity="0.7">
+      <rect x="304" y="200" width="16" height="16" rx="3" />
+      <rect x="330" y="200" width="16" height="16" rx="3" />
+      <rect x="356" y="200" width="16" height="16" rx="3" />
+      <rect x="304" y="230" width="16" height="16" rx="3" />
+      <rect x="330" y="230" width="16" height="16" rx="3" />
+      <rect x="356" y="230" width="16" height="16" rx="3" />
+      <rect x="304" y="260" width="16" height="16" rx="3" />
+      <rect x="330" y="260" width="16" height="16" rx="3" />
+      <rect x="356" y="260" width="16" height="16" rx="3" />
+    </g>
+    <!-- WE'RE HIRING Glowing Badge -->
+    <rect x="140" y="356" width="232" height="38" rx="19" fill="#064E3B" stroke="#10B981" stroke-width="2.5" />
+    <circle cx="165" cy="375" r="7" fill="#34D399" />
+    <text x="260" y="381" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">WE'RE HIRING</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_linkedin_hiring_company_lead_enricher)">
-    <rect x="314" y="56" width="134" height="42" rx="21" fill="#0C2340" stroke="#38BDF8" stroke-width="2.2" />
-    <circle cx="334" cy="77" r="5.5" fill="#7DD3FC" filter="url(#softGlow_linkedin_hiring_company_lead_enricher)" />
-    <text x="390" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">INTENT</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#082F49" stroke="#0A66C2" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_linkedin_hiring_company_lead_enricher)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">LI HIRING</text>
   </g>
 </svg>

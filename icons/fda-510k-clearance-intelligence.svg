@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_fda_510k_clearance_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#1A080C" /><stop offset="50%" stop-color="#341118" /><stop offset="100%" stop-color="#120508" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_fda_510k_clearance_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.95" /><stop offset="50%" stop-color="#E11D48" stop-opacity="0.5" /><stop offset="100%" stop-color="#FDA4AF" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_fda_510k_clearance_intelligence" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -65,24 +65,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_fda_510k_clearance_intelligence)">
     
-        <!-- Medical Device Cross with FDA 510(k) Approval Stamp -->
-        <g fill="#881337" stroke="#FDA4AF" stroke-width="3">
-          <rect x="236" y="150" width="40" height="160" rx="8" />
-          <rect x="176" y="210" width="160" height="40" rx="8" />
-        </g>
-        <!-- Center Medical Pulse Seal -->
-        <circle cx="256" cy="230" r="30" fill="#9F1239" stroke="#FFFFFF" stroke-width="2.5" />
-        <path d="M 242 230 L 250 230 L 253 222 L 259 238 L 264 230 L 270 230" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-        <!-- Approved Ribbon -->
-        <rect x="200" y="325" width="112" height="34" rx="17" fill="#15803D" stroke="#86EFAC" stroke-width="2" />
-        <text x="256" y="347" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">APPROVED</text>
-        
+    <!-- Medical Device Blueprint Caduceus -->
+    <rect x="160" y="150" width="192" height="160" rx="14" fill="#0B132B" stroke="#38BDF8" stroke-width="2.5" />
+    <circle cx="256" cy="230" r="45" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" />
+    <!-- Caduceus Rod -->
+    <line x1="256" y1="170" x2="256" y2="280" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <!-- Vibrant 510(k) Cleared Seal -->
+    <rect x="146" y="346" width="220" height="42" rx="21" fill="#065F46" stroke="#34D399" stroke-width="3" />
+    <circle cx="170" cy="367" r="8" fill="#34D399" />
+    <text x="264" y="373" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">510(k) CLEARED</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_fda_510k_clearance_intelligence)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_fda_510k_clearance_intelligence)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">510K</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_fda_510k_clearance_intelligence)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">FDA 510(K)</text>
   </g>
 </svg>

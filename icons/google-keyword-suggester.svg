@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_google_keyword_suggester" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1315" /><stop offset="50%" stop-color="#132426" /><stop offset="100%" stop-color="#1A3D3B" />
+      <stop offset="0%" stop-color="#0D1117" /><stop offset="50%" stop-color="#161B22" /><stop offset="100%" stop-color="#090D12" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_google_keyword_suggester" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.4" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.95" /><stop offset="50%" stop-color="#EA4335" stop-opacity="0.6" /><stop offset="100%" stop-color="#34A853" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_google_keyword_suggester" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#4285F4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#4285F4" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,13 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_google_keyword_suggester)" />
   
-        <g stroke="#10B981" stroke-opacity="0.08" stroke-width="1.5">
-          <line x1="60" y1="120" x2="452" y2="120" stroke-dasharray="4 8" />
-          <line x1="60" y1="180" x2="452" y2="180" />
-          <line x1="60" y1="240" x2="452" y2="240" stroke-dasharray="6 6" />
-          <line x1="60" y1="300" x2="452" y2="300" />
-          <line x1="60" y1="360" x2="452" y2="360" stroke-dasharray="4 8" />
-          <line x1="60" y1="420" x2="452" y2="420" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -64,27 +64,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_google_keyword_suggester)">
     
-        <!-- Search Query Bar & Exploding Keyword Constellation -->
-        <rect x="136" y="170" width="240" height="50" rx="25" fill="#1E293B" stroke="#10B981" stroke-width="2.5" />
-        <circle cx="165" cy="195" r="12" fill="none" stroke="#34D399" stroke-width="3" />
-        <line x1="174" y1="204" x2="185" y2="215" stroke="#34D399" stroke-width="3" stroke-linecap="round" />
-        <rect x="200" y="191" width="120" height="8" rx="4" fill="#94A3B8" />
-        <!-- Semantic Keyword Nodes Floating Below -->
-        <g transform="translate(140, 240)">
-          <rect x="0" y="0" width="105" height="36" rx="18" fill="#065F46" stroke="#34D399" stroke-width="1.8" />
-          <text x="52" y="23" font-family="sans-serif" font-weight="800" font-size="13" fill="#FFFFFF" text-anchor="middle">KEYWORD A</text>
-        </g>
-        <g transform="translate(180, 290)">
-          <rect x="0" y="0" width="115" height="36" rx="18" fill="#047857" stroke="#6EE7B7" stroke-width="1.8" />
-          <text x="57" y="23" font-family="sans-serif" font-weight="800" font-size="13" fill="#FFFFFF" text-anchor="middle">LONG TAIL</text>
-        </g>
-        
+    <!-- Google 4-Color Magnifying Glass -->
+    <circle cx="230" cy="220" r="65" fill="none" stroke="#4285F4" stroke-width="18" />
+    <path d="M 184 174 A 65 65 0 0 1 276 174" fill="none" stroke="#EA4335" stroke-width="18" />
+    <path d="M 276 174 A 65 65 0 0 1 276 266" fill="none" stroke="#FBBC05" stroke-width="18" />
+    <path d="M 276 266 A 65 65 0 0 1 184 266" fill="none" stroke="#34A853" stroke-width="18" />
+    <line x1="280" y1="270" x2="350" y2="340" stroke="#4285F4" stroke-width="22" stroke-linecap="round" />
+    <!-- Autocomplete Search Tags -->
+    <rect x="136" y="360" width="240" height="38" rx="19" fill="#1E293B" stroke="#4285F4" stroke-width="2" />
+    <text x="256" y="384" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" text-anchor="middle">best shopify scraper 2026|</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_google_keyword_suggester)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#064E3B" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_google_keyword_suggester)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">SEO</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#1E293B" stroke="#4285F4" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#EA4335" filter="url(#softGlow_google_keyword_suggester)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFFFF" letter-spacing="1.5">GOOGLE SEO</text>
   </g>
 </svg>

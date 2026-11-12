@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_social_bio_contact_email_extractor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D1A" /><stop offset="50%" stop-color="#151C3B" /><stop offset="100%" stop-color="#1E295A" />
+      <stop offset="0%" stop-color="#0A0E24" /><stop offset="50%" stop-color="#141C48" /><stop offset="100%" stop-color="#080B1C" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_social_bio_contact_email_extractor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" /><stop offset="50%" stop-color="#818CF8" stop-opacity="0.4" /><stop offset="100%" stop-color="#C084FC" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#6366F1" stop-opacity="0.5" /><stop offset="100%" stop-color="#A855F7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_social_bio_contact_email_extractor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#06B6D4" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -64,26 +64,23 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_social_bio_contact_email_extractor)">
     
-        <!-- Smartphone Social Bio Card -->
-        <rect x="166" y="140" width="180" height="250" rx="28" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5" />
-        <rect x="226" y="152" width="60" height="6" rx="3" fill="#334155" />
-        <!-- Avatar & Link Branches -->
-        <circle cx="256" cy="205" r="30" fill="#0284C7" stroke="#38BDF8" stroke-width="2.5" />
-        <rect x="196" y="250" width="120" height="14" rx="7" fill="#1E293B" />
-        <rect x="206" y="275" width="100" height="12" rx="6" fill="#1E293B" />
-        <!-- Extracted Email Floating Node -->
-        <g transform="translate(200, 310)">
-          <rect x="0" y="0" width="112" height="42" rx="21" fill="#0369A1" stroke="#38BDF8" stroke-width="2" />
-          <circle cx="21" cy="21" r="10" fill="#10B981" />
-          <text x="66" y="26" font-family="sans-serif" font-weight="800" font-size="13" fill="#FFFFFF" text-anchor="middle">EMAIL</text>
-        </g>
-        
+    <!-- Smartphone Frame -->
+    <rect x="176" y="130" width="160" height="250" rx="28" fill="#0F172A" stroke="#C084FC" stroke-width="3.5" />
+    <!-- Bio Links -->
+    <circle cx="256" cy="190" r="26" fill="#A855F7" stroke="#FFFFFF" stroke-width="2" />
+    <rect x="200" y="235" width="112" height="18" rx="9" fill="#1E293B" stroke="#EC4899" stroke-width="1.5" />
+    <rect x="200" y="265" width="112" height="18" rx="9" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <!-- Extracted Leads Card -->
+    <rect x="146" y="315" width="220" height="70" rx="16" fill="#1E1B4B" stroke="#38BDF8" stroke-width="2.5" />
+    <text x="256" y="345" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">PHONE + EMAIL EXTRACT</text>
+    <text x="256" y="368" font-family="sans-serif" font-weight="800" font-size="11" fill="#34D399" text-anchor="middle">INSTAGRAM • TIKTOK • X</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_social_bio_contact_email_extractor)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_social_bio_contact_email_extractor)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">BIO</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#1E1B4B" stroke="#6366F1" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#A855F7" filter="url(#softGlow_social_bio_contact_email_extractor)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">BIO LEADS</text>
   </g>
 </svg>

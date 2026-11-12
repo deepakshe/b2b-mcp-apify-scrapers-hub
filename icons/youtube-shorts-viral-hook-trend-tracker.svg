@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_youtube_shorts_viral_hook_trend_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A070B" /><stop offset="50%" stop-color="#3F0C14" /><stop offset="100%" stop-color="#68101E" />
+      <stop offset="0%" stop-color="#1F0407" /><stop offset="50%" stop-color="#3B080E" /><stop offset="100%" stop-color="#140204" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_youtube_shorts_viral_hook_trend_tracker" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#FBBF24" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FF4D4D" stop-opacity="0.95" /><stop offset="50%" stop-color="#FF0000" stop-opacity="0.5" /><stop offset="100%" stop-color="#B30000" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_youtube_shorts_viral_hook_trend_tracker" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF0000" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF0000" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF0000" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,22 +61,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_youtube_shorts_viral_hook_trend_tracker)">
     
-        <!-- 9:16 Vertical Smartphone & Ascending Rocket Flame -->
-        <rect x="176" y="140" width="160" height="250" rx="26" fill="#1C0A0E" stroke="#FB7185" stroke-width="3.5" />
-        <rect x="226" y="152" width="60" height="5" rx="2.5" fill="#4C0519" />
-        <!-- Viral Flame Trajectory -->
-        <path d="M 256 340 Q 230 290 256 250 Q 275 220 256 185 Q 285 230 270 280 Z" fill="#F59E0B" />
-        <path d="M 256 340 Q 242 305 256 275 Q 266 255 256 230 Q 272 260 264 295 Z" fill="#EF4444" />
-        <!-- Ascending Trend Graph Line -->
-        <polyline points="196,310 226,290 256,240 316,190" fill="none" stroke="#FDE047" stroke-width="3.5" stroke-linecap="round" />
-        <circle cx="316" cy="190" r="6" fill="#FDE047" />
-        
+    <!-- Vertical Smartphone Frame -->
+    <rect x="176" y="130" width="160" height="260" rx="30" fill="#0F172A" stroke="#FF4D4D" stroke-width="3.5" />
+    <rect x="236" y="142" width="40" height="6" rx="3" fill="#334155" />
+    <!-- YouTube Shorts Flame / Spiral Icon -->
+    <path d="M 230 200 C 230 180, 250 170, 266 185 C 282 200, 282 220, 266 235 L 246 250 C 230 265, 230 285, 246 300 C 262 315, 282 305, 282 285" fill="none" stroke="#FF0000" stroke-width="14" stroke-linecap="round" />
+    <polygon points="250,225 250,255 272,240" fill="#FFFFFF" />
+    <!-- Viral Velocity Arrow -->
+    <path d="M 140 370 L 220 320 L 372 200" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" />
+    <polygon points="372,200 350,205 365,220" fill="#F59E0B" />
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_youtube_shorts_viral_hook_trend_tracker)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#450A0A" stroke="#F59E0B" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_youtube_shorts_viral_hook_trend_tracker)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">HOOK</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#450A0A" stroke="#EF4444" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#F87171" filter="url(#softGlow_youtube_shorts_viral_hook_trend_tracker)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">YT SHORTS</text>
   </g>
 </svg>

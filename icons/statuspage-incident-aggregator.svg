@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_statuspage_incident_aggregator" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#06121E" /><stop offset="50%" stop-color="#0D2238" /><stop offset="100%" stop-color="#040D17" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_statuspage_incident_aggregator" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.5" /><stop offset="100%" stop-color="#7DD3FC" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_statuspage_incident_aggregator" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#0EA5E9" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,21 +61,33 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_statuspage_incident_aggregator)">
     
-        <!-- Operational Console with 5 Green Uptime Status Bars -->
-        <rect x="146" y="160" width="220" height="170" rx="20" fill="#0F172A" stroke="#8B5CF6" stroke-width="3" />
-        <!-- 4 Uptime Bars -->
-        <rect x="176" y="190" width="160" height="16" rx="8" fill="#065F46" />
-        <rect x="176" y="190" width="160" height="16" rx="8" fill="#10B981" />
-        <rect x="176" y="220" width="160" height="16" rx="8" fill="#10B981" />
-        <rect x="176" y="250" width="160" height="16" rx="8" fill="#10B981" />
-        <rect x="176" y="280" width="140" height="16" rx="8" fill="#F59E0B" />
-        
+    <!-- Statuspage 90-Day Uptime Green Bars -->
+    <g transform="translate(140, 200)">
+      <rect x="0" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="18" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="36" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="54" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="72" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="90" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="108" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="126" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="144" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="162" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="180" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="198" y="0" width="12" height="60" rx="4" fill="#10B981" />
+      <rect x="216" y="0" width="12" height="60" rx="4" fill="#10B981" />
+    </g>
+    <!-- All Systems Operational Pill -->
+    <rect x="140" y="320" width="232" height="46" rx="23" fill="#064E3B" stroke="#10B981" stroke-width="3" />
+    <circle cx="170" cy="343" r="8" fill="#34D399" />
+    <text x="264" y="350" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">ALL SYSTEMS OPERATIONAL</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_statuspage_incident_aggregator)">
-    <rect x="314" y="56" width="134" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="334" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_statuspage_incident_aggregator)" />
-    <text x="390" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">STATUS</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#082F49" stroke="#0EA5E9" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#38BDF8" filter="url(#softGlow_statuspage_incident_aggregator)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">99.99% UP</text>
   </g>
 </svg>

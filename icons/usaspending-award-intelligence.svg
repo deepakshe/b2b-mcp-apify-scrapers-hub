@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_usaspending_award_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0A1124" /><stop offset="50%" stop-color="#14213D" /><stop offset="100%" stop-color="#1E3258" />
+      <stop offset="0%" stop-color="#08101E" /><stop offset="50%" stop-color="#101D36" /><stop offset="100%" stop-color="#060C17" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_usaspending_award_intelligence" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8" /><stop offset="50%" stop-color="#FCD34D" stop-opacity="0.4" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.95" /><stop offset="50%" stop-color="#EF4444" stop-opacity="0.5" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_usaspending_award_intelligence" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#D97706" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -63,24 +63,22 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_usaspending_award_intelligence)">
     
-        <!-- Treasury Vault with Ledger Flow -->
-        <rect x="150" y="160" width="212" height="160" rx="20" fill="#0F172A" stroke="#F59E0B" stroke-width="3" />
-        <!-- Vault Dial Center -->
-        <circle cx="256" cy="240" r="50" fill="#1E293B" stroke="#FBBF24" stroke-width="4" />
-        <circle cx="256" cy="240" r="28" fill="#B45309" stroke="#FDE047" stroke-width="2" />
-        <circle cx="256" cy="240" r="10" fill="#FEF08A" />
-        <!-- Dial spokes -->
-        <line x1="256" y1="190" x2="256" y2="290" stroke="#FBBF24" stroke-width="3" />
-        <line x1="206" y1="240" x2="306" y2="240" stroke="#FBBF24" stroke-width="3" />
-        <!-- Award Ribbon -->
-        <polygon points="256,290 270,350 256,335 242,350" fill="#F59E0B" />
-        
+    <!-- US Capitol Dome Representation -->
+    <path d="M 216 260 L 296 260 L 296 230 C 296 200, 216 200, 216 230 Z" fill="#1E293B" stroke="#F59E0B" stroke-width="3" />
+    <rect x="190" y="260" width="132" height="30" fill="#1E293B" stroke="#F59E0B" stroke-width="3" />
+    <!-- Gold Dollar Coins Vault -->
+    <circle cx="256" cy="320" r="30" fill="#F59E0B" stroke="#FEF08A" stroke-width="3" />
+    <text x="256" y="333" font-family="sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">$</text>
+    <!-- Trillion Award Tracking Pill -->
+    <rect x="146" y="370" width="220" height="34" rx="17" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+    <text x="256" y="392" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">$4.2T FEDERAL SPEND</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_usaspending_award_intelligence)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#451A03" stroke="#F59E0B" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_usaspending_award_intelligence)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">AWARD</text>
+    <rect x="234" y="56" width="214" height="42" rx="21" fill="#1E293B" stroke="#F59E0B" stroke-width="2.2" />
+    <circle cx="254" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_usaspending_award_intelligence)" />
+    <text x="350" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FEF3C7" letter-spacing="1.5">USASPENDING</text>
   </g>
 </svg>

@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_azure_status_feed_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#05162B" /><stop offset="50%" stop-color="#0A2B52" /><stop offset="100%" stop-color="#031020" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_azure_status_feed_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#0078D4" stop-opacity="0.5" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_azure_status_feed_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#0078D4" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#0078D4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0078D4" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_azure_status_feed_monitor)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -61,18 +64,23 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_azure_status_feed_monitor)">
     
-        <!-- Azure Cloud Geometric Diamond & Telemetry Beacon -->
-        <polygon points="256,150 340,240 256,330 172,240" fill="#0C4A6E" stroke="#38BDF8" stroke-width="3.5" />
-        <polygon points="256,190 306,240 256,290 206,240" fill="#0284C7" stroke="#7DD3FC" stroke-width="2" />
-        <!-- Real-time Regional Telemetry Core -->
-        <circle cx="256" cy="240" r="12" fill="#38BDF8" />
-        
+    <!-- Microsoft Azure 3D Faceted Logo / Cloud -->
+    <g transform="translate(256, 230)">
+      <path d="M -70 40 L 0 -80 L 40 -80 L -30 40 Z" fill="#0078D4" />
+      <path d="M -20 -10 L 20 -70 L 60 40 L -60 40 Z" fill="#50E6FF" opacity="0.85" />
+      <path d="M -30 40 L 70 40 L 50 -10 Z" fill="#005BA1" />
+    </g>
+    <!-- Live Status Pulse -->
+    <rect x="146" y="350" width="220" height="36" rx="18" fill="#0A2E59" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="170" cy="368" r="7" fill="#10B981" />
+    <text x="265" y="374" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">AZURE REGIONS OK</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_azure_status_feed_monitor)">
-    <rect x="330" y="56" width="118" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="350" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_azure_status_feed_monitor)" />
-    <text x="398" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">AZURE</text>
+    <rect x="234" y="56" width="214" height="42" rx="21" fill="#0A2E59" stroke="#38BDF8" stroke-width="2.2" />
+    <circle cx="254" cy="77" r="5.5" fill="#60A5FA" filter="url(#softGlow_azure_status_feed_monitor)" />
+    <text x="350" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">AZURE CLOUD</text>
   </g>
 </svg>

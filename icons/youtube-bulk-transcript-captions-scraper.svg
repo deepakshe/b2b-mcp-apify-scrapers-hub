@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_youtube_bulk_transcript_captions_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A070B" /><stop offset="50%" stop-color="#3F0C14" /><stop offset="100%" stop-color="#68101E" />
+      <stop offset="0%" stop-color="#1F0407" /><stop offset="50%" stop-color="#3B080E" /><stop offset="100%" stop-color="#140204" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_youtube_bulk_transcript_captions_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#FBBF24" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#FF4D4D" stop-opacity="0.95" /><stop offset="50%" stop-color="#FF0000" stop-opacity="0.5" /><stop offset="100%" stop-color="#B30000" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_youtube_bulk_transcript_captions_scraper" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#E11D48" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#FF0000" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#FF0000" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FF0000" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -61,21 +61,19 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_youtube_bulk_transcript_captions_scraper)">
     
-        <!-- 3D Crimson Glass Play Prism & Audio Waves -->
-        <rect x="136" y="160" width="240" height="170" rx="36" fill="#450A0A" stroke="#F43F5E" stroke-width="3.5" />
-        <polygon points="230,210 230,280 295,245" fill="#F43F5E" />
-        <!-- Captions / Subtitles Document Strip -->
-        <rect x="170" y="295" width="172" height="54" rx="14" fill="#1C1917" stroke="#FBBF24" stroke-width="2" />
-        <rect x="190" y="312" width="60" height="7" rx="3.5" fill="#FDE047" />
-        <rect x="260" y="312" width="62" height="7" rx="3.5" fill="#FFFFFF" />
-        <rect x="190" y="327" width="90" height="6" rx="3" fill="#A8A29E" />
-        
+    <!-- YouTube Red 3D Button -->
+    <rect x="136" y="156" width="240" height="170" rx="46" fill="#FF0000" stroke="#FF4D4D" stroke-width="2" />
+    <polygon points="232,205 232,277 296,241" fill="#FFFFFF" />
+    <!-- Glowing AI Markdown Transcript Wave underneath -->
+    <rect x="156" y="356" width="200" height="36" rx="18" fill="#2A0B0E" stroke="#FF4D4D" stroke-width="2.5" />
+    <text x="256" y="380" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">CC TRANSCRIPT</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_youtube_bulk_transcript_captions_scraper)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#450A0A" stroke="#F59E0B" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FBBF24" filter="url(#softGlow_youtube_bulk_transcript_captions_scraper)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">CC</text>
+    <rect x="234" y="56" width="214" height="42" rx="21" fill="#450A0A" stroke="#EF4444" stroke-width="2.2" />
+    <circle cx="254" cy="77" r="5.5" fill="#F87171" filter="url(#softGlow_youtube_bulk_transcript_captions_scraper)" />
+    <text x="350" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFFBEB" letter-spacing="1.5">YT CAPTIONS</text>
   </g>
 </svg>

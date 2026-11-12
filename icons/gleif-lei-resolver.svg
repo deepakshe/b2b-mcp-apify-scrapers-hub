@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_gleif_lei_resolver" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#170912" /><stop offset="50%" stop-color="#2E1024" /><stop offset="100%" stop-color="#4C1337" />
+      <stop offset="0%" stop-color="#0A0E24" /><stop offset="50%" stop-color="#141C48" /><stop offset="100%" stop-color="#080B1C" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_gleif_lei_resolver" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BE123C" stop-opacity="0.8" /><stop offset="50%" stop-color="#FB7185" stop-opacity="0.4" /><stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#6366F1" stop-opacity="0.5" /><stop offset="100%" stop-color="#A855F7" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_gleif_lei_resolver" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#9F1239" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#9F1239" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,14 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_gleif_lei_resolver)" />
   
-        <g stroke="#BE123C" stroke-opacity="0.12" fill="none" stroke-width="1.5">
-          <polygon points="256,120 286,137 286,172 256,189 226,172 226,137" />
-          <polygon points="196,155 226,172 226,207 196,224 166,207 166,172" />
-          <polygon points="316,155 346,172 346,207 316,224 286,207 286,172" />
-          <polygon points="256,224 286,241 286,276 256,293 226,276 226,241" />
-          <polygon points="196,259 226,276 226,311 196,328 166,311 166,276" />
-          <polygon points="316,259 346,276 346,311 316,328 286,311 286,276" />
-          <polygon points="256,328 286,345 286,380 256,397 226,380 226,345" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -65,24 +64,29 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_gleif_lei_resolver)">
     
-        <!-- ISO 17442 Legal Entity Identifier Tree -->
-        <circle cx="256" cy="180" r="28" fill="#881337" stroke="#FDA4AF" stroke-width="3" />
-        <line x1="256" y1="208" x2="256" y2="245" stroke="#E11D48" stroke-width="3" />
-        <line x1="196" y1="245" x2="316" y2="245" stroke="#E11D48" stroke-width="3" />
-        <line x1="196" y1="245" x2="196" y2="275" stroke="#E11D48" stroke-width="3" />
-        <line x1="316" y1="245" x2="316" y2="275" stroke="#E11D48" stroke-width="3" />
-        <circle cx="196" cy="295" r="20" fill="#4C0519" stroke="#E11D48" stroke-width="2.5" />
-        <circle cx="316" cy="295" r="20" fill="#4C0519" stroke="#E11D48" stroke-width="2.5" />
-        <!-- 20-digit Code Pill -->
-        <rect x="156" y="340" width="200" height="30" rx="15" fill="#0F172A" stroke="#E11D48" stroke-width="2" />
-        <text x="256" y="360" font-family="monospace" font-weight="900" font-size="12" fill="#FDA4AF" text-anchor="middle">213800...LEI</text>
-        
+    <!-- Corporate Hierarchy Org Tree -->
+    <rect x="220" y="160" width="72" height="38" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="2.5" />
+    <text x="256" y="184" font-family="sans-serif" font-weight="900" font-size="11" fill="#FFFFFF" text-anchor="middle">PARENT</text>
+    <!-- Branch lines -->
+    <line x1="256" y1="198" x2="256" y2="230" stroke="#38BDF8" stroke-width="3" />
+    <line x1="176" y1="230" x2="336" y2="230" stroke="#38BDF8" stroke-width="3" />
+    <line x1="176" y1="230" x2="176" y2="250" stroke="#38BDF8" stroke-width="3" />
+    <line x1="336" y1="230" x2="336" y2="250" stroke="#38BDF8" stroke-width="3" />
+    <!-- Subsidiaries -->
+    <rect x="140" y="250" width="72" height="34" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+    <text x="176" y="272" font-family="sans-serif" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">SUB A</text>
+    <rect x="300" y="250" width="72" height="34" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+    <text x="336" y="272" font-family="sans-serif" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">SUB B</text>
+    <!-- 20-Digit LEI Barcode Badge -->
+    <rect x="146" y="340" width="220" height="42" rx="10" fill="#0C2340" stroke="#38BDF8" stroke-width="2.5" />
+    <text x="256" y="366" font-family="sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" text-anchor="middle">20-DIGIT LEI RESOLVER</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_gleif_lei_resolver)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#4C0519" stroke="#E11D48" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#FDA4AF" filter="url(#softGlow_gleif_lei_resolver)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FFF1F2" letter-spacing="1.5">LEI</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#1E1B4B" stroke="#6366F1" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#A855F7" filter="url(#softGlow_gleif_lei_resolver)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">GLEIF LEI</text>
   </g>
 </svg>

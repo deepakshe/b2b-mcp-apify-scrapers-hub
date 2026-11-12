@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_app_store_reviews_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1315" /><stop offset="50%" stop-color="#132426" /><stop offset="100%" stop-color="#1A3D3B" />
+      <stop offset="0%" stop-color="#061528" /><stop offset="50%" stop-color="#0C2B52" /><stop offset="100%" stop-color="#040F1D" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_app_store_reviews_scraper" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" /><stop offset="50%" stop-color="#F59E0B" stop-opacity="0.4" /><stop offset="100%" stop-color="#34D399" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" /><stop offset="50%" stop-color="#007AFF" stop-opacity="0.5" /><stop offset="100%" stop-color="#60A5FA" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_app_store_reviews_scraper" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#10B981" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#007AFF" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#007AFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#007AFF" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,13 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_app_store_reviews_scraper)" />
   
-        <g stroke="#10B981" stroke-opacity="0.08" stroke-width="1.5">
-          <line x1="60" y1="120" x2="452" y2="120" stroke-dasharray="4 8" />
-          <line x1="60" y1="180" x2="452" y2="180" />
-          <line x1="60" y1="240" x2="452" y2="240" stroke-dasharray="6 6" />
-          <line x1="60" y1="300" x2="452" y2="300" />
-          <line x1="60" y1="360" x2="452" y2="360" stroke-dasharray="4 8" />
-          <line x1="60" y1="420" x2="452" y2="420" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -64,28 +64,32 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_app_store_reviews_scraper)">
     
-        <!-- Five-Star Rating Cluster & Dialog Card -->
-        <rect x="146" y="160" width="220" height="140" rx="24" fill="#0F172A" stroke="#F59E0B" stroke-width="3" />
-        <!-- 5 Golden Stars -->
-        <g transform="translate(165, 190)">
-          <polygon points="15,0 19,10 30,10 21,17 25,27 15,20 5,27 9,17 0,10 11,10" fill="#FBBF24" />
-          <polygon points="50,0 54,10 65,10 56,17 60,27 50,20 40,27 44,17 35,10 46,10" fill="#FBBF24" />
-          <polygon points="85,0 89,10 100,10 91,17 95,27 85,20 75,27 79,17 70,10 81,10" fill="#FBBF24" />
-          <polygon points="120,0 124,10 135,10 126,17 130,27 120,20 110,27 114,17 105,10 116,10" fill="#FBBF24" />
-          <polygon points="155,0 159,10 170,10 161,17 165,27 155,20 145,27 149,17 140,10 151,10" fill="#FBBF24" />
-        </g>
-        <rect x="180" y="240" width="150" height="10" rx="5" fill="#334155" />
-        <rect x="180" y="260" width="100" height="8" rx="4" fill="#334155" />
-        <!-- Rating Score Pill -->
-        <rect x="206" y="315" width="100" height="34" rx="17" fill="#D97706" stroke="#FDE047" stroke-width="2" />
-        <text x="256" y="338" font-family="sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">5.0 ★</text>
-        
+    <!-- Apple App Store Official Icon Background -->
+    <rect x="156" y="146" width="200" height="200" rx="44" fill="#007AFF" stroke="#60A5FA" stroke-width="3" />
+    <!-- Apple 'A' Minimalist Drafting Tool Icon in White -->
+    <g stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Pencil / Ruler Left Bar -->
+      <line x1="200" y1="290" x2="256" y2="190" />
+      <!-- Right Bar -->
+      <line x1="312" y1="290" x2="256" y2="190" />
+      <!-- Crossbar -->
+      <line x1="190" y1="265" x2="322" y2="265" />
+    </g>
+    <!-- 5 Gold Review Stars -->
+    <g fill="#F59E0B" stroke="#FEF08A" stroke-width="1.5" transform="translate(136, 360)">
+      <polygon points="20,5 25,18 38,18 28,26 32,38 20,30 8,38 12,26 2,18 15,18" />
+      <polygon points="65,5 70,18 83,18 73,26 77,38 65,30 53,38 57,26 47,18 60,18" />
+      <polygon points="110,5 115,18 128,18 118,26 122,38 110,30 98,38 102,26 92,18 105,18" />
+      <polygon points="155,5 160,18 173,18 163,26 167,38 155,30 143,38 147,26 137,18 150,18" />
+      <polygon points="200,5 205,18 218,18 208,26 212,38 200,30 188,38 192,26 182,18 195,18" />
+    </g>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_app_store_reviews_scraper)">
-    <rect x="336" y="56" width="112" height="42" rx="21" fill="#064E3B" stroke="#10B981" stroke-width="2.2" />
-    <circle cx="356" cy="77" r="5.5" fill="#34D399" filter="url(#softGlow_app_store_reviews_scraper)" />
-    <text x="401" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ECFDF5" letter-spacing="1.5">STAR</text>
+    <rect x="266" y="56" width="182" height="42" rx="21" fill="#0C2E59" stroke="#38BDF8" stroke-width="2.2" />
+    <circle cx="286" cy="77" r="5.5" fill="#60A5FA" filter="url(#softGlow_app_store_reviews_scraper)" />
+    <text x="366" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">APP STORE</text>
   </g>
 </svg>

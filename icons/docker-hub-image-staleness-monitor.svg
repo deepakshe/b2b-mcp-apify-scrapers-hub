@@ -2,19 +2,19 @@
   <defs>
     <!-- Background Linear Gradient -->
     <linearGradient id="bgGrad_docker_hub_image_staleness_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0C0A1E" /><stop offset="50%" stop-color="#181438" /><stop offset="100%" stop-color="#251D56" />
+      <stop offset="0%" stop-color="#06182C" /><stop offset="50%" stop-color="#0A2E54" /><stop offset="100%" stop-color="#041324" />
     </linearGradient>
 
     <!-- Squircle Border Gradient -->
     <linearGradient id="borderGrad_docker_hub_image_staleness_monitor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8" /><stop offset="50%" stop-color="#C084FC" stop-opacity="0.4" /><stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9" /><stop offset="50%" stop-color="#1D63ED" stop-opacity="0.5" /><stop offset="100%" stop-color="#0DB7ED" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Radial Glowing Orb Gradient -->
     <radialGradient id="glowOrb_docker_hub_image_staleness_monitor" cx="50%" cy="46%" r="52%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55" />
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#1D63ED" stop-opacity="0.55" />
+      <stop offset="70%" stop-color="#1D63ED" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1D63ED" stop-opacity="0.0" />
     </radialGradient>
 
     <!-- Top Specular Reflection Gradient (macOS Glass Arc) -->
@@ -48,10 +48,13 @@
   <!-- ================= LAYER 2: AMBIENT GLOW & TEXTURE ================= -->
   <circle cx="256" cy="245" r="150" fill="url(#glowOrb_docker_hub_image_staleness_monitor)" />
   
-        <g stroke="#8B5CF6" stroke-opacity="0.14" fill="none" stroke-width="1.8">
-          <path d="M 60 256 L 140 256 L 160 220 L 180 290 L 200 230 L 220 270 L 240 256 L 452 256" />
-          <line x1="60" y1="170" x2="452" y2="170" stroke-opacity="0.07" stroke-dasharray="4 6" />
-          <line x1="60" y1="340" x2="452" y2="340" stroke-opacity="0.07" stroke-dasharray="4 6" />
+        <g stroke="#38BDF8" stroke-opacity="0.10" stroke-width="1.5">
+          <line x1="60" y1="140" x2="452" y2="330" />
+          <line x1="60" y1="200" x2="452" y2="390" />
+          <line x1="60" y1="260" x2="452" y2="450" />
+          <line x1="452" y1="140" x2="60" y2="330" />
+          <line x1="452" y1="200" x2="60" y2="390" />
+          <line x1="452" y1="260" x2="60" y2="450" />
         </g>
         
 
@@ -61,25 +64,40 @@
   <!-- ================= LAYER 4: BESPOKE 3D HERO ILLUSTRATION ================= -->
   <g filter="url(#heroShadow_docker_hub_image_staleness_monitor)">
     
-        <!-- 3D Shipping Container on Whale Deck with Age Stamp -->
-        <path d="M 150 250 Q 200 290 360 270 Q 370 250 350 240 L 150 240 Z" fill="#0284C7" stroke="#38BDF8" stroke-width="3" />
-        <!-- Container Grid On Top -->
-        <g fill="#0369A1" stroke="#38BDF8" stroke-width="2">
-          <rect x="180" y="195" width="35" height="35" rx="4" />
-          <rect x="225" y="195" width="35" height="35" rx="4" />
-          <rect x="270" y="195" width="35" height="35" rx="4" />
-          <rect x="225" y="152" width="35" height="35" rx="4" />
-          <rect x="270" y="152" width="35" height="35" rx="4" />
-        </g>
-        <!-- Whale Eye -->
-        <circle cx="340" cy="255" r="4" fill="#FFFFFF" />
-        
+    <!-- Docker Whale and Containers -->
+    <g transform="translate(256, 260)">
+      <!-- Containers on Whale Back -->
+      <g fill="#0DB7ED" stroke="#FFFFFF" stroke-width="2">
+        <rect x="-60" y="-80" width="24" height="20" rx="3" />
+        <rect x="-32" y="-80" width="24" height="20" rx="3" />
+        <rect x="-4" y="-80" width="24" height="20" rx="3" />
+        <rect x="-60" y="-56" width="24" height="20" rx="3" />
+        <rect x="-32" y="-56" width="24" height="20" rx="3" />
+        <rect x="-4" y="-56" width="24" height="20" rx="3" />
+        <rect x="24" y="-56" width="24" height="20" rx="3" />
+        <rect x="-60" y="-32" width="24" height="20" rx="3" />
+        <rect x="-32" y="-32" width="24" height="20" rx="3" />
+        <rect x="-4" y="-32" width="24" height="20" rx="3" />
+        <rect x="24" y="-32" width="24" height="20" rx="3" />
+        <rect x="52" y="-32" width="24" height="20" rx="3" />
+      </g>
+      <!-- Whale Body -->
+      <path d="M -110 -10 C -90 -10, -70 20, 0 20 C 70 20, 110 -10, 110 -10 C 110 30, 70 60, 0 60 C -70 60, -110 30, -110 -10 Z" fill="#1D63ED" />
+      <!-- Whale Tail -->
+      <path d="M -110 -10 C -125 -25, -140 -20, -145 0 C -135 15, -120 10, -110 -10 Z" fill="#1D63ED" />
+      <!-- Eye -->
+      <circle cx="70" cy="15" r="5" fill="#FFFFFF" />
+    </g>
+    <!-- Digest Verification Badge -->
+    <rect x="146" y="370" width="220" height="34" rx="17" fill="#0C2B4D" stroke="#38BDF8" stroke-width="2" />
+    <text x="256" y="392" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">SHA256 DIGEST VERIFIED</text>
+    
   </g>
 
   <!-- ================= LAYER 5: HIGH-CONTRAST METALLIC MICRO-BADGE ================= -->
   <g filter="url(#badgeShadow_docker_hub_image_staleness_monitor)">
-    <rect x="314" y="56" width="134" height="42" rx="21" fill="#2E1065" stroke="#8B5CF6" stroke-width="2.2" />
-    <circle cx="334" cy="77" r="5.5" fill="#C084FC" filter="url(#softGlow_docker_hub_image_staleness_monitor)" />
-    <text x="390" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#FAF5FF" letter-spacing="1.5">DOCKER</text>
+    <rect x="250" y="56" width="198" height="42" rx="21" fill="#0C2B4D" stroke="#38BDF8" stroke-width="2.2" />
+    <circle cx="270" cy="77" r="5.5" fill="#0DB7ED" filter="url(#softGlow_docker_hub_image_staleness_monitor)" />
+    <text x="358" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#F0F9FF" letter-spacing="1.5">DOCKER HUB</text>
   </g>
 </svg>
