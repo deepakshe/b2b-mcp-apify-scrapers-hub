@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.deepakshe/b2b-mcp-apify-scrapers-hub",
   "title": "B2B MCP Apify Scrapers & SecOps Hub",
-  "description": "63 production B2B scrapers, lead intelligence & security auditing tools on Apify: DNS security, catalog extraction, keyword research, ATS jobs, and email verification without proxies.",
+  "description": "63 proxy-free Apify B2B scrapers & MCP tools for lead gen, emails, DNS security & tenders.",
   "version": "1.0.0",
   "websiteUrl": "https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub",
   "repository": {
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@apify/actors-mcp-server",
-      "version": "latest",
+      "version": "0.23.0",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
@@ -31,10 +31,8 @@
   ],
   "remotes": [
     {
-      "transport": {
-        "type": "streamable-http",
-        "url": "https://mcp.apify.com/?tools=deepaksheoran172/website-contact-extractor,deepaksheoran172/bulk-email-verifier-mx-smtp,deepaksheoran172/ats-jobs-extractor,deepaksheoran172/b2b-lead-domain-intelligence-suite,deepaksheoran172/linkedin-public-company-profiler,deepaksheoran172/local-business-website-phone-whatsapp-scraper,deepaksheoran172/domain-security-super-auditor,deepaksheoran172/indian-public-tender-parser,deepaksheoran172/store-catalog-redirect-extractor,deepaksheoran172/openrouter-mcp-registry"
-      }
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=deepaksheoran172/website-contact-extractor,deepaksheoran172/bulk-email-verifier-mx-smtp,deepaksheoran172/ats-jobs-extractor,deepaksheoran172/b2b-lead-domain-intelligence-suite,deepaksheoran172/linkedin-public-company-profiler,deepaksheoran172/local-business-website-phone-whatsapp-scraper,deepaksheoran172/domain-security-super-auditor,deepaksheoran172/indian-public-tender-parser,deepaksheoran172/store-catalog-redirect-extractor,deepaksheoran172/openrouter-mcp-registry"
     }
   ]
 }
