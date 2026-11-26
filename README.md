@@ -9,6 +9,29 @@
 
 ---
 
+## 🤖 1-Click MCP Setup (Claude Desktop, Cursor, Windsurf, VS Code)
+
+Connect all **63 Apify Scrapers & SecOps Tools** directly into your AI agent in 10 seconds (`$5/month` free Apify credits included):
+
+```json
+{
+  "mcpServers": {
+    "apify-b2b-scrapers": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
+```
+
+* **AI Crawler Index (`llms.txt`):** [llms.txt](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/llms.txt) | [llms-full.txt](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/llms-full.txt)
+* **Ready-to-Import n8n Workflows (63 JSONs):** [n8n-templates/](./n8n-templates)
+
+---
+
 ## 🔌 1-Click Integration Blueprints (n8n, Make.com, Claude MCP, Python)
 
 ### A. Dedicated Documentation Pages & Live URLs

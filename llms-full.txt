@@ -1,0 +1,572 @@
+# B2B MCP Apify Scrapers & SecOps Hub — Full Machine-Readable Catalog
+
+Total Actors: 63 | Pricing Model: Pay-Per-Event (Zero Proxies, Zero-Charge-on-Error)
+MCP Endpoint (Stdio): npx -y @apify/actors-mcp-server
+MCP Endpoint (HTTP): https://mcp.apify.com/?tools=deepaksheoran172/<actor-slug>
+
+## 01. Public API & Model Deprecation Radar (`deepaksheoran172/api-sdk-deprecation-radar`)
+- Store URL: https://apify.com/deepaksheoran172/api-sdk-deprecation-radar
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/api-sdk-deprecation-radar.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, B2B_AND_COMPANY_DATA, DEVELOPER_AND_TECH, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/api-sdk-deprecation-radar-workflow.json
+- Description: Monitor official deprecation notices and version sunsets for major public APIs, SDKs, and cloud services. Export deprecation radars to JSON & CSV. Zero proxies, fast run. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 02. App Store & Google Play Customer Reviews Scraper (`deepaksheoran172/app-store-reviews-scraper`)
+- Store URL: https://apify.com/deepaksheoran172/app-store-reviews-scraper
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/app-store-reviews-scraper.html
+- Pricing: $0.002/result
+- Categories: BRAND_MONITORING, RESEARCH_MARKETS_AND_COMPETITORS, ANALYZE_SENTIMENT, COLLECT_AND_ANALYZE_CUSTOMER_REVIEWS, DEVELOPER_AND_TECH, REVIEW_SITES, APPLE_APP_STORE, GOOGLE_PLAY, REVIEWS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/app-store-reviews-scraper-workflow.json
+- Description: Extract user reviews, 1-star complaint breakdowns, feature requests, and version ratings from iOS App Store and Google Play without rate limits.
+
+## 03. ATS Jobs Scraper (Greenhouse, Lever, Ashby & Workable) (`deepaksheoran172/ats-jobs-extractor`)
+- Store URL: https://apify.com/deepaksheoran172/ats-jobs-extractor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/ats-jobs-extractor.html
+- Pricing: $0.005/result
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, JOB_PLATFORMS, JOB_LISTINGS, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--ats-jobs-extractor.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/ats-jobs-extractor-workflow.json
+- Description: Extract live hiring signals, job openings, tech stacks, and salaries directly from top ATS job boards (Greenhouse, Lever, Ashby, Workable) with 0 proxy costs.
+
+## 04. AWS Health Incident & Service Status Monitor (`deepaksheoran172/aws-health-incident-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/aws-health-incident-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/aws-health-incident-monitor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, AMAZON, AUTOMATION, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/aws-health-incident-monitor-workflow.json
+- Description: Monitor public AWS Health and service availability status feeds across global regions and services. Export cloud incident alerts to JSON & CSV. Zero proxies, fast polling. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).
+
+## 05. Microsoft Azure Status & Incident Monitor (`deepaksheoran172/azure-status-feed-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/azure-status-feed-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/azure-status-feed-monitor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, NEWS_AND_ARTICLES, NEWS_ARTICLES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/azure-status-feed-monitor-workflow.json
+- Description: Track Microsoft Azure service health, cloud disruptions, and regional status updates in real-time. Export infrastructure incident logs to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).
+
+## 06. B2B Decision-Maker Email & Contact Finder (`deepaksheoran172/b2b-decision-maker-email-finder`)
+- Store URL: https://apify.com/deepaksheoran172/b2b-decision-maker-email-finder
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/b2b-decision-maker-email-finder.html
+- Pricing: $0.003/result-item
+- Categories: GENERATE_LEADS, LEAD_ENRICHMENT_AND_VALIDATION, AI_AND_ML, B2B_AND_COMPANY_DATA, CONTACT_DETAILS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/b2b-decision-maker-email-finder-workflow.json
+- Description: Resolve verified corporate emails for C-level executives, founders, and VPs. Tests RFC pattern permutations ({first}.{last}, {first}) against live mailservers.
+
+## 07. All-in-One B2B Lead & Corporate Domain Intelligence Suite (`deepaksheoran172/b2b-lead-domain-intelligence-suite`)
+- Store URL: https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/b2b-lead-domain-intelligence-suite.html
+- Pricing: $0.005/b2b-domain-lead-record
+- Categories: GENERATE_LEADS, RESEARCH_MARKETS_AND_COMPETITORS, BUILD_B2B_PROSPECT_LISTS, LEAD_ENRICHMENT_AND_VALIDATION, PROFILE_COMPANIES_AND_DUE_DILIGENCE, ENRICH_COMPANY_PROFILES, B2B_AND_COMPANY_DATA, SOCIAL_MEDIA, WHATSAPP, COMPANY_DATA, CONTACT_DETAILS, PROFILES, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/b2b-lead-domain-intelligence-suite-workflow.json
+- Description: Extracts executive contacts, validates emails via MX/DNS, audits DMARC/SPF/SSL, and detects tech stack.
+
+## 08. Bulk Email Verifier & MX/SMTP Deliverability Checker (`deepaksheoran172/bulk-email-verifier-mx-smtp`)
+- Store URL: https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/bulk-email-verifier-mx-smtp.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, GENERATE_LEADS, LEAD_ENRICHMENT_AND_VALIDATION, TRANSFORM_AND_PROCESS_DATA, VALIDATE_AND_RESOLVE_IDENTIFIERS, AI_AND_ML, CONTACT_DETAILS, AI_TOOLS, MCP_SERVER, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--bulk-email-verifier-mx-smtp.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/bulk-email-verifier-mx-smtp-workflow.json
+- Description: Verify thousands of B2B email addresses with direct DNS MX lookups, SMTP handshake simulation, and disposable domain detection. $0 proxy fees and <50ms checks.
+
+## 09. Shopify & WooCommerce Product Catalog Feed Normalizer (`deepaksheoran172/catalog-feed-normalizer`)
+- Store URL: https://apify.com/deepaksheoran172/catalog-feed-normalizer
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/catalog-feed-normalizer.html
+- Pricing: $0.005/feed-normalization-run, $0.0005/product-item-normalized
+- Categories: DEVELOPER_TOOLS, TRANSFORM_AND_PROCESS_DATA, CONVERT_BETWEEN_DATA_FORMATS, ECOMMERCE, SHOPIFY, PRODUCTS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/catalog-feed-normalizer-workflow.json
+- Description: Normalize messy e-commerce product feeds into pristine Google Merchant Center, Meta & Shopify CSVs. Fix invalid schemas, currency errors, and unmapped variants in seconds.
+
+## 10. CISA KEV Delta Monitor (Known Exploited Vulnerabilities) (`deepaksheoran172/cisa-kev-delta-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/cisa-kev-delta-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/cisa-kev-delta-monitor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/cisa-kev-delta-monitor-workflow.json
+- Description: Monitor the official CISA KEV catalog for newly weaponized zero-day exploits and critical CVEs. Provides real-time alerts and remediation guidance.
+
+## 11. UK Companies House Corporate Event & Filing Monitor (`deepaksheoran172/companies-house-event-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/companies-house-event-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/companies-house-event-monitor.html
+- Pricing: $0.005/uk-company-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, GET_COMPANY_REGISTRIES_AND_FILINGS, AI_AND_ML, B2B_AND_COMPANY_DATA, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, EVENTS, PLACES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/companies-house-event-monitor-workflow.json
+- Description: Monitor UK Companies House corporate filings, officer appointments, charges, and company status changes. Export corporate intelligence to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 12. CPSC Consumer Product Safety Recall Monitor (`deepaksheoran172/cpsc-recall-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/cpsc-recall-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/cpsc-recall-monitor.html
+- Pricing: $0.005/cpsc-recall-record
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, NEWS_ARTICLES, PRODUCTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/cpsc-recall-monitor-workflow.json
+- Description: Track Consumer Product Safety Commission (CPSC) product recalls, injury hazards, and remedy announcements. Export safety alerts to clean JSON & CSV. Zero proxies. Zapier & Make ready. PPE ($0.003/record with 10 free preview items).
+
+## 13. DNS Record Drift & Nameserver Change Monitor (`deepaksheoran172/dns-record-drift-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/dns-record-drift-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/dns-record-drift-monitor.html
+- Pricing: $0.003/dns-drift-audit-record
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/dns-record-drift-monitor-workflow.json
+- Description: Monitor authoritative DNS zones for unexpected IP drift, MX change, or dangling CNAME takeovers. Export DNS audit logs to JSON & CSV. Zero proxies, ultra-fast. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 14. Docker Hub Container Image Staleness & Digest Monitor (`deepaksheoran172/docker-hub-image-staleness-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/docker-hub-image-staleness-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/docker-hub-image-staleness-monitor.html
+- Pricing: $0.003/docker-image-audit-record
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/docker-hub-image-staleness-monitor-workflow.json
+- Description: Monitor public Docker Hub container images for stale base layers, unpatched digest drift, and update frequency. Export container audits to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 15. Domain Well-Known Protocol & App Link Signals Enricher (`deepaksheoran172/domain-protocol-signals-enricher`)
+- Store URL: https://apify.com/deepaksheoran172/domain-protocol-signals-enricher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/domain-protocol-signals-enricher.html
+- Pricing: $0.003/domain-probed
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, ENRICH_COMPANY_PROFILES, AI_AND_ML, B2B_AND_COMPANY_DATA, DEVELOPER_AND_TECH, GENERIC_SCRAPERS, APPLE_APP_STORE, GOOGLE_PLAY, CONTACT_DETAILS, MCP_SERVER, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--domain-protocol-signals-enricher.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/domain-protocol-signals-enricher-workflow.json
+- Description: Inspect domain security headers, .well-known protocol manifests (assetlinks.json, apple-app-site-association), security.txt, and webmaster verification tokens.
+
+## 16. Bulk Domain Security, SSL/TLS, Headers & DMARC Auditor (`deepaksheoran172/domain-security-super-auditor`)
+- Store URL: https://apify.com/deepaksheoran172/domain-security-super-auditor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/domain-security-super-auditor.html
+- Pricing: $0.003/ssl-tls-base-audit, $0.003/security-headers-dns-enrichment
+- Categories: ANALYZE_SEO_AND_MARKETING, DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, RUN_WEBSITE_AUDITS, B2B_AND_COMPANY_DATA, GOVERNMENT_AND_PUBLIC_DATA, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--domain-security-super-auditor.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/domain-security-super-auditor-workflow.json
+- Description: Conduct deep automated audits of SPF records, DMARC policies, DKIM selector health, and SSL certificate chains across 10,000+ domains. Prevent spoofing and blacklists.
+
+## 17. ECHA SVHC European Chemical & Safety Alert Monitor (`deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/echa-svhc-rasff-chemical-alert-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/echa-svhc-rasff-chemical-alert-monitor.html
+- Pricing: $0.005/chemical-alert-record
+- Categories: DEVELOPER_TOOLS, RESEARCH_MARKETS_AND_COMPETITORS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, PROFILE_COMPANIES_AND_DUE_DILIGENCE, CHECK_COMPLIANCE_AND_ESG, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/echa-svhc-rasff-chemical-alert-monitor-workflow.json
+- Description: Monitor EU European Chemicals Agency (ECHA) SVHC candidate lists and RASFF safety alerts for restricted substances. Export chemical compliance data to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 18. FDA 510(k) Medical Device Clearance Intelligence (`deepaksheoran172/fda-510k-clearance-intelligence`)
+- Store URL: https://apify.com/deepaksheoran172/fda-510k-clearance-intelligence
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/fda-510k-clearance-intelligence.html
+- Pricing: $0.005/fda-510k-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, PRODUCTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/fda-510k-clearance-intelligence-workflow.json
+- Description: Track FDA 510(k) premarket notifications and medical device clearances by applicant and device class. Export medical device market data to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 19. FDA Food & Drug Enforcement & Recall Monitor (`deepaksheoran172/fda-food-and-drug-enforcement-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/fda-food-and-drug-enforcement-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/fda-food-and-drug-enforcement-monitor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, RESEARCH_MARKETS_AND_COMPETITORS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, PROFILE_COMPANIES_AND_DUE_DILIGENCE, CHECK_COMPLIANCE_AND_ESG, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, NEWS_ARTICLES, PRODUCTS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/fda-food-and-drug-enforcement-monitor-workflow.json
+- Description: Monitor official FDA enforcement reports for drug, food, and medical device recalls and safety alerts. Export compliance intelligence to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).
+
+## 20. Google Cloud Platform (GCP) Incident Monitor (`deepaksheoran172/gcp-incident-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/gcp-incident-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/gcp-incident-monitor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, GOOGLE, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/gcp-incident-monitor-workflow.json
+- Description: Monitor Google Cloud Platform (GCP) service health dashboards for regional disruptions and incidents. Export cloud infrastructure alerts to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).
+
+## 21. GitHub Actions Hash Pinning & Workflow Security Auditor (`deepaksheoran172/github-actions-pinning-auditor`)
+- Store URL: https://apify.com/deepaksheoran172/github-actions-pinning-auditor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/github-actions-pinning-auditor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, GITHUB, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/github-actions-pinning-auditor-workflow.json
+- Description: Audit public GitHub Actions workflows for unpinned third-party actions and supply-chain vulnerabilities. Export hash pinning security reports to JSON & CSV. Zero proxies. Zapier & CI/CD ready. PPE ($0.003/record with 10 free preview items).
+
+## 22. GitHub Competitive Repository Velocity & Star Tracker (`deepaksheoran172/github-competitive-repo-tracker`)
+- Store URL: https://apify.com/deepaksheoran172/github-competitive-repo-tracker
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/github-competitive-repo-tracker.html
+- Pricing: $0.003/github-repo-intel-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, TRACK_COMPETITORS, DEVELOPER_AND_TECH, GITHUB, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/github-competitive-repo-tracker-workflow.json
+- Description: Track GitHub repository star velocity, fork growth, release cadences, and open issue ratios for open source intelligence. Export metrics to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 23. GLEIF Legal Entity Identifier (LEI) & Hierarchy Resolver (`deepaksheoran172/gleif-lei-resolver`)
+- Store URL: https://apify.com/deepaksheoran172/gleif-lei-resolver
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/gleif-lei-resolver.html
+- Pricing: $0.005/gleif-lei-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, ENRICH_COMPANY_PROFILES, AI_AND_ML, B2B_AND_COMPANY_DATA, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/gleif-lei-resolver-workflow.json
+- Description: Resolve Legal Entity Identifiers (LEI), ultimate parent structures, and official corporate registration data from GLEIF. Export entity hierarchies to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 24. Google Ads Transparency & Competitor Creative Spy (`deepaksheoran172/google-ads-transparency`)
+- Store URL: https://apify.com/deepaksheoran172/google-ads-transparency
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/google-ads-transparency.html
+- Pricing: $0.005/result
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, TRACK_COMPETITORS, B2B_AND_COMPANY_DATA, SEARCH_ENGINES_AND_SEO, GOOGLE, COMPANY_DATA, PROFILES, VIDEOS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/google-ads-transparency-workflow.json
+- Description: Scrape active competitor ads, copy headlines, display creatives, and landing pages from the Google Ads Transparency Center. Zero proxy fees required.
+
+## 25. Google Keyword Suggest & Long-Tail Search Extractor (`deepaksheoran172/google-keyword-suggester`)
+- Store URL: https://apify.com/deepaksheoran172/google-keyword-suggester
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/google-keyword-suggester.html
+- Pricing: $0.001/result
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, TRACK_TRENDS, RESEARCH_KEYWORDS_AND_SEARCH_DEMAND, SEARCH_ENGINES_AND_SEO, GOOGLE, SEO_ANALYTICS, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--google-keyword-suggester.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/google-keyword-suggester-workflow.json
+- Description: Extract thousands of real-time Google search suggestions, question keywords, and buyer search terms. Pure HTTP async extraction with zero proxy fees.
+
+## 26. Grants.gov Federal Opportunity & Grant Matcher (`deepaksheoran172/grants-gov-opportunity-matcher`)
+- Store URL: https://apify.com/deepaksheoran172/grants-gov-opportunity-matcher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/grants-gov-opportunity-matcher.html
+- Pricing: $0.005/grants-gov-opportunity-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DEVELOPER_TOOLS, BUILD_FEEDS_AND_DIRECTORIES, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/grants-gov-opportunity-matcher-workflow.json
+- Description: Discover open and forecasted US federal grant opportunities, eligibility criteria, and funding ceilings from Grants.gov. Export grant listings to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 27. Hacker News Launch & Developer Trend Monitor (`deepaksheoran172/hacker-news-launch-and-trend-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/hacker-news-launch-and-trend-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/hacker-news-launch-and-trend-monitor.html
+- Pricing: $0.003/hacker-news-trend-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, DISCOVER_STARTUPS_AND_NEW_LAUNCHES, TRACK_TRENDS, AI_AND_ML, DEVELOPER_AND_TECH, NEWS_AND_ARTICLES, SOCIAL_POSTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/hacker-news-launch-and-trend-monitor-workflow.json
+- Description: Monitor trending Hacker News stories, Show HN launches, and developer discussion velocity in real-time. Export tech intelligence to JSON & CSV. Zero proxies, ultra-fast. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 28. India Public Tender, GeM & CPPP eProcurement Extractor (`deepaksheoran172/indian-public-tender-parser`)
+- Store URL: https://apify.com/deepaksheoran172/indian-public-tender-parser
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/indian-public-tender-parser.html
+- Pricing: $0.001/tender-search-query, $0.003/tender-record-parsed
+- Categories: DEVELOPER_TOOLS, TRANSFORM_AND_PROCESS_DATA, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, EVENTS, FINANCIAL_DATA, PLACES, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/indian-public-tender-parser-workflow.json
+- Description: Monitor and parse public government tenders, GeM bids, and CPPP contracts across Indian ministries. Extract bid values, eligibility, deadlines, and BOQ documents.
+
+## 29. LinkedIn Hiring Company & Tech Stack Lead Enricher (`deepaksheoran172/linkedin-hiring-company-lead-enricher`)
+- Store URL: https://apify.com/deepaksheoran172/linkedin-hiring-company-lead-enricher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/linkedin-hiring-company-lead-enricher.html
+- Pricing: $0.003/result-item
+- Categories: GENERATE_LEADS, RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, ENRICH_COMPANY_PROFILES, AI_AND_ML, B2B_AND_COMPANY_DATA, JOB_PLATFORMS, LINKEDIN, COMPANY_DATA, CONTACT_DETAILS, JOB_LISTINGS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/linkedin-hiring-company-lead-enricher-workflow.json
+- Description: Extract hiring company career portals, estimated domains, and executive HR email patterns from public job signals. Export verified B2B hiring leads to CSV & JSON. Zero proxies required. Zapier ready. PPE ($0.003/item with 10 free preview records).
+
+## 30. LinkedIn Jobs Scraper (No Login Required) (`deepaksheoran172/linkedin-jobs-scraper-no-login`)
+- Store URL: https://apify.com/deepaksheoran172/linkedin-jobs-scraper-no-login
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/linkedin-jobs-scraper-no-login.html
+- Pricing: $0.003/result-item
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, BUILD_FEEDS_AND_DIRECTORIES, AI_AND_ML, JOB_PLATFORMS, SOCIAL_MEDIA, LINKEDIN, JOB_LISTINGS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/linkedin-jobs-scraper-no-login-workflow.json
+- Description: Scrape live LinkedIn job postings without login, session cookies, or proxy burn. Extract job titles, hiring companies, salaries, locations, and descriptions.
+
+## 31. LinkedIn Public Company Firmographics Profiler (`deepaksheoran172/linkedin-public-company-profiler`)
+- Store URL: https://apify.com/deepaksheoran172/linkedin-public-company-profiler
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/linkedin-public-company-profiler.html
+- Pricing: $0.003/result-item
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, ENRICH_COMPANY_PROFILES, AI_AND_ML, B2B_AND_COMPANY_DATA, SOCIAL_MEDIA, LINKEDIN, COMPANY_DATA, PROFILES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/linkedin-public-company-profiler-workflow.json
+- Description: Extract public corporate firmographics, employee size ranges, industries, and verified website domains. Export enriched B2B company accounts to CSV & JSON. Zero proxies, fast execution. Zapier ready. PPE ($0.003/item with 10 free records).
+
+## 32. Remote Tech Job & Transparent Salary Filter (`deepaksheoran172/linkedin-remote-salary-filter`)
+- Store URL: https://apify.com/deepaksheoran172/linkedin-remote-salary-filter
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/linkedin-remote-salary-filter.html
+- Pricing: $0.003/result-item
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, BUILD_FEEDS_AND_DIRECTORIES, AI_AND_ML, JOB_PLATFORMS, SOCIAL_MEDIA, LINKEDIN, JOB_LISTINGS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/linkedin-remote-salary-filter-workflow.json
+- Description: Filter and extract remote tech job listings featuring transparent salary ranges and equity compensation. Export curated remote leads to clean CSV & JSON. Zero proxies required. Zapier & Make ready. PPE ($0.003/item with 10 free preview records).
+
+## 33. Local Business Phone, Email & WhatsApp Scraper (`deepaksheoran172/local-business-website-phone-whatsapp-scraper`)
+- Store URL: https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/local-business-website-phone-whatsapp-scraper.html
+- Pricing: $0.003/result-item
+- Categories: GENERATE_LEADS, EMAIL_PHONE_EXTRACTION, LOCAL_BUSINESS_PROSPECTING, AI_AND_ML, B2B_AND_COMPANY_DATA, GENERIC_SCRAPERS, MAPS_AND_LOCAL_BUSINESSES, SOCIAL_MEDIA, WHATSAPP, CONTACT_DETAILS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/local-business-website-phone-whatsapp-scraper-workflow.json
+- Description: Extract direct landlines, mobile numbers, WhatsApp click-to-chat links, and contact emails from local business websites. Built for local agency lead generation.
+
+## 34. NHTSA Automotive Vehicle Safety Recall Monitor (`deepaksheoran172/nhtsa-vehicle-recall-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/nhtsa-vehicle-recall-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/nhtsa-vehicle-recall-monitor.html
+- Pricing: $0.005/vehicle-recall-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, AUTOMOTIVE, GOVERNMENT_AND_PUBLIC_DATA, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/nhtsa-vehicle-recall-monitor-workflow.json
+- Description: Monitor official NHTSA automotive safety recalls, defect investigations, and compliance campaigns by vehicle make and model. Export recall datasets to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 35. npm Package Download Velocity & Adoption Trend Reporter (`deepaksheoran172/npm-download-trend-reporter`)
+- Store URL: https://apify.com/deepaksheoran172/npm-download-trend-reporter
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/npm-download-trend-reporter.html
+- Pricing: $0.003/npm-download-trend-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, TRACK_TRENDS, AI_AND_ML, DEVELOPER_AND_TECH, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/npm-download-trend-reporter-workflow.json
+- Description: Track weekly download statistics and adoption velocity trends for npm packages from the official npm Registry API. Export developer metrics to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 36. npm Package Health & Deprecation Auditor (`deepaksheoran172/npm-package-health-auditor`)
+- Store URL: https://apify.com/deepaksheoran172/npm-package-health-auditor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/npm-package-health-auditor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/npm-package-health-auditor-workflow.json
+- Description: Audit Node.js npm packages for deprecated dependencies, unmaintained repos, security advisories, license compliance, and download velocity.
+
+## 37. OFAC SDN Sanctions List Screener & Delta Auditor (`deepaksheoran172/ofac-sdn-delta-screener`)
+- Store URL: https://apify.com/deepaksheoran172/ofac-sdn-delta-screener
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/ofac-sdn-delta-screener.html
+- Pricing: $0.005/ofac-sdn-entity-screened
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, CHECK_COMPLIANCE_AND_ESG, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, PROFILES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/ofac-sdn-delta-screener-workflow.json
+- Description: Screen and monitor the US Treasury OFAC Specially Designated Nationals (SDN) sanctions list for new entries and status deltas. Export compliance screening to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 38. OpenAPI Specification Breaking-Change Diff (`deepaksheoran172/openapi-breaking-change-diff`)
+- Store URL: https://apify.com/deepaksheoran172/openapi-breaking-change-diff
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/openapi-breaking-change-diff.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/openapi-breaking-change-diff-workflow.json
+- Description: Compare two OpenAPI / Swagger specifications to detect breaking API changes, removed endpoints, modified schemas, and altered status codes automatically.
+
+## 39. OpenRouter LLM Token Pricing & MCP Tool Schema Registry (`deepaksheoran172/openrouter-mcp-registry`)
+- Store URL: https://apify.com/deepaksheoran172/openrouter-mcp-registry
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/openrouter-mcp-registry.html
+- Pricing: $0.01/registry-sync-query, $0.001/model-detail-extracted
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, AI_TOOLS, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--openrouter-mcp-registry.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/openrouter-mcp-registry-workflow.json
+- Description: Real-time pricing matrix, context window limits, and capability tags for 200+ LLMs across OpenAI, Anthropic, Google, and Meta via OpenRouter API.
+
+## 40. OpenSanctions Global Sanctions & PEP Screening Enricher (`deepaksheoran172/opensanctions-screening-enricher`)
+- Store URL: https://apify.com/deepaksheoran172/opensanctions-screening-enricher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/opensanctions-screening-enricher.html
+- Pricing: $0.005/sanction-screening-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, CHECK_COMPLIANCE_AND_ESG, AI_AND_ML, B2B_AND_COMPANY_DATA, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, PROFILES, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/opensanctions-screening-enricher-workflow.json
+- Description: Screen individuals and corporate entities against international sanctions, PEP, and crime watchlists via OpenSanctions. Export KYC screening records to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 41. OSV Open Source Dependency CVE Scanner (`deepaksheoran172/osv-dependency-cve-scanner`)
+- Store URL: https://apify.com/deepaksheoran172/osv-dependency-cve-scanner
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/osv-dependency-cve-scanner.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, GOOGLE, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/osv-dependency-cve-scanner-workflow.json
+- Description: Scan open-source dependencies across npm, PyPI, Go, Maven, and Cargo against Google's distributed Open Source Vulnerabilities (OSV.dev) database in real time.
+
+## 42. Google deps.dev Supply-Chain Dependency Graph Enricher (`deepaksheoran172/package-dependency-graph-enricher`)
+- Store URL: https://apify.com/deepaksheoran172/package-dependency-graph-enricher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/package-dependency-graph-enricher.html
+- Pricing: $0.003/package-dependency-record
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, GOOGLE, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/package-dependency-graph-enricher-workflow.json
+- Description: Extract full software supply-chain dependency trees, licenses, and security advisories from Google's official deps.dev API. Export dependency trees to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 43. PyPI Package Health & Security Auditor (`deepaksheoran172/pypi-package-health-auditor`)
+- Store URL: https://apify.com/deepaksheoran172/pypi-package-health-auditor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/pypi-package-health-auditor.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, AI_AND_ML, DEVELOPER_AND_TECH, PROFILES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/pypi-package-health-auditor-workflow.json
+- Description: Audit Python packages on PyPI for download trends, release velocity, maintainer activity, open vulnerabilities, and malicious typosquatting risks.
+
+## 44. RDAP Domain Registration & Lifecycle Monitor (`deepaksheoran172/rdap-domain-registration-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/rdap-domain-registration-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/rdap-domain-registration-monitor.html
+- Pricing: $0.003/rdap-domain-record
+- Categories: DEVELOPER_TOOLS, TRANSFORM_AND_PROCESS_DATA, VALIDATE_AND_RESOLVE_IDENTIFIERS, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, CONTACT_DETAILS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/rdap-domain-registration-monitor-workflow.json
+- Description: Monitor domain name registration dates, registrar transfers, and DNS status flags via official RDAP protocol (RFC 7482). Export domain lifecycle events to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 45. Runtime & Base Container End-of-Life (EOL) Radar (`deepaksheoran172/runtime-and-container-eol-radar`)
+- Store URL: https://apify.com/deepaksheoran172/runtime-and-container-eol-radar
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/runtime-and-container-eol-radar.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, PRODUCTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/runtime-and-container-eol-radar-workflow.json
+- Description: Track End-of-Life (EOL) dates and support cycles for programming runtimes, Linux distros, and container base images. Export compliance timelines to JSON & CSV. Zero proxies. Zapier & Make ready. PPE ($0.003/record with 10 free preview items).
+
+## 46. SAM.gov Federal Contracting Opportunity Monitor (`deepaksheoran172/sam-gov-opportunity-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/sam-gov-opportunity-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/sam-gov-opportunity-monitor.html
+- Pricing: $0.005/sam-gov-opportunity-record
+- Categories: GENERATE_LEADS, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, SEARCH_RESULTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/sam-gov-opportunity-monitor-workflow.json
+- Description: Monitor federal contract opportunities, solicitations, and pre-solicitation notices published on SAM.gov. Export defense and civilian contracting leads to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 47. Scanned Document OCR & PDF Text Extractor (`deepaksheoran172/scanned-document-ocr`)
+- Store URL: https://apify.com/deepaksheoran172/scanned-document-ocr
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/scanned-document-ocr.html
+- Pricing: $0.01/result
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DEVELOPER_TOOLS, BUILD_AI_TRAINING_DATA, TRANSFORM_AND_PROCESS_DATA, GENERIC_SCRAPERS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/scanned-document-ocr-workflow.json
+- Description: Extract structured text, tabular data, and line items from scanned PDF documents, bills, and image receipts. Clean layout-preserving output.
+
+## 48. SEC EDGAR Material Event & Filing Intelligence (`deepaksheoran172/sec-filing-event-intelligence`)
+- Store URL: https://apify.com/deepaksheoran172/sec-filing-event-intelligence
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/sec-filing-event-intelligence.html
+- Pricing: $0.005/sec-filing-record
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, PROFILE_COMPANIES_AND_DUE_DILIGENCE, GET_COMPANY_REGISTRIES_AND_FILINGS, AI_AND_ML, B2B_AND_COMPANY_DATA, FINANCE_AND_CRYPTO, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, FINANCIAL_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/sec-filing-event-intelligence-workflow.json
+- Description: Monitor real-time SEC EDGAR corporate filings (8-K, 10-K, 10-Q) for material corporate events and financial disclosures. Export SEC filings to clean JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 49. Social Bio & Influencer Contact Email Extractor (`deepaksheoran172/social-bio-contact-email-extractor`)
+- Store URL: https://apify.com/deepaksheoran172/social-bio-contact-email-extractor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/social-bio-contact-email-extractor.html
+- Pricing: $0.003/result-item
+- Categories: GENERATE_LEADS, EMAIL_PHONE_EXTRACTION, INFLUENCER_AND_CREATOR_OUTREACH, FIND_AND_ENRICH_CREATOR_CONTACTS, AI_AND_ML, B2B_AND_COMPANY_DATA, SOCIAL_MEDIA, WHATSAPP, CONTACT_DETAILS, PROFILES, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/social-bio-contact-email-extractor-workflow.json
+- Description: Extract public business inquiry emails and sponsorship links from social profile bios, linktrees, and creator landing pages without login credentials.
+
+## 50. State & Local Government RFP Opportunity Aggregator (`deepaksheoran172/state-and-local-rfp-aggregator`)
+- Store URL: https://apify.com/deepaksheoran172/state-and-local-rfp-aggregator
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/state-and-local-rfp-aggregator.html
+- Pricing: $0.005/state-local-rfp-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DEVELOPER_TOOLS, BUILD_FEEDS_AND_DIRECTORIES, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/state-and-local-rfp-aggregator-workflow.json
+- Description: Aggregate state, county, and municipal government procurement RFP notices across public portals. Export government contract opportunities to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 51. Statuspage Incident & Component Aggregator (`deepaksheoran172/statuspage-incident-aggregator`)
+- Store URL: https://apify.com/deepaksheoran172/statuspage-incident-aggregator
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/statuspage-incident-aggregator.html
+- Pricing: $0.003/result-item
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, GITHUB, EVENTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/statuspage-incident-aggregator-workflow.json
+- Description: Aggregate live incidents, component outages, and scheduled maintenance feeds from major cloud providers and SaaS Statuspages. Export alerts to JSON & CSV. Zero proxies. Zapier & Slack ready. PPE ($0.003/record with 10 free preview items).
+
+## 52. Shopify & WooCommerce Catalog + 301 SEO Redirect Generator (`deepaksheoran172/store-catalog-redirect-extractor`)
+- Store URL: https://apify.com/deepaksheoran172/store-catalog-redirect-extractor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/store-catalog-redirect-extractor.html
+- Pricing: $0.002/store-catalog-extraction, $0.001/product-record-exported
+- Categories: DEVELOPER_TOOLS, TRANSFORM_AND_PROCESS_DATA, ECOMMERCE, SHOPIFY, PRODUCTS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/store-catalog-redirect-extractor-workflow.json
+- Description: Extract full Shopify & WooCommerce product catalogs with prices, variants, SKUs, and auto-generate 100% SEO-safe 301 URL redirects in CSV format.
+
+## 53. TED EU Public Procurement Tender Monitor (`deepaksheoran172/ted-eu-tender-monitor`)
+- Store URL: https://apify.com/deepaksheoran172/ted-eu-tender-monitor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/ted-eu-tender-monitor.html
+- Pricing: $0.005/ted-eu-tender-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/ted-eu-tender-monitor-workflow.json
+- Description: Monitor European Union public procurement notices and business opportunities from Tenders Electronic Daily (TED). Export tender opportunities to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 54. TLS/SSL Certificate Expiry & Integrity Auditor (`deepaksheoran172/tls-certificate-expiry-auditor`)
+- Store URL: https://apify.com/deepaksheoran172/tls-certificate-expiry-auditor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/tls-certificate-expiry-auditor.html
+- Pricing: $0.003/tls-cert-audit-record
+- Categories: DEVELOPER_TOOLS, MONITOR_AND_ALERT_ON_WEBSITE_CHANGES, AI_AND_ML, DEVELOPER_AND_TECH, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/tls-certificate-expiry-auditor-workflow.json
+- Description: Audit web domains in bulk for SSL/TLS certificate expiration dates (<30d warning), issuer authorities, and SAN coverage. Export security reports to JSON & CSV. Zero proxies. PPE ($0.003/record with 10 free preview items).
+
+## 55. USAspending Federal Contract Award Intelligence (`deepaksheoran172/usaspending-award-intelligence`)
+- Store URL: https://apify.com/deepaksheoran172/usaspending-award-intelligence
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/usaspending-award-intelligence.html
+- Pricing: $0.005/usaspending-award-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, RESEARCH_MARKETS_AND_COMPETITORS, BUILD_AI_TRAINING_DATA, BUILD_FEEDS_AND_DIRECTORIES, PROFILE_COMPANIES_AND_DUE_DILIGENCE, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, COMPANY_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/usaspending-award-intelligence-workflow.json
+- Description: Extract US federal contract awards, recipients, funding agencies, and obligated amounts from USAspending.gov. Export federal procurement data to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 56. Website Contact & Decision-Maker Email Extractor (`deepaksheoran172/website-contact-extractor`)
+- Store URL: https://apify.com/deepaksheoran172/website-contact-extractor
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/website-contact-extractor.html
+- Pricing: $0.0025/result
+- Categories: GENERATE_LEADS, EMAIL_PHONE_EXTRACTION, B2B_AND_COMPANY_DATA, DEVELOPER_AND_TECH, GENERIC_SCRAPERS, SOCIAL_MEDIA, FACEBOOK, GITHUB, INSTAGRAM, LINKEDIN, WHATSAPP, X_TWITTER, YOUTUBE, CONTACT_DETAILS, PROFILES, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--website-contact-extractor.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/website-contact-extractor-workflow.json
+- Description: Crawl corporate websites to extract verified contact emails, LinkedIn company URLs, Twitter/X profiles, and phone numbers in seconds. Zero proxy fees.
+
+## 57. Website Health, 404 Broken Link & Redirect Auditor (`deepaksheoran172/website-health-checker`)
+- Store URL: https://apify.com/deepaksheoran172/website-health-checker
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/website-health-checker.html
+- Pricing: $0.001/url-health-check, $0.002/deep-page-seo-audit
+- Categories: ANALYZE_SEO_AND_MARKETING, RUN_WEBSITE_AUDITS, DEVELOPER_AND_TECH, GENERIC_SCRAPERS, SEARCH_ENGINES_AND_SEO, SEO_ANALYTICS, SINGLE_TENANT_SERVER
+- Standby Server Mode: Yes (https://deepaksheoran172--website-health-checker.apify.actor)
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/website-health-checker-workflow.json
+- Description: Deep crawl any website to detect 404 broken links, 301/302 redirect chains, missing meta titles, and SSL errors before they damage SEO rankings.
+
+## 58. Website Screenshot & High-Res PDF Generator (`deepaksheoran172/website-screenshot-pdf`)
+- Store URL: https://apify.com/deepaksheoran172/website-screenshot-pdf
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/website-screenshot-pdf.html
+- Pricing: $0.005/result
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, DOWNLOAD_AND_ARCHIVE_MEDIA, GENERIC_SCRAPERS, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/website-screenshot-pdf-workflow.json
+- Description: Generate pixel-perfect full-page PNG screenshots and vector PDFs of any URL. Handles lazy loading, custom viewports, dark mode, and cookie banner suppression.
+
+## 59. World Bank Global Project & Procurement Pipeline (`deepaksheoran172/world-bank-project-pipeline-matcher`)
+- Store URL: https://apify.com/deepaksheoran172/world-bank-project-pipeline-matcher
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/world-bank-project-pipeline-matcher.html
+- Pricing: $0.005/world-bank-project-record
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, GENERATE_LEADS, BUILD_FEEDS_AND_DIRECTORIES, AI_AND_ML, GOVERNMENT_AND_PUBLIC_DATA, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/world-bank-project-pipeline-matcher-workflow.json
+- Description: Track World Bank global development projects, procurement pipelines, and country lending commitments. Export international procurement leads to JSON & CSV. Zero proxies. Zapier ready. PPE ($0.003/record with 10 free preview items).
+
+## 60. YouTube Video Bulk Transcript & Captions Scraper (`deepaksheoran172/youtube-bulk-transcript-captions-scraper`)
+- Store URL: https://apify.com/deepaksheoran172/youtube-bulk-transcript-captions-scraper
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/youtube-bulk-transcript-captions-scraper.html
+- Pricing: $0.003/result-item
+- Categories: COLLECT_AND_DISTRIBUTE_CONTENT, BUILD_AI_TRAINING_DATA, EXTRACT_VIDEO_TRANSCRIPTS_AND_CAPTIONS, AI_AND_ML, SOCIAL_MEDIA, YOUTUBE, TRANSCRIPTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/youtube-bulk-transcript-captions-scraper-workflow.json
+- Description: Scrape full public captions and video transcripts from YouTube videos in bulk. Export timestamped text and markdown to JSON & TXT for AI LLM training. Zero proxies, fast execution. Zapier ready. PPE ($0.003/item with 10 free preview transcripts).
+
+## 61. YouTube Creator Sponsor & Business Email Finder (`deepaksheoran172/youtube-channel-sponsor-email-lead-finder`)
+- Store URL: https://apify.com/deepaksheoran172/youtube-channel-sponsor-email-lead-finder
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/youtube-channel-sponsor-email-lead-finder.html
+- Pricing: $0.003/result-item
+- Categories: GENERATE_LEADS, INFLUENCER_AND_CREATOR_OUTREACH, FIND_AND_ENRICH_CREATOR_CONTACTS, AI_AND_ML, B2B_AND_COMPANY_DATA, SOCIAL_MEDIA, YOUTUBE, COMPANY_DATA, CONTACT_DETAILS, PROFILES, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/youtube-channel-sponsor-email-lead-finder-workflow.json
+- Description: Discover brand sponsors, affiliate partnerships, and public business inquiry emails from top YouTube channels. Export creator sponsorship leads to CSV & JSON. Zero proxies. Zapier ready. PPE ($0.003/item with 10 free preview records).
+
+## 62. YouTube Comments Sentiment & Pain-Point Miner (`deepaksheoran172/youtube-comments-painpoint-sentiment-miner`)
+- Store URL: https://apify.com/deepaksheoran172/youtube-comments-painpoint-sentiment-miner
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/youtube-comments-painpoint-sentiment-miner.html
+- Pricing: $0.003/result-item
+- Categories: BRAND_MONITORING, RESEARCH_MARKETS_AND_COMPETITORS, ANALYZE_SENTIMENT, AI_AND_ML, SOCIAL_MEDIA, YOUTUBE, COMMENTS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/youtube-comments-painpoint-sentiment-miner-workflow.json
+- Description: Mine public YouTube comments for customer pain points, product complaints, and feature requests. Export raw sentiment data to CSV & JSON for market research. Zero proxies. Zapier ready. PPE ($0.003/item with 10 free preview records).
+
+## 63. YouTube Shorts Viral Hook & Trend Velocity Tracker (`deepaksheoran172/youtube-shorts-viral-hook-trend-tracker`)
+- Store URL: https://apify.com/deepaksheoran172/youtube-shorts-viral-hook-trend-tracker
+- Docs Page: https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/actors/youtube-shorts-viral-hook-trend-tracker.html
+- Pricing: $0.003/result-item
+- Categories: RESEARCH_MARKETS_AND_COMPETITORS, TRACK_TRENDS, SPOT_VIRAL_CONTENT_AND_CREATORS, AI_AND_ML, SOCIAL_MEDIA, YOUTUBE, PROFILES, SOCIAL_POSTS, VIDEOS, AI_TOOLS, MCP_SERVER, RUN
+- Standby Server Mode: Batch / MCP via @apify/actors-mcp-server
+- n8n Template: https://github.com/deepakshe/b2b-mcp-apify-scrapers-hub/blob/main/n8n-templates/youtube-shorts-viral-hook-trend-tracker-workflow.json
+- Description: Track viral YouTube Shorts titles, view velocity, and engagement patterns in real-time. Export creator intelligence to CSV & JSON for video production. Zero proxies, fast run. Zapier ready. PPE ($0.003/item with 10 free preview records).
